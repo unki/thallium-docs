@@ -12,12 +12,8 @@ OUTPUT="${DIRNAME}/docs"
 TITLE="Thallium API Documentation"
 SOURCE="${DIRNAME}/$(basename ${GITREPO} .git)"
 
-if [ ! -d ${OUTPUT} ]; then
-   if [ -f ${OUTPUT} ]; then
-      echo "${OUTPUT} already exists!"
-      exit 1
-   fi
-   mkdir ${OUTPUT}
+if [ -d ${OUTPUT} ]; then
+   rm -r ${OUTPUT}
 fi
 
 if [ ! -d ${SOURCE} ]; then
