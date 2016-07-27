@@ -142,6 +142,10 @@
 	<h1>Class ViewsController</h1>
 
 
+	<div class="description">
+	<p>ViewsController takes care of loading views and mapping the
+clients page requests to a specific view.</p>
+	</div>
 
 	<dl class="tree well">
 		<dd style="padding-left:0px">
@@ -175,9 +179,15 @@
 		
 		
 		<b>Namespace:</b> <a href="namespace-Thallium.html">Thallium</a>\<a href="namespace-Thallium.Controllers.html">Controllers</a><br>
-		
+		<b>Package:</b> Thallium\Controllers\ViewsController\Controllers<br>
 
-			<b>Located at</b> <a href="source-class-Thallium.Controllers.ViewsController.html#22-166" title="Go to source code">vendor/Thallium/Controllers/ViewsController.php</a>
+				<b>Copyright:</b>
+				2015-2016 Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+				<b>License:</b>
+				<a href="AGPL3">AGPL3</a><br>
+				<b>Author:</b>
+				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+			<b>Located at</b> <a href="source-class-Thallium.Controllers.ViewsController.html#22-259" title="Go to source code">vendor/Thallium/Controllers/ViewsController.php</a>
 		<br>
 	</div>
 
@@ -197,18 +207,22 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Thallium.Controllers.ViewsController.html#32-49" title="Go to source code">__construct</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.ViewsController.html#47-72" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
-				
+				<p>class constructor</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>class constructor</p>
 
 
 
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 					<h4>Overrides</h4>
@@ -220,26 +234,41 @@
 		<tr data-order="getViewName" id="_getViewName">
 
 			<td class="attributes"><code>
-				 public static
-				
+				 protected static
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getViewName">#</a>
-			<code><a href="source-class-Thallium.Controllers.ViewsController.html#51-85" title="Go to source code">getViewName</a>( <span> <var>$view</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.ViewsController.html#74-121" title="Go to source code">getViewName</a>( <span>string <var>$view</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the name of a view that is responsible for handling
+a specific page request.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the name of a view that is responsible for handling
+a specific page request.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$view</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -250,25 +279,38 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				object|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getView">#</a>
-			<code><a href="source-class-Thallium.Controllers.ViewsController.html#87-117" title="Go to source code">getView</a>( <span> <var>$view</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.ViewsController.html#123-160" title="Go to source code">getView</a>( <span>string <var>$view</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>loads the view specified as $view</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>loads the view specified as $view</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$view</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						object|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -279,25 +321,42 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_load">#</a>
-			<code><a href="source-class-Thallium.Controllers.ViewsController.html#119-146" title="Go to source code">load</a>( <span> <var>$view</var></span>, <span> <var>$skeleton</var> = <span class="php-keyword1">true</span></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.ViewsController.html#162-209" title="Go to source code">load</a>( <span>string <var>$view</var></span>, <span>boolean <var>$skeleton</var> = <span class="php-keyword1">true</span></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the output of a view, either with or without the page
+skeleton structure.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the output of a view, either with or without the page
+skeleton structure.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$view</var></dt>
+						<dd></dd>
+						<dt><var>$skeleton</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -308,25 +367,40 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isLoadedView">#</a>
-			<code><a href="source-class-Thallium.Controllers.ViewsController.html#148-155" title="Go to source code">isLoadedView</a>( <span> <var>$name</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.ViewsController.html#211-235" title="Go to source code">isLoadedView</a>( <span>string <var>$view</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the specified view has already been loaded and is
+present in the $loaded_views property.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the specified view has already been loaded and is
+present in the $loaded_views property.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$view</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -337,25 +411,40 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				object|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getLoadedView">#</a>
-			<code><a href="source-class-Thallium.Controllers.ViewsController.html#157-165" title="Go to source code">getLoadedView</a>( <span> <var>$name</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.ViewsController.html#237-258" title="Go to source code">getLoadedView</a>( <span>string <var>$view</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns a view that has already been cached in property $loaded_views
+a specific page request.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns a view that has already been cached in property $loaded_views
+a specific page request.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$view</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						object|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -409,14 +498,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.ViewsController.html#24-28" title="Go to source code"><var>$page_map</var></a>
+					<a href="source-class-Thallium.Controllers.ViewsController.html#34-39" title="Go to source code"><var>$page_map</var></a>
 
 				<div class="description short">
-					
+					<p>$page_map</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$page_map</p>
 
 				</div>
 			</td>
@@ -434,18 +523,18 @@
 		<tr data-order="page_skeleton" id="$page_skeleton">
 			<td class="attributes"><code>
 				protected  
-				
+				object
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.ViewsController.html#29" title="Go to source code"><var>$page_skeleton</var></a>
+					<a href="source-class-Thallium.Controllers.ViewsController.html#41-42" title="Go to source code"><var>$page_skeleton</var></a>
 
 				<div class="description short">
-					
+					<p>$page_skeleton</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$page_skeleton</p>
 
 				</div>
 			</td>
@@ -463,14 +552,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.ViewsController.html#30" title="Go to source code"><var>$loaded_views</var></a>
+					<a href="source-class-Thallium.Controllers.ViewsController.html#44-45" title="Go to source code"><var>$loaded_views</var></a>
 
 				<div class="description short">
-					
+					<p>$loaded_views</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$loaded_views</p>
 
 				</div>
 			</td>

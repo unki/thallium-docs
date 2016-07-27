@@ -142,6 +142,11 @@
 	<h1>Class RequirementsController</h1>
 
 
+	<div class="description">
+	<p>RequirementsController is used to check if all the software
+requirements as well as required directories to be available
+with the right permissions.</p>
+	</div>
 
 	<dl class="tree well">
 		<dd style="padding-left:0px">
@@ -175,9 +180,15 @@
 		
 		
 		<b>Namespace:</b> <a href="namespace-Thallium.html">Thallium</a>\<a href="namespace-Thallium.Controllers.html">Controllers</a><br>
-		
+		<b>Package:</b> Thallium\Controllers\ConfigController\Controllers<br>
 
-			<b>Located at</b> <a href="source-class-Thallium.Controllers.RequirementsController.html#24-201" title="Go to source code">vendor/Thallium/Controllers/RequirementsController.php</a>
+				<b>Copyright:</b>
+				2015-2016 Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+				<b>License:</b>
+				<a href="AGPL3">AGPL3</a><br>
+				<b>Author:</b>
+				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+			<b>Located at</b> <a href="source-class-Thallium.Controllers.RequirementsController.html#24-259" title="Go to source code">vendor/Thallium/Controllers/RequirementsController.php</a>
 		<br>
 	</div>
 
@@ -197,18 +208,22 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Thallium.Controllers.RequirementsController.html#26-34" title="Go to source code">__construct</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.RequirementsController.html#37-52" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
-				
+				<p>class constructor</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>class constructor</p>
 
 
 
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 					<h4>Overrides</h4>
@@ -221,25 +236,35 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_check">#</a>
-			<code><a href="source-class-Thallium.Controllers.RequirementsController.html#36-61" title="Go to source code">check</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.RequirementsController.html#54-87" title="Go to source code">check</a>( )</code>
 
 			<div class="description short">
-				
+				<p>This method gets called from the outside and triggers the controller
+to perform all checks.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>This method gets called from the outside and triggers the controller
+to perform all checks.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -250,25 +275,35 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_checkPhp">#</a>
-			<code><a href="source-class-Thallium.Controllers.RequirementsController.html#63-79" title="Go to source code">checkPhp</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.RequirementsController.html#89-113" title="Go to source code">checkPhp</a>( )</code>
 
 			<div class="description short">
-				
+				<p>perform checks for required PHP internal functions and extensions.
+to perform all checks.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>perform checks for required PHP internal functions and extensions.
+to perform all checks.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -279,25 +314,35 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_checkDatabaseSupport">#</a>
-			<code><a href="source-class-Thallium.Controllers.RequirementsController.html#81-129" title="Go to source code">checkDatabaseSupport</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.RequirementsController.html#115-173" title="Go to source code">checkDatabaseSupport</a>( )</code>
 
 			<div class="description short">
-				
+				<p>perform checks if the configured database type ([database] section)
+is supported by PHP.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>perform checks if the configured database type ([database] section)
+is supported by PHP.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -308,25 +353,33 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_checkExternalLibraries">#</a>
-			<code><a href="source-class-Thallium.Controllers.RequirementsController.html#131-153" title="Go to source code">checkExternalLibraries</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.RequirementsController.html#175-204" title="Go to source code">checkExternalLibraries</a>( )</code>
 
 			<div class="description short">
-				
+				<p>perform checks if external libraries are available.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>perform checks if external libraries are available.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -337,25 +390,33 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_checkDirectoryPermissions">#</a>
-			<code><a href="source-class-Thallium.Controllers.RequirementsController.html#155-200" title="Go to source code">checkDirectoryPermissions</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.RequirementsController.html#206-258" title="Go to source code">checkDirectoryPermissions</a>( )</code>
 
 			<div class="description short">
-				
+				<p>perform checks directory permission checks.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>perform checks directory permission checks.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 

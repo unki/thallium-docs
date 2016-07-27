@@ -243,7 +243,7 @@
 </span></span><span id="61" class="l"><span class="php-comment">     *
 </span></span><span id="62" class="l"><span class="php-comment">     * @param string $mode allow specifying the mode Thallium starts into
 </span></span><span id="63" class="l"><span class="php-comment">     * @return void
-</span></span><span id="64" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="64" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="65" class="l"><span class="php-comment">     */</span>
 </span><span id="66" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct(<span class="php-var">$mode</span> = <span class="php-keyword1">null</span>)
 </span><span id="67" class="l">    {
@@ -372,7 +372,7 @@
 </span></span><span id="190" class="l"><span class="php-comment">     *
 </span></span><span id="191" class="l"><span class="php-comment">     * @param none
 </span></span><span id="192" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="193" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="193" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="194" class="l"><span class="php-comment">     */</span>
 </span><span id="195" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> startup()
 </span><span id="196" class="l">    {
@@ -421,7 +421,7 @@
 </span></span><span id="239" class="l"><span class="php-comment">     *
 </span></span><span id="240" class="l"><span class="php-comment">     * @param none
 </span></span><span id="241" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="242" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="242" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="243" class="l"><span class="php-comment">     */</span>
 </span><span id="244" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> runBackgroundJobs()
 </span><span id="245" class="l">    {
@@ -445,7 +445,7 @@
 </span></span><span id="263" class="l"><span class="php-comment">     *
 </span></span><span id="264" class="l"><span class="php-comment">     * @param int $level LOG_INFO, LOG_WARNING, LOG_DEBUG
 </span></span><span id="265" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="266" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="266" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="267" class="l"><span class="php-comment">     */</span>
 </span><span id="268" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> setVerbosity(<span class="php-var">$level</span>)
 </span><span id="269" class="l">    {
@@ -476,7 +476,7 @@
 </span></span><span id="294" class="l"><span class="php-comment">     *
 </span></span><span id="295" class="l"><span class="php-comment">     * @param none
 </span></span><span id="296" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="297" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="297" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="298" class="l"><span class="php-comment">     */</span>
 </span><span id="299" class="l">    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> rpcHandler()
 </span><span id="300" class="l">    {
@@ -501,7 +501,7 @@
 </span></span><span id="319" class="l"><span class="php-comment">     *
 </span></span><span id="320" class="l"><span class="php-comment">     * @param none
 </span></span><span id="321" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="322" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="322" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="323" class="l"><span class="php-comment">     */</span>
 </span><span id="324" class="l">    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> uploadHandler()
 </span><span id="325" class="l">    {
@@ -556,7 +556,7 @@
 </span></span><span id="374" class="l"><span class="php-comment">     *
 </span></span><span id="375" class="l"><span class="php-comment">     * @param string $model_name
 </span></span><span id="376" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="377" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="377" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="378" class="l"><span class="php-comment">     */</span>
 </span><span id="379" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> isValidModel(<span class="php-var">$model_name</span>)
 </span><span id="380" class="l">    {
@@ -588,7 +588,7 @@
 </span></span><span id="406" class="l"><span class="php-comment">     *
 </span></span><span id="407" class="l"><span class="php-comment">     * @param string
 </span></span><span id="408" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="409" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="409" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="410" class="l"><span class="php-comment">     */</span>
 </span><span id="411" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> isValidGuidSyntax(<span class="php-var">$guid</span>)
 </span><span id="412" class="l">    {
@@ -610,7 +610,7 @@
 </span></span><span id="428" class="l"><span class="php-comment">     *
 </span></span><span id="429" class="l"><span class="php-comment">     * @param string $id
 </span></span><span id="430" class="l"><span class="php-comment">     * @return bool|stdClass
-</span></span><span id="431" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="431" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="432" class="l"><span class="php-comment">     */</span>
 </span><span id="433" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> parseId(<span class="php-var">$id</span>)
 </span><span id="434" class="l">    {
@@ -643,7 +643,7 @@
 </span></span><span id="461" class="l"><span class="php-comment">     *
 </span></span><span id="462" class="l"><span class="php-comment">     * @param none
 </span></span><span id="463" class="l"><span class="php-comment">     * @return string|bool
-</span></span><span id="464" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="464" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="465" class="l"><span class="php-comment">     */</span>
 </span><span id="466" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> createGuid()
 </span><span id="467" class="l">    {
@@ -670,7 +670,7 @@
 </span></span><span id="488" class="l"><span class="php-comment">     * @param int|null $id
 </span></span><span id="489" class="l"><span class="php-comment">     * @param string|null $guid
 </span></span><span id="490" class="l"><span class="php-comment">     * @return object|bool
-</span></span><span id="491" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="491" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="492" class="l"><span class="php-comment">     */</span>
 </span><span id="493" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> loadModel(<span class="php-var">$model_name</span>, <span class="php-var">$id</span> = <span class="php-keyword1">null</span>, <span class="php-var">$guid</span> = <span class="php-keyword1">null</span>)
 </span><span id="494" class="l">    {
@@ -738,7 +738,7 @@
 </span></span><span id="556" class="l"><span class="php-comment">     *
 </span></span><span id="557" class="l"><span class="php-comment">     * @param none
 </span></span><span id="558" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="559" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="559" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="560" class="l"><span class="php-comment">     */</span>
 </span><span id="561" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> checkUpgrade()
 </span><span id="562" class="l">    {
@@ -794,7 +794,7 @@
 </span></span><span id="612" class="l"><span class="php-comment">     * @param string $controller
 </span></span><span id="613" class="l"><span class="php-comment">     * @param string $global_name
 </span></span><span id="614" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="615" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="615" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="616" class="l"><span class="php-comment">     */</span>
 </span><span id="617" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> loadController(<span class="php-var">$controller</span>, <span class="php-var">$global_name</span>)
 </span><span id="618" class="l">    {
@@ -837,7 +837,7 @@
 </span></span><span id="655" class="l"><span class="php-comment">     *
 </span></span><span id="656" class="l"><span class="php-comment">     * @param none
 </span></span><span id="657" class="l"><span class="php-comment">     * @return int|bool
-</span></span><span id="658" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="658" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="659" class="l"><span class="php-comment">     */</span>
 </span><span id="660" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getProcessUserId()
 </span><span id="661" class="l">    {
@@ -854,7 +854,7 @@
 </span></span><span id="672" class="l"><span class="php-comment">     *
 </span></span><span id="673" class="l"><span class="php-comment">     * @param none
 </span></span><span id="674" class="l"><span class="php-comment">     * @return int|bool
-</span></span><span id="675" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="675" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="676" class="l"><span class="php-comment">     */</span>
 </span><span id="677" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getProcessGroupId()
 </span><span id="678" class="l">    {
@@ -871,7 +871,7 @@
 </span></span><span id="689" class="l"><span class="php-comment">     *
 </span></span><span id="690" class="l"><span class="php-comment">     * @param none
 </span></span><span id="691" class="l"><span class="php-comment">     * @return string|bool
-</span></span><span id="692" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="692" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="693" class="l"><span class="php-comment">     */</span>
 </span><span id="694" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getProcessUserName()
 </span><span id="695" class="l">    {
@@ -893,7 +893,7 @@
 </span></span><span id="711" class="l"><span class="php-comment">     *
 </span></span><span id="712" class="l"><span class="php-comment">     * @param none
 </span></span><span id="713" class="l"><span class="php-comment">     * @return string|bool
-</span></span><span id="714" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="714" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="715" class="l"><span class="php-comment">     */</span>
 </span><span id="716" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getProcessGroupName()
 </span><span id="717" class="l">    {
@@ -916,7 +916,7 @@
 </span></span><span id="734" class="l"><span class="php-comment">     *
 </span></span><span id="735" class="l"><span class="php-comment">     * @param none
 </span></span><span id="736" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="737" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="737" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="738" class="l"><span class="php-comment">     */</span>
 </span><span id="739" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> processRequestMessages()
 </span><span id="740" class="l">    {
@@ -961,7 +961,7 @@
 </span></span><span id="779" class="l"><span class="php-comment">     *
 </span></span><span id="780" class="l"><span class="php-comment">     * @param \Thallium\Models\MessageModel $message
 </span></span><span id="781" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="782" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="782" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="783" class="l"><span class="php-comment">     */</span>
 </span><span id="784" class="l">    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> handleMessage(&amp;<span class="php-var">$message</span>)
 </span><span id="785" class="l">    {
@@ -1025,7 +1025,7 @@
 </span></span><span id="843" class="l"><span class="php-comment">     *
 </span></span><span id="844" class="l"><span class="php-comment">     * @param none
 </span></span><span id="845" class="l"><span class="php-comment">     * @return string|bool
-</span></span><span id="846" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="846" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="847" class="l"><span class="php-comment">     */</span>
 </span><span id="848" class="l">    <span class="php-keyword1">final</span> <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getNamespacePrefix()
 </span><span id="849" class="l">    {
@@ -1062,7 +1062,7 @@
 </span></span><span id="880" class="l"><span class="php-comment">     *
 </span></span><span id="881" class="l"><span class="php-comment">     * @param string $prefix
 </span></span><span id="882" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="883" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="883" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="884" class="l"><span class="php-comment">     */</span>
 </span><span id="885" class="l">    <span class="php-keyword1">final</span> <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> setNamespacePrefix(<span class="php-var">$prefix</span>)
 </span><span id="886" class="l">    {
@@ -1080,7 +1080,7 @@
 </span></span><span id="898" class="l"><span class="php-comment">     *
 </span></span><span id="899" class="l"><span class="php-comment">     * @param none
 </span></span><span id="900" class="l"><span class="php-comment">     * @return array|bool
-</span></span><span id="901" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="901" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="902" class="l"><span class="php-comment">     */</span>
 </span><span id="903" class="l">    <span class="php-keyword1">final</span> <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getRegisteredModels()
 </span><span id="904" class="l">    {
@@ -1101,7 +1101,7 @@
 </span></span><span id="919" class="l"><span class="php-comment">     * @param string $nick
 </span></span><span id="920" class="l"><span class="php-comment">     * @param string $model
 </span></span><span id="921" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="922" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="922" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="923" class="l"><span class="php-comment">     */</span>
 </span><span id="924" class="l">    <span class="php-keyword1">final</span> <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> registerModel(<span class="php-var">$nick</span>, <span class="php-var">$model</span>)
 </span><span id="925" class="l">    {
@@ -1150,7 +1150,7 @@
 </span></span><span id="968" class="l"><span class="php-comment">     * @param string $nick
 </span></span><span id="969" class="l"><span class="php-comment">     * @param string $model
 </span></span><span id="970" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="971" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="971" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="972" class="l"><span class="php-comment">     */</span>
 </span><span id="973" class="l">    <span class="php-keyword1">final</span> <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> isRegisteredModel(<span class="php-var">$nick</span> = <span class="php-keyword1">null</span>, <span class="php-var">$model</span> = <span class="php-keyword1">null</span>)
 </span><span id="974" class="l">    {
@@ -1200,7 +1200,7 @@
 </span></span><span id="1018" class="l"><span class="php-comment">     *
 </span></span><span id="1019" class="l"><span class="php-comment">     * @param string $nick
 </span></span><span id="1020" class="l"><span class="php-comment">     * @return string|bool
-</span></span><span id="1021" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="1021" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="1022" class="l"><span class="php-comment">     */</span>
 </span><span id="1023" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getModelByNick(<span class="php-var">$nick</span>)
 </span><span id="1024" class="l">    {
@@ -1228,7 +1228,7 @@
 </span></span><span id="1046" class="l"><span class="php-comment">     * @param string $dir
 </span></span><span id="1047" class="l"><span class="php-comment">     * @param string|null $topmost
 </span></span><span id="1048" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="1049" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="1049" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="1050" class="l"><span class="php-comment">     */</span>
 </span><span id="1051" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> isBelowDirectory(<span class="php-var">$dir</span>, <span class="php-var">$topmost</span> = <span class="php-keyword1">null</span>)
 </span><span id="1052" class="l">    {
@@ -1276,7 +1276,7 @@
 </span></span><span id="1094" class="l"><span class="php-comment">     * @param string $handler_name
 </span></span><span id="1095" class="l"><span class="php-comment">     * @param string|array $handler
 </span></span><span id="1096" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="1097" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="1097" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="1098" class="l"><span class="php-comment">     */</span>
 </span><span id="1099" class="l">    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> registerHandler(<span class="php-var">$handler_name</span>, <span class="php-var">$handler</span>)
 </span><span id="1100" class="l">    {
@@ -1315,7 +1315,7 @@
 </span></span><span id="1133" class="l"><span class="php-comment">     *
 </span></span><span id="1134" class="l"><span class="php-comment">     * @param string $handler_name
 </span></span><span id="1135" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="1136" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="1136" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="1137" class="l"><span class="php-comment">     */</span>
 </span><span id="1138" class="l">    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> unregisterHandler(<span class="php-var">$handler_name</span>)
 </span><span id="1139" class="l">    {
@@ -1337,7 +1337,7 @@
 </span></span><span id="1155" class="l"><span class="php-comment">     *
 </span></span><span id="1156" class="l"><span class="php-comment">     * @param string $handler_name
 </span></span><span id="1157" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="1158" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="1158" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="1159" class="l"><span class="php-comment">     */</span>
 </span><span id="1160" class="l">    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> isRegisteredHandler(<span class="php-var">$handler_name</span>)
 </span><span id="1161" class="l">    {
@@ -1358,7 +1358,7 @@
 </span></span><span id="1176" class="l"><span class="php-comment">     *
 </span></span><span id="1177" class="l"><span class="php-comment">     * @param string $handler_name
 </span></span><span id="1178" class="l"><span class="php-comment">     * @return array|bool
-</span></span><span id="1179" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="1179" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="1180" class="l"><span class="php-comment">     */</span>
 </span><span id="1181" class="l">
 </span><span id="1182" class="l">    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> getHandler(<span class="php-var">$handler_name</span>)
@@ -1381,7 +1381,7 @@
 </span></span><span id="1199" class="l"><span class="php-comment">     *
 </span></span><span id="1200" class="l"><span class="php-comment">     * @param none
 </span></span><span id="1201" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="1202" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="1202" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="1203" class="l"><span class="php-comment">     */</span>
 </span><span id="1204" class="l">    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> viewHandler()
 </span><span id="1205" class="l">    {
@@ -1414,7 +1414,7 @@
 </span></span><span id="1232" class="l"><span class="php-comment">     *
 </span></span><span id="1233" class="l"><span class="php-comment">     * @param none
 </span></span><span id="1234" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="1235" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="1235" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="1236" class="l"><span class="php-comment">     */</span>
 </span><span id="1237" class="l">    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> callHandlers()
 </span><span id="1238" class="l">    {
@@ -1447,7 +1447,7 @@
 </span></span><span id="1265" class="l"><span class="php-comment">     *
 </span></span><span id="1266" class="l"><span class="php-comment">     * @param none
 </span></span><span id="1267" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="1268" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="1268" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="1269" class="l"><span class="php-comment">     */</span>
 </span><span id="1270" class="l">    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> callHandler(<span class="php-var">$handler_name</span>)
 </span><span id="1271" class="l">    {
@@ -1487,7 +1487,7 @@
 </span></span><span id="1305" class="l"><span class="php-comment">     *
 </span></span><span id="1306" class="l"><span class="php-comment">     * @param none
 </span></span><span id="1307" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="1308" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="1308" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="1309" class="l"><span class="php-comment">     */</span>
 </span><span id="1310" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> flushOutputBufferToLog()
 </span><span id="1311" class="l">    {
@@ -1516,7 +1516,7 @@
 </span></span><span id="1334" class="l"><span class="php-comment">     *
 </span></span><span id="1335" class="l"><span class="php-comment">     * @param string $model
 </span></span><span id="1336" class="l"><span class="php-comment">     * @return string|bool
-</span></span><span id="1337" class="l"><span class="php-comment">     * @throws \MasterShaper\Controllers\ExceptionController if an error occurs.
+</span></span><span id="1337" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController if an error occurs.
 </span></span><span id="1338" class="l"><span class="php-comment">     */</span>
 </span><span id="1339" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getFullModelName(<span class="php-var">$model</span>)
 </span><span id="1340" class="l">    {

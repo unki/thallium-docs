@@ -142,6 +142,9 @@
 	<h1>Class AuditController</h1>
 
 
+	<div class="description">
+	<p>AuditController</p>
+	</div>
 
 	<dl class="tree well">
 		<dd style="padding-left:0px">
@@ -175,9 +178,15 @@
 		
 		
 		<b>Namespace:</b> <a href="namespace-Thallium.html">Thallium</a>\<a href="namespace-Thallium.Controllers.html">Controllers</a><br>
-		
+		<b>Package:</b> Thallium\Controllers\AuditController\Controllers<br>
 
-			<b>Located at</b> <a href="source-class-Thallium.Controllers.AuditController.html#22-117" title="Go to source code">vendor/Thallium/Controllers/AuditController.php</a>
+				<b>Copyright:</b>
+				2015-2016 Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+				<b>License:</b>
+				<a href="AGPL3">AGPL3</a><br>
+				<b>Author:</b>
+				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+			<b>Located at</b> <a href="source-class-Thallium.Controllers.AuditController.html#22-175" title="Go to source code">vendor/Thallium/Controllers/AuditController.php</a>
 		<br>
 	</div>
 
@@ -190,25 +199,44 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_log">#</a>
-			<code><a href="source-class-Thallium.Controllers.AuditController.html#24-59" title="Go to source code">log</a>( <span> <var>$message</var></span>, <span> <var>$entry_type</var></span>, <span> <var>$scene</var></span>, <span> <var>$guid</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.AuditController.html#33-105" title="Go to source code">log</a>( <span>string <var>$message</var></span>, <span>string <var>$entry_type</var></span>, <span>string <var>$scene</var></span>, <span>string|null <var>$guid</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
-				
+				<p>log an audit entry</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>log an audit entry</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$message</var></dt>
+						<dd></dd>
+						<dt><var>$entry_type</var></dt>
+						<dd></dd>
+						<dt><var>$scene</var></dt>
+						<dd></dd>
+						<dt><var>$guid</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						MasterShaper\Controller\ExceptionController
+					</div>
 
 
 
@@ -219,25 +247,38 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				array|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_retrieveAuditLog">#</a>
-			<code><a href="source-class-Thallium.Controllers.AuditController.html#61-116" title="Go to source code">retrieveAuditLog</a>( <span> <var>$guid</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.AuditController.html#107-174" title="Go to source code">retrieveAuditLog</a>( <span>string <var>$guid</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the audit log entries for a specific GUID</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the audit log entries for a specific GUID</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$guid</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						array|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						MasterShaper\Controller\ExceptionController
+					</div>
 
 
 

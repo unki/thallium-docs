@@ -142,6 +142,12 @@
 	<h1>Class CacheController</h1>
 
 
+	<div class="description">
+	<p>CacheController provides a standard way for caching objects
+in memory while executing. By this it is easier to access
+an shared object from within Controllers, Views and Models
+without the need to duplicate objects while they are processed.</p>
+	</div>
 
 	<dl class="tree well">
 		<dd style="padding-left:0px">
@@ -169,9 +175,15 @@
 		
 		
 		<b>Namespace:</b> <a href="namespace-Thallium.html">Thallium</a>\<a href="namespace-Thallium.Controllers.html">Controllers</a><br>
-		
+		<b>Package:</b> Thallium\Controllers\CacheController\Controllers<br>
 
-			<b>Located at</b> <a href="source-class-Thallium.Controllers.CacheController.html#23-183" title="Go to source code">vendor/Thallium/Controllers/CacheController.php</a>
+				<b>Copyright:</b>
+				2015-2016 Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+				<b>License:</b>
+				<a href="AGPL3">AGPL3</a><br>
+				<b>Author:</b>
+				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+			<b>Located at</b> <a href="source-class-Thallium.Controllers.CacheController.html#23-254" title="Go to source code">vendor/Thallium/Controllers/CacheController.php</a>
 		<br>
 	</div>
 
@@ -191,18 +203,22 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Thallium.Controllers.CacheController.html#28-41" title="Go to source code">__construct</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.CacheController.html#44-66" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
-				
+				<p>class constructor</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>class constructor</p>
 
 
 
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 					<h4>Overrides</h4>
@@ -215,25 +231,40 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				string|integer|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_add">#</a>
-			<code><a href="source-class-Thallium.Controllers.CacheController.html#43-100" title="Go to source code">add</a>( <span> <var>&amp; $cacheobj</var></span>, <span> <var>$lookup_key</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.CacheController.html#68-135" title="Go to source code">add</a>( <span>mixed <var>&amp; $cacheobj</var></span>, <span>string|integer <var>$lookup_key</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
-				
+				<p>add an object to the cache</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>add an object to the cache</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$cacheobj</var></dt>
+						<dd></dd>
+						<dt><var>$lookup_key</var></dt>
+						<dd>$lookup_key, if not present, a newly created GUID will be used for the index.</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|integer|boolean<br>lookup key or false, in case of an error occurred.
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -244,25 +275,38 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				mixed|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get">#</a>
-			<code><a href="source-class-Thallium.Controllers.CacheController.html#102-122" title="Go to source code">get</a>( <span> <var>$lookup_key</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.CacheController.html#137-164" title="Go to source code">get</a>( <span>string|integer <var>$lookup_key</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>retriving an item from cache by its lookup key</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>retriving an item from cache by its lookup key</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$lookup_key</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						mixed|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -273,25 +317,40 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_has">#</a>
-			<code><a href="source-class-Thallium.Controllers.CacheController.html#124-141" title="Go to source code">has</a>( <span> <var>$lookup_key</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.CacheController.html#166-191" title="Go to source code">has</a>( <span>string|integer <var>$lookup_key</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>check if an object is available in the cache, identified
+by its lookup key.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>check if an object is available in the cache, identified
+by its lookup key.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$lookup_key</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -302,25 +361,38 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_del">#</a>
-			<code><a href="source-class-Thallium.Controllers.CacheController.html#143-164" title="Go to source code">del</a>( <span> <var>$lookup_key</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.CacheController.html#193-221" title="Go to source code">del</a>( <span>string|integer <var>$lookup_key</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>removes an object from cache, identified by its lookup key.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>removes an object from cache, identified by its lookup key.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$lookup_key</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -331,25 +403,33 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				array|null
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_dump">#</a>
-			<code><a href="source-class-Thallium.Controllers.CacheController.html#166-173" title="Go to source code">dump</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.CacheController.html#223-237" title="Go to source code">dump</a>( )</code>
 
 			<div class="description short">
-				
+				<p>dumps the content of the cache</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>dumps the content of the cache</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						array|null
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -360,25 +440,33 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				array|null
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_dumpIndex">#</a>
-			<code><a href="source-class-Thallium.Controllers.CacheController.html#175-182" title="Go to source code">dumpIndex</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.CacheController.html#239-253" title="Go to source code">dumpIndex</a>( )</code>
 
 			<div class="description short">
-				
+				<p>dumps the content of the cache index (lookup keys).</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>dumps the content of the cache index (lookup keys).</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						array|null
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -432,14 +520,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.CacheController.html#25" title="Go to source code"><var>$cache</var></a>
+					<a href="source-class-Thallium.Controllers.CacheController.html#38-39" title="Go to source code"><var>$cache</var></a>
 
 				<div class="description short">
-					
+					<p>$cache</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$cache</p>
 
 				</div>
 			</td>
@@ -457,14 +545,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.CacheController.html#26" title="Go to source code"><var>$cache_index</var></a>
+					<a href="source-class-Thallium.Controllers.CacheController.html#41-42" title="Go to source code"><var>$cache_index</var></a>
 
 				<div class="description short">
-					
+					<p>$cache_index</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$cache_index</p>
 
 				</div>
 			</td>

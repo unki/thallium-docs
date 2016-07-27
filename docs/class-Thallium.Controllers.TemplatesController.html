@@ -142,6 +142,11 @@
 	<h1>Class TemplatesController</h1>
 
 
+	<div class="description">
+	<p>TemplatesController manage the interaction with the Smarty
+template engine. Usually is accessed by ViewsController or
+Views themself.</p>
+	</div>
 
 	<dl class="tree well">
 		<dd style="padding-left:0px">
@@ -175,9 +180,15 @@
 		
 		
 		<b>Namespace:</b> <a href="namespace-Thallium.html">Thallium</a>\<a href="namespace-Thallium.Controllers.html">Controllers</a><br>
-		
+		<b>Package:</b> Thallium\Controllers\TemplatesController\Controllers<br>
 
-			<b>Located at</b> <a href="source-class-Thallium.Controllers.TemplatesController.html#24-357" title="Go to source code">vendor/Thallium/Controllers/TemplatesController.php</a>
+				<b>Copyright:</b>
+				2015-2016 Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+				<b>License:</b>
+				<a href="AGPL3">AGPL3</a><br>
+				<b>Author:</b>
+				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+			<b>Located at</b> <a href="source-class-Thallium.Controllers.TemplatesController.html#24-579" title="Go to source code">vendor/Thallium/Controllers/TemplatesController.php</a>
 		<br>
 	</div>
 
@@ -197,18 +208,22 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#33-120" title="Go to source code">__construct</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#52-170" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
-				
+				<p>class constructor</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>class constructor</p>
 
 
 
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 					<h4>Overrides</h4>
@@ -221,25 +236,33 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				string|false
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getuid">#</a>
-			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#122-132" title="Go to source code">getuid</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#172-200" title="Go to source code">getuid</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the user name of the current process owner.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the user name of the current process owner.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|false
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -250,25 +273,52 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				string|false
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_fetch">#</a>
-			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#134-172" title="Go to source code">fetch</a>( <span> <var>$template</var> = <span class="php-keyword1">null</span></span>, <span> <var>$cache_id</var> = <span class="php-keyword1">null</span></span>, <span> <var>$compile_id</var> = <span class="php-keyword1">null</span></span>, <span> <var>$parent</var> = <span class="php-keyword1">null</span></span>, <span> <var>$display</var> = <span class="php-keyword1">false</span></span>, <span> <var>$merge_tpl_vars</var> = <span class="php-keyword1">true</span></span>, <span> <var>$no_output_filter</var> = <span class="php-keyword1">false</span> </span> )</code>
+			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#202-260" title="Go to source code">fetch</a>( <span>string <var>$template</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$cache_id</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$compile_id</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$parent</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$display</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$merge_tpl_vars</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$no_output_filter</var> = <span class="php-keyword1">false</span> </span> )</code>
 
 			<div class="description short">
-				
+				<p>this method mimes fetch() method of Smarty, but tries to verify
+that the template file actually exists before it triggers Smarty.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>this method mimes fetch() method of Smarty, but tries to verify
+that the template file actually exists before it triggers Smarty.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$template</var></dt>
+						<dd></dd>
+						<dt><var>$cache_id</var></dt>
+						<dd></dd>
+						<dt><var>$compile_id</var></dt>
+						<dd></dd>
+						<dt><var>$parent</var></dt>
+						<dd></dd>
+						<dt><var>$display</var></dt>
+						<dd></dd>
+						<dt><var>$merge_tpl_vars</var></dt>
+						<dd></dd>
+						<dt><var>$no_output_filter</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|false
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -279,25 +329,40 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				string|null
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getMenuState">#</a>
-			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#174-189" title="Go to source code">getMenuState</a>( <span> <var>$params</var></span>, <span> <var>&amp; $smarty</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#262-285" title="Go to source code">getMenuState</a>( <span>array <var>$params</var></span>, <span>object <var>&amp; $smarty</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the menu state</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the menu state</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$params</var></dt>
+						<dd></dd>
+						<dt><var>$smarty</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|null
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -308,25 +373,42 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				string|false
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getHumanReadableFilesize">#</a>
-			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#191-206" title="Go to source code">getHumanReadableFilesize</a>( <span> <var>$params</var></span>, <span> <var>&amp; $smarty</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#287-313" title="Go to source code">getHumanReadableFilesize</a>( <span>array <var>$params</var></span>, <span>object <var>&amp; $smarty</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the provided byte value in human-readable notations as
+KB, MB, GB, etc.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the provided byte value in human-readable notations as
+KB, MB, GB, etc.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$params</var></dt>
+						<dd></dd>
+						<dt><var>$smarty</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|false
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -337,25 +419,40 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				string|false
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_assign">#</a>
-			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#208-216" title="Go to source code">assign</a>( <span> <var>$key</var></span>, <span> <var>$value</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#315-353" title="Go to source code">assign</a>( <span>string <var>$key</var></span>, <span>boolean|integer|string|array|object <var>$value</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>this method mimes assign() Smarty method but verifies $key and $value parameters first.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>this method mimes assign() Smarty method but verifies $key and $value parameters first.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd></dd>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|false
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -366,25 +463,40 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasPlugin">#</a>
-			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#218-229" title="Go to source code">hasPlugin</a>( <span> <var>$type</var></span>, <span> <var>$name</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#355-384" title="Go to source code">hasPlugin</a>( <span>string <var>$type</var></span>, <span>string <var>$name</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>return true if the provided plugin name is registered in Smarty.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>return true if the provided plugin name is registered in Smarty.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$type</var></dt>
+						<dd></dd>
+						<dt><var>$name</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -395,25 +507,46 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_registerPlugin">#</a>
-			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#231-243" title="Go to source code">registerPlugin</a>( <span> <var>$type</var></span>, <span> <var>$name</var></span>, <span> <var>$callback</var></span>, <span> <var>$cacheable</var> = <span class="php-keyword1">true</span></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#386-438" title="Go to source code">registerPlugin</a>( <span>string <var>$type</var></span>, <span>string <var>$name</var></span>, <span>callable <var>$callback</var></span>, <span>boolean <var>$cacheable</var> = <span class="php-keyword1">true</span></span> )</code>
 
 			<div class="description short">
-				
+				<p>this method mimes registerPlugin() Smarty method and checks if the callback
+function is actually callable.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>this method mimes registerPlugin() Smarty method and checks if the callback
+function is actually callable.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$type</var></dt>
+						<dd></dd>
+						<dt><var>$name</var></dt>
+						<dd></dd>
+						<dt><var>$callback</var></dt>
+						<dd></dd>
+						<dt><var>$cacheable</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -424,25 +557,40 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_templateExists">#</a>
-			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#245-252" title="Go to source code">templateExists</a>( <span> <var>$tmpl</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#440-460" title="Go to source code">templateExists</a>( <span>string <var>$tmpl</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the specified template exists by usings Smartys own
+templateExists() method.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the specified template exists by usings Smartys own
+templateExists() method.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$tmpl</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -453,25 +601,38 @@
 
 			<td class="attributes"><code>
 				 public static
-				
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getUrl">#</a>
-			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#254-328" title="Go to source code">getUrl</a>( <span> <var>$params</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#462-543" title="Go to source code">getUrl</a>( <span>array <var>$params</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>general getUrl() method :)</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>general getUrl() method :)</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$params</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -489,18 +650,27 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_smartyRaiseError">#</a>
-			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#330-356" title="Go to source code">smartyRaiseError</a>( <span> <var>$params</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.TemplatesController.html#545-578" title="Go to source code">smartyRaiseError</a>( <span>array <var>$params</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>raises an exception and can be called from within a template.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>raises an exception and can be called from within a template.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$params</var></dt>
+						<dd></dd>
+					</dl></div>
 
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -550,18 +720,18 @@
 		<tr data-order="smarty" id="$smarty">
 			<td class="attributes"><code>
 				protected  
-				
+				object
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.TemplatesController.html#26" title="Go to source code"><var>$smarty</var></a>
+					<a href="source-class-Thallium.Controllers.TemplatesController.html#37-38" title="Go to source code"><var>$smarty</var></a>
 
 				<div class="description short">
-					
+					<p>$smarty</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$smarty</p>
 
 				</div>
 			</td>
@@ -575,18 +745,18 @@
 		<tr data-order="config_template_dir" id="$config_template_dir">
 			<td class="attributes"><code>
 				protected  
-				
+				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.TemplatesController.html#28" title="Go to source code"><var>$config_template_dir</var></a>
+					<a href="source-class-Thallium.Controllers.TemplatesController.html#40-41" title="Go to source code"><var>$config_template_dir</var></a>
 
 				<div class="description short">
-					
+					<p>$config_template_dir</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$config_template_dir</p>
 
 				</div>
 			</td>
@@ -600,18 +770,18 @@
 		<tr data-order="config_compile_dir" id="$config_compile_dir">
 			<td class="attributes"><code>
 				protected  
-				
+				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.TemplatesController.html#29" title="Go to source code"><var>$config_compile_dir</var></a>
+					<a href="source-class-Thallium.Controllers.TemplatesController.html#43-44" title="Go to source code"><var>$config_compile_dir</var></a>
 
 				<div class="description short">
-					
+					<p>$config_compile_dir</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$config_compile_dir</p>
 
 				</div>
 			</td>
@@ -625,18 +795,18 @@
 		<tr data-order="config_config_dir" id="$config_config_dir">
 			<td class="attributes"><code>
 				protected  
-				
+				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.TemplatesController.html#30" title="Go to source code"><var>$config_config_dir</var></a>
+					<a href="source-class-Thallium.Controllers.TemplatesController.html#46-47" title="Go to source code"><var>$config_config_dir</var></a>
 
 				<div class="description short">
-					
+					<p>$config_config_dir</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$config_config_dir</p>
 
 				</div>
 			</td>
@@ -650,18 +820,18 @@
 		<tr data-order="config_cache_dir" id="$config_cache_dir">
 			<td class="attributes"><code>
 				protected  
-				
+				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.TemplatesController.html#31" title="Go to source code"><var>$config_cache_dir</var></a>
+					<a href="source-class-Thallium.Controllers.TemplatesController.html#49-50" title="Go to source code"><var>$config_cache_dir</var></a>
 
 				<div class="description short">
-					
+					<p>$config_cache_dir</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$config_cache_dir</p>
 
 				</div>
 			</td>

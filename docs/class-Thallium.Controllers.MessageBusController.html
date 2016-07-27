@@ -142,6 +142,10 @@
 	<h1>Class MessageBusController</h1>
 
 
+	<div class="description">
+	<p>MessageBusController manages receives and sends messages to
+clients.</p>
+	</div>
 
 	<dl class="tree well">
 		<dd style="padding-left:0px">
@@ -175,9 +179,15 @@
 		
 		
 		<b>Namespace:</b> <a href="namespace-Thallium.html">Thallium</a>\<a href="namespace-Thallium.Controllers.html">Controllers</a><br>
-		
+		<b>Package:</b> Thallium\Controllers\MessageBusController\Controllers<br>
 
-			<b>Located at</b> <a href="source-class-Thallium.Controllers.MessageBusController.html#22-407" title="Go to source code">vendor/Thallium/Controllers/MessageBusController.php</a>
+				<b>Copyright:</b>
+				2015-2016 Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+				<b>License:</b>
+				<a href="AGPL3">AGPL3</a><br>
+				<b>Author:</b>
+				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+			<b>Located at</b> <a href="source-class-Thallium.Controllers.MessageBusController.html#22-506" title="Go to source code">vendor/Thallium/Controllers/MessageBusController.php</a>
 		<br>
 	</div>
 
@@ -197,18 +207,22 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#28-51" title="Go to source code">__construct</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#43-78" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
-				
+				<p>class constructor</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>class constructor</p>
 
 
 
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 					<h4>Overrides</h4>
@@ -221,25 +235,40 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_submit">#</a>
-			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#53-154" title="Go to source code">submit</a>( <span> <var>$messages_raw</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#80-187" title="Go to source code">submit</a>( <span>string <var>$messages_raw</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>submit one or more messages to the message bus.
+inbound messages in a JSON-formated string.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>submit one or more messages to the message bus.
+inbound messages in a JSON-formated string.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$messages_raw</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -250,25 +279,35 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_poll">#</a>
-			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#156-237" title="Go to source code">poll</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#189-284" title="Go to source code">poll</a>( )</code>
 
 			<div class="description short">
-				
+				<p>this method is called when a client polls the message bus for pending
+messages. they are returned as JSON-encoded strings.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>this method is called when a client polls the message bus for pending
+messages. they are returned as JSON-encoded strings.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -279,25 +318,33 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				array|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getRequestMessages">#</a>
-			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#239-259" title="Go to source code">getRequestMessages</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#286-313" title="Go to source code">getRequestMessages</a>( )</code>
 
 			<div class="description short">
-				
+				<p>retrieve messages from message bus with type request.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>retrieve messages from message bus with type request.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						array|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -308,25 +355,33 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_removeExpiredMessages">#</a>
-			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#261-276" title="Go to source code">removeExpiredMessages</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#315-337" title="Go to source code">removeExpiredMessages</a>( )</code>
 
 			<div class="description short">
-				
+				<p>purges all expired messages from the message bus.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>purges all expired messages from the message bus.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -337,25 +392,44 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_sendMessageToClient">#</a>
-			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#278-348" title="Go to source code">sendMessageToClient</a>( <span> <var>$command</var></span>, <span> <var>$body</var></span>, <span> <var>$value</var></span>, <span> <var>$sessionid</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#339-420" title="Go to source code">sendMessageToClient</a>( <span>string <var>$command</var></span>, <span>string <var>$body</var></span>, <span>string <var>$value</var></span>, <span>string|null <var>$sessionid</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
-				
+				<p>submit a message to the message bus that has to be sent to a client.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>submit a message to the message bus that has to be sent to a client.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$command</var></dt>
+						<dd></dd>
+						<dt><var>$body</var></dt>
+						<dd></dd>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+						<dt><var>$sessionid</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -366,25 +440,38 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getSessionIdFromJob">#</a>
-			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#350-385" title="Go to source code">getSessionIdFromJob</a>( <span> <var>$job_guid</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#422-465" title="Go to source code">getSessionIdFromJob</a>( <span>string|null <var>$job_guid</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
-				
+				<p>return the session-id that is bound to a specific job.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>return the session-id that is bound to a specific job.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$job_guid</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -395,25 +482,33 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isSuppressOutboundMessaging">#</a>
-			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#387-394" title="Go to source code">isSuppressOutboundMessaging</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#467-485" title="Go to source code">isSuppressOutboundMessaging</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns true if outbound messaging is temporary disabled.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if outbound messaging is temporary disabled.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -424,25 +519,38 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_suppressOutboundMessaging">#</a>
-			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#396-406" title="Go to source code">suppressOutboundMessaging</a>( <span> <var>$state</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#487-505" title="Go to source code">suppressOutboundMessaging</a>( <span>boolean <var>$state</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>enable or disable outbound messaging</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>enable or disable outbound messaging</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$state</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean<br>the state before
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -479,7 +587,7 @@
 				<td class="attributes"><code>integer</code></td>
 				<td class="name">
 					<code>
-						<a href="source-class-Thallium.Controllers.MessageBusController.html#24" title="Go to source code"><b>EXPIRE_TIMEOUT</b></a>
+						<a href="source-class-Thallium.Controllers.MessageBusController.html#34-35" title="Go to source code"><b>EXPIRE_TIMEOUT</b></a>
 					</code>
 
 					<div class="description short">
@@ -522,14 +630,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.MessageBusController.html#25" title="Go to source code"><var>$suppressOutboundMessaging</var></a>
+					<a href="source-class-Thallium.Controllers.MessageBusController.html#37-38" title="Go to source code"><var>$suppressOutboundMessaging</var></a>
 
 				<div class="description short">
-					
+					<p>$suppressOutboundMessaging allows to temporary suppress all outbound messages</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$suppressOutboundMessaging allows to temporary suppress all outbound messages</p>
 
 				</div>
 			</td>
@@ -547,14 +655,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.MessageBusController.html#26" title="Go to source code"><var>$json_errors</var></a>
+					<a href="source-class-Thallium.Controllers.MessageBusController.html#40-41" title="Go to source code"><var>$json_errors</var></a>
 
 				<div class="description short">
-					
+					<p>$json_errors</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$json_errors</p>
 
 				</div>
 			</td>

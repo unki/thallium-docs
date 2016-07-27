@@ -142,6 +142,10 @@
 	<h1>Class HttpRouterController</h1>
 
 
+	<div class="description">
+	<p>HttpRouterController parses client requests and takes in user data
+that is provided by $_GET, $_POST, etc.</p>
+	</div>
 
 	<dl class="tree well">
 		<dd style="padding-left:0px">
@@ -175,9 +179,15 @@
 		
 		
 		<b>Namespace:</b> <a href="namespace-Thallium.html">Thallium</a>\<a href="namespace-Thallium.Controllers.html">Controllers</a><br>
-		
+		<b>Package:</b> Thallium\Controllers\HttpRouterController\Controllers<br>
 
-			<b>Located at</b> <a href="source-class-Thallium.Controllers.HttpRouterController.html#22-438" title="Go to source code">vendor/Thallium/Controllers/HttpRouterController.php</a>
+				<b>Copyright:</b>
+				2015-2016 Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+				<b>License:</b>
+				<a href="AGPL3">AGPL3</a><br>
+				<b>Author:</b>
+				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+			<b>Located at</b> <a href="source-class-Thallium.Controllers.HttpRouterController.html#22-518" title="Go to source code">vendor/Thallium/Controllers/HttpRouterController.php</a>
 		<br>
 	</div>
 
@@ -197,18 +207,22 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#58-195" title="Go to source code">__construct</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#77-229" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
-				
+				<p>class constructor</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>class constructor</p>
 
 
 
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 					<h4>Overrides</h4>
@@ -221,25 +235,33 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				stdClass|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_select">#</a>
-			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#197-250" title="Go to source code">select</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#231-275" title="Go to source code">select</a>( )</code>
 
 			<div class="description short">
-				
+				<p>select() method controlls how to react on a HTTP request</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>select() method controlls how to react on a HTTP request</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						stdClass|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -257,7 +279,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isRpcCall">#</a>
-			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#252-264" title="Go to source code">isRpcCall</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#277-291" title="Go to source code">isRpcCall</a>( )</code>
 
 			<div class="description short">
 				<p>return true if current request is a RPC call</p>
@@ -273,64 +295,10 @@
 						boolean
 					</div>
 
-
-
-
-			</div>
-			</div></td>
-		</tr>
-		<tr data-order="isImageCall" id="_isImageCall">
-
-			<td class="attributes"><code>
-				 public 
-				
-				
-				</code>
-			</td>
-
-			<td class="name"><div>
-			<a class="anchor" href="#_isImageCall">#</a>
-			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#266-273" title="Go to source code">isImageCall</a>( )</code>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-
-
-
-
-
-
-			</div>
-			</div></td>
-		</tr>
-		<tr data-order="isDocumentCall" id="_isDocumentCall">
-
-			<td class="attributes"><code>
-				 public 
-				
-				
-				</code>
-			</td>
-
-			<td class="name"><div>
-			<a class="anchor" href="#_isDocumentCall">#</a>
-			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#275-282" title="Go to source code">isDocumentCall</a>( )</code>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-
-
-
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -341,25 +309,33 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isUploadCall">#</a>
-			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#284-295" title="Go to source code">isUploadCall</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#294-312" title="Go to source code">isUploadCall</a>( )</code>
 
 			<div class="description short">
-				
+				<p>return true if current request is a file-upload request</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>return true if current request is a file-upload request</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -370,25 +346,38 @@
 
 			<td class="attributes"><code>
 				 protected static
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isValidAction">#</a>
-			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#297-311" title="Go to source code">isValidAction</a>( <span> <var>$action</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#314-335" title="Go to source code">isValidAction</a>( <span>string <var>$action</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>return true if requested action is a supported action</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>return true if requested action is a supported action</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$action</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -399,25 +388,38 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_addValidRpcAction">#</a>
-			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#313-326" title="Go to source code">addValidRpcAction</a>( <span> <var>$action</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#337-357" title="Go to source code">addValidRpcAction</a>( <span>string <var>$action</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>register an additional RPC action</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>register an additional RPC action</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$action</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -428,25 +430,38 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isValidRpcAction">#</a>
-			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#328-340" title="Go to source code">isValidRpcAction</a>( <span> <var>$action</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#359-378" title="Go to source code">isValidRpcAction</a>( <span>string <var>$action</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>return true if requested RPC action is a supported action</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>return true if requested RPC action is a supported action</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$action</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -457,25 +472,33 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				array|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getValidRpcActions">#</a>
-			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#342-349" title="Go to source code">getValidRpcActions</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#380-394" title="Go to source code">getValidRpcActions</a>( )</code>
 
 			<div class="description short">
-				
+				<p>return a list of supported RPC actions as array.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>return a list of supported RPC actions as array.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						array|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -486,25 +509,35 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				array|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_parseQueryParams">#</a>
-			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#351-381" title="Go to source code">parseQueryParams</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#396-434" title="Go to source code">parseQueryParams</a>( )</code>
 
 			<div class="description short">
-				
+				<p>helper method that may be called from Views to return an
+array containing HTTP request query details.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>helper method that may be called from Views to return an
+array containing HTTP request query details.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						array|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -515,25 +548,42 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_redirectTo">#</a>
-			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#383-403" title="Go to source code">redirectTo</a>( <span> <var>$page</var></span>, <span> <var>$mode</var></span>, <span> <var>$id</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#436-471" title="Go to source code">redirectTo</a>( <span>string <var>$page</var></span>, <span>string <var>$mode</var></span>, <span>string <var>$id</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>outputs a Location: header to redirect a client to another place.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>outputs a Location: header to redirect a client to another place.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$page</var></dt>
+						<dd></dd>
+						<dt><var>$mode</var></dt>
+						<dd></dd>
+						<dt><var>$id</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -544,25 +594,38 @@
 
 			<td class="attributes"><code>
 				 protected static
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isValidRequestMethod">#</a>
-			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#405-419" title="Go to source code">isValidRequestMethod</a>( <span> <var>$method</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#473-494" title="Go to source code">isValidRequestMethod</a>( <span>string <var>$method</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>return true if current request is a valid request method.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>return true if current request is a valid request method.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$method</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -573,25 +636,38 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isValidUpdateObject">#</a>
-			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#421-437" title="Go to source code">isValidUpdateObject</a>( <span> <var>$update_object</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.HttpRouterController.html#496-517" title="Go to source code">isValidUpdateObject</a>( <span>string <var>$update_object</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>return true if current request is a valid request method.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>return true if current request is a valid request method.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$update_object</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -641,18 +717,18 @@
 		<tr data-order="query" id="$query">
 			<td class="attributes"><code>
 				protected  
-				
+				stdClass
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.HttpRouterController.html#24" title="Go to source code"><var>$query</var></a>
+					<a href="source-class-Thallium.Controllers.HttpRouterController.html#34-35" title="Go to source code"><var>$query</var></a>
 
 				<div class="description short">
-					
+					<p>$query holds meta information about the HTTP query</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$query holds meta information about the HTTP query</p>
 
 				</div>
 			</td>
@@ -666,18 +742,18 @@
 		<tr data-order="query_parts" id="$query_parts">
 			<td class="attributes"><code>
 				protected  
-				
+				array
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.HttpRouterController.html#25" title="Go to source code"><var>$query_parts</var></a>
+					<a href="source-class-Thallium.Controllers.HttpRouterController.html#37-38" title="Go to source code"><var>$query_parts</var></a>
 
 				<div class="description short">
-					
+					<p>$query_parts holds the exploded parts of the HTTP request query</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$query_parts holds the exploded parts of the HTTP request query</p>
 
 				</div>
 			</td>
@@ -695,14 +771,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.HttpRouterController.html#26-29" title="Go to source code"><var>$valid_request_methods</var></a>
+					<a href="source-class-Thallium.Controllers.HttpRouterController.html#40-44" title="Go to source code"><var>$valid_request_methods</var></a>
 
 				<div class="description short">
-					
+					<p>$valid_request_methods supported list of HTTP request methods</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$valid_request_methods supported list of HTTP request methods</p>
 
 				</div>
 			</td>
@@ -723,14 +799,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.HttpRouterController.html#30-39" title="Go to source code"><var>$valid_request_actions</var></a>
+					<a href="source-class-Thallium.Controllers.HttpRouterController.html#46-56" title="Go to source code"><var>$valid_request_actions</var></a>
 
 				<div class="description short">
-					
+					<p>$valid_request_methods supported list of actions to be trigged by a HTTP request</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$valid_request_methods supported list of actions to be trigged by a HTTP request</p>
 
 				</div>
 			</td>
@@ -757,14 +833,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.HttpRouterController.html#40-56" title="Go to source code"><var>$valid_rpc_actions</var></a>
+					<a href="source-class-Thallium.Controllers.HttpRouterController.html#58-75" title="Go to source code"><var>$valid_rpc_actions</var></a>
 
 				<div class="description short">
-					
+					<p>$valid_rpc_actions supported list of remote procedure calls (RPC)</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$valid_rpc_actions supported list of remote procedure calls (RPC)</p>
 
 				</div>
 			</td>

@@ -142,6 +142,11 @@
 	<h1>Class PagingController</h1>
 
 
+	<div class="description">
+	<p>PagingController acts similar as the PEAR class Pager.
+On providing data to the controller, it also the split
+this data into pages so that long lists can be paged.</p>
+	</div>
 
 	<dl class="tree well">
 		<dd style="padding-left:0px">
@@ -175,9 +180,15 @@
 		
 		
 		<b>Namespace:</b> <a href="namespace-Thallium.html">Thallium</a>\<a href="namespace-Thallium.Controllers.html">Controllers</a><br>
-		
+		<b>Package:</b> Thallium\Controllers\PagingController\Controllers<br>
 
-			<b>Located at</b> <a href="source-class-Thallium.Controllers.PagingController.html#22-538" title="Go to source code">vendor/Thallium/Controllers/PagingController.php</a>
+				<b>Copyright:</b>
+				2015-2016 Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+				<b>License:</b>
+				<a href="AGPL3">AGPL3</a><br>
+				<b>Author:</b>
+				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+			<b>Located at</b> <a href="source-class-Thallium.Controllers.PagingController.html#22-741" title="Go to source code">vendor/Thallium/Controllers/PagingController.php</a>
 		<br>
 	</div>
 
@@ -197,18 +208,27 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#32-45" title="Go to source code">__construct</a>( <span> <var>$params</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#52-72" title="Go to source code">__construct</a>( <span>array <var>$params</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>class constructor</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>class constructor</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$params</var></dt>
+						<dd></dd>
+					</dl></div>
 
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 					<h4>Overrides</h4>
@@ -221,25 +241,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setPagingData">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#47-68" title="Go to source code">setPagingData</a>( <span> <var>&amp; $data</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#74-102" title="Go to source code">setPagingData</a>( <span>object <var>&amp; $data</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>sets data that will be paged</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>sets data that will be paged</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -250,25 +283,40 @@
 
 			<td class="attributes"><code>
 				final protected 
-				
+				arary
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getPagingData">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#70-86" title="Go to source code">getPagingData</a>( <span> <var>$offset</var></span>, <span> <var>$limit</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#104-139" title="Go to source code">getPagingData</a>( <span>integer <var>$offset</var></span>, <span>integer <var>$limit</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>startup methods by which Thallium is actually starting to perform.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>startup methods by which Thallium is actually starting to perform.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$offset</var></dt>
+						<dd></dd>
+						<dt><var>$limit</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						arary
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -279,25 +327,33 @@
 
 			<td class="attributes"><code>
 				final protected 
-				
+				integer
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getPagingDataCount">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#88-105" title="Go to source code">getPagingDataCount</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#141-165" title="Go to source code">getPagingDataCount</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns how many items in total are available in the paged data</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns how many items in total are available in the paged data</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						integer
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -308,25 +364,38 @@
 
 			<td class="attributes"><code>
 				final protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setPagingParameters">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#107-127" title="Go to source code">setPagingParameters</a>( <span> <var>$params</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#167-194" title="Go to source code">setPagingParameters</a>( <span>array <var>$params</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>startup methods by which Thallium is actually starting to perform.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>startup methods by which Thallium is actually starting to perform.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$params</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -337,25 +406,40 @@
 
 			<td class="attributes"><code>
 				final protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setParameter">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#129-141" title="Go to source code">setParameter</a>( <span> <var>$key</var></span>, <span> <var>$value</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#196-218" title="Go to source code">setParameter</a>( <span>string <var>$key</var></span>, <span>string <var>$value</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>internal set parameter for paging.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>internal set parameter for paging.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd></dd>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -365,26 +449,39 @@
 		<tr data-order="getParameter" id="_getParameter">
 
 			<td class="attributes"><code>
-				final public 
-				
+				final protected 
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getParameter">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#143-155" title="Go to source code">getParameter</a>( <span> <var>$key</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#220-239" title="Go to source code">getParameter</a>( <span>none <var>$key</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the requested internal paging parameter.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the requested internal paging parameter.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -395,25 +492,35 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				integer|false
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getNumberOfPages">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#157-208" title="Go to source code">getNumberOfPages</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#241-300" title="Go to source code">getNumberOfPages</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the number of pages based on the total number of items
+and the items-per-page limit.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the number of pages based on the total number of items
+and the items-per-page limit.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						integer|false
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -424,25 +531,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				integer|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getCurrentPage">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#210-223" title="Go to source code">getCurrentPage</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#302-322" title="Go to source code">getCurrentPage</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the current page number.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the current page number.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						integer|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -453,25 +568,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isCurrentPage">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#225-236" title="Go to source code">isCurrentPage</a>( <span> <var>$pageno</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#324-347" title="Go to source code">isCurrentPage</a>( <span>integer <var>$pageno</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the provided page number matches the current page number</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the provided page number matches the current page number</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$pageno</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -482,25 +610,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setCurrentPage">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#238-263" title="Go to source code">setCurrentPage</a>( <span> <var>$pageno</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#349-380" title="Go to source code">setCurrentPage</a>( <span>integer <var>$pageno</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>startup methods by which Thallium is actually starting to perform.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>startup methods by which Thallium is actually starting to perform.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$pageno</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -511,25 +652,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				array
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getPageData">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#265-328" title="Go to source code">getPageData</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#382-452" title="Go to source code">getPageData</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the whole data that has been submited as paging data.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the whole data that has been submited as paging data.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -540,25 +689,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasPagingData">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#330-340" title="Go to source code">hasPagingData</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#454-471" title="Go to source code">hasPagingData</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns true if there is paging data set.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if there is paging data set.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -569,25 +726,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				integer|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getNextPageNumber">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#342-367" title="Go to source code">getNextPageNumber</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#473-505" title="Go to source code">getNextPageNumber</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the number of the next, following page.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the number of the next, following page.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						integer|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -598,25 +763,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				integer|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getPreviousPageNumber">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#369-386" title="Go to source code">getPreviousPageNumber</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#507-531" title="Go to source code">getPreviousPageNumber</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the number of the previous page</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the number of the previous page</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						integer|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -627,25 +800,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				integer
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getFirstPageNumber">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#388-391" title="Go to source code">getFirstPageNumber</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#533-543" title="Go to source code">getFirstPageNumber</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the number of the first page. usually 1.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the number of the first page. usually 1.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						integer
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -656,25 +837,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				integer|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getLastPageNumber">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#393-400" title="Go to source code">getLastPageNumber</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#545-559" title="Go to source code">getLastPageNumber</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the number of the last page</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the number of the last page</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						integer|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -685,26 +874,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				integer|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getPageNumbers">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#402-424" title="Go to source code">getPageNumbers</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#561-591" title="Go to source code">getPageNumbers</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the number of pages.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the number of pages.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						integer|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
+					<h4>Todo</h4>
+					<div class="list">
+							is this duplicate to getNumberofPages()?<br>
+					</div>
 
 
 			</div>
@@ -714,25 +915,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				integer|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getDeltaPageNumbers">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#426-478" title="Go to source code">getDeltaPageNumbers</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#593-652" title="Go to source code">getDeltaPageNumbers</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the delta page number.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the delta page number.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						integer|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -743,25 +952,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				integer|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getCurrentItemsLimit">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#480-487" title="Go to source code">getCurrentItemsLimit</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#654-668" title="Go to source code">getCurrentItemsLimit</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the currently set items-per-page limit.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the currently set items-per-page limit.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						integer|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -772,25 +989,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				array
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getItemsLimits">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#489-492" title="Go to source code">getItemsLimits</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#670-680" title="Go to source code">getItemsLimits</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns an array of possible items-per-page limits.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns an array of possible items-per-page limits.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -801,25 +1026,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setItemsLimit">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#494-518" title="Go to source code">setItemsLimit</a>( <span> <var>$limit</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#682-713" title="Go to source code">setItemsLimit</a>( <span>integer <var>$limit</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>set the items-per-page limit.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>set the items-per-page limit.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$limit</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -830,25 +1068,40 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isCurrentItemsLimit">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#520-537" title="Go to source code">isCurrentItemsLimit</a>( <span> <var>$limit</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#715-740" title="Go to source code">isCurrentItemsLimit</a>( <span>integer <var>$limit</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the provided $limit matches the one that is currently
+selected in the controller</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the provided $limit matches the one that is currently
+selected in the controller</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$limit</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -902,14 +1155,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.PagingController.html#24" title="Go to source code"><var>$pagingData</var></a>
+					<a href="source-class-Thallium.Controllers.PagingController.html#35-36" title="Go to source code"><var>$pagingData</var></a>
 
 				<div class="description short">
-					
+					<p>$pagingData</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$pagingData</p>
 
 				</div>
 			</td>
@@ -927,14 +1180,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.PagingController.html#25" title="Go to source code"><var>$pagingParameters</var></a>
+					<a href="source-class-Thallium.Controllers.PagingController.html#38-39" title="Go to source code"><var>$pagingParameters</var></a>
 
 				<div class="description short">
-					
+					<p>$pagingParameters</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$pagingParameters</p>
 
 				</div>
 			</td>
@@ -948,18 +1201,18 @@
 		<tr data-order="currentPage" id="$currentPage">
 			<td class="attributes"><code>
 				protected  
-				
+				integer
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.PagingController.html#26" title="Go to source code"><var>$currentPage</var></a>
+					<a href="source-class-Thallium.Controllers.PagingController.html#41-42" title="Go to source code"><var>$currentPage</var></a>
 
 				<div class="description short">
-					
+					<p>$currentPage</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$currentPage</p>
 
 				</div>
 			</td>
@@ -973,18 +1226,18 @@
 		<tr data-order="currentItemsLimit" id="$currentItemsLimit">
 			<td class="attributes"><code>
 				protected  
-				
+				integer
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.PagingController.html#27" title="Go to source code"><var>$currentItemsLimit</var></a>
+					<a href="source-class-Thallium.Controllers.PagingController.html#44-45" title="Go to source code"><var>$currentItemsLimit</var></a>
 
 				<div class="description short">
-					
+					<p>$currentItemsLimit</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$currentItemsLimit</p>
 
 				</div>
 			</td>
@@ -1002,14 +1255,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.PagingController.html#28-30" title="Go to source code"><var>$itemsPerPageLimits</var></a>
+					<a href="source-class-Thallium.Controllers.PagingController.html#47-50" title="Go to source code"><var>$itemsPerPageLimits</var></a>
 
 				<div class="description short">
-					
+					<p>$itemsPerPageLimits</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$itemsPerPageLimits</p>
 
 				</div>
 			</td>

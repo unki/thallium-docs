@@ -142,6 +142,10 @@
 	<h1>Class DatabaseController</h1>
 
 
+	<div class="description">
+	<p>DatabaseController handles all the database specific tasks like
+storing and retriving something from the database.</p>
+	</div>
 
 	<dl class="tree well">
 		<dd style="padding-left:0px">
@@ -175,9 +179,15 @@
 		
 		
 		<b>Namespace:</b> <a href="namespace-Thallium.html">Thallium</a>\<a href="namespace-Thallium.Controllers.html">Controllers</a><br>
-		
+		<b>Package:</b> Thallium\Controllers\DatabaseController\Controllers<br>
 
-			<b>Located at</b> <a href="source-class-Thallium.Controllers.DatabaseController.html#24-758" title="Go to source code">vendor/Thallium/Controllers/DatabaseController.php</a>
+				<b>Copyright:</b>
+				2015-2016 Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+				<b>License:</b>
+				<a href="AGPL3">AGPL3</a><br>
+				<b>Author:</b>
+				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+			<b>Located at</b> <a href="source-class-Thallium.Controllers.DatabaseController.html#24-1159" title="Go to source code">vendor/Thallium/Controllers/DatabaseController.php</a>
 		<br>
 	</div>
 
@@ -197,18 +207,22 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#34-76" title="Go to source code">__construct</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#67-125" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
-				
+				<p>class constructor</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>class constructor</p>
 
 
 
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 					<h4>Overrides</h4>
@@ -220,26 +234,34 @@
 		<tr data-order="connect" id="_connect">
 
 			<td class="attributes"><code>
-				 protected 
-				
+				final protected 
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_connect">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#78-111" title="Go to source code">connect</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#127-182" title="Go to source code">connect</a>( )</code>
 
 			<div class="description short">
-				
+				<p>opens a connection to the database.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>opens a connection to the database.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -249,26 +271,39 @@
 		<tr data-order="setConnectionStatus" id="_setConnectionStatus">
 
 			<td class="attributes"><code>
-				 protected 
-				
+				final protected 
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setConnectionStatus">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#113-116" title="Go to source code">setConnectionStatus</a>( <span> <var>$status</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#184-200" title="Go to source code">setConnectionStatus</a>( <span>boolean <var>$status</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>sets or clears the internal connected-flag.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>sets or clears the internal connected-flag.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$status</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -278,26 +313,39 @@
 		<tr data-order="getConnectionStatus" id="_getConnectionStatus">
 
 			<td class="attributes"><code>
-				 protected 
-				
+				final protected 
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getConnectionStatus">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#118-121" title="Go to source code">getConnectionStatus</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#202-216" title="Go to source code">getConnectionStatus</a>( <span>boolean <var>$status</var>,…</span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the state of the internal connected-flag.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the state of the internal connected-flag.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$status</var>,…</dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -308,25 +356,40 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_query">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#123-166" title="Go to source code">query</a>( <span> <var>$query</var> = <span class="php-quote">&quot;&quot;</span></span>, <span> <var>$mode</var> = Thallium\Controllers\PDO::FETCH_OBJ</span> )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#218-297" title="Go to source code">query</a>( <span>string <var>$query</var></span>, <span>integer <var>$mode</var> = Thallium\Controllers\PDO::FETCH_OBJ</span> )</code>
 
 			<div class="description short">
-				
+				<p>executes a SQL query.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>executes a SQL query.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$query</var></dt>
+						<dd></dd>
+						<dt><var>$mode</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -336,26 +399,39 @@
 		<tr data-order="prepare" id="_prepare">
 
 			<td class="attributes"><code>
-				 public 
-				
+				final public 
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_prepare">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#168-188" title="Go to source code">prepare</a>( <span> <var>$query</var> = <span class="php-quote">&quot;&quot;</span></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#299-335" title="Go to source code">prepare</a>( <span>string <var>$query</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>prepares an SQL statement.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>prepares an SQL statement.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$query</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -366,25 +442,40 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_execute">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#190-229" title="Go to source code">execute</a>( <span> <var>$sth</var></span>, <span> <var>$data</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#337-388" title="Go to source code">execute</a>( <span>PDOStatement <var>$sth</var></span>, <span>array <var>$data</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
-				
+				<p>executes an previously prepared SQL statement.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>executes an previously prepared SQL statement.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$sth</var></dt>
+						<dd></dd>
+						<dt><var>$data</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -394,26 +485,39 @@
 		<tr data-order="freeStatement" id="_freeStatement">
 
 			<td class="attributes"><code>
-				 public 
-				
+				final public 
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_freeStatement">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#231-250" title="Go to source code">freeStatement</a>( <span> <var>$sth</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#390-418" title="Go to source code">freeStatement</a>( <span>PDOStatement <var>$sth</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>frees the resources of a SQL result.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>frees the resources of a SQL result.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$sth</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -423,26 +527,41 @@
 		<tr data-order="fetchSingleRow" id="_fetchSingleRow">
 
 			<td class="attributes"><code>
-				 public 
-				
+				final public 
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_fetchSingleRow">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#252-280" title="Go to source code">fetchSingleRow</a>( <span> <var>$query</var> = <span class="php-quote">&quot;&quot;</span></span>, <span> <var>$mode</var> = Thallium\Controllers\PDO::FETCH_OBJ</span> )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#420-471" title="Go to source code">fetchSingleRow</a>( <span>string <var>$query</var> = <span class="php-quote">&quot;&quot;</span></span>, <span>integer <var>$mode</var> = Thallium\Controllers\PDO::FETCH_OBJ</span> )</code>
 
 			<div class="description short">
-				
+				<p>frees the resources of a SQL result.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>frees the resources of a SQL result.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$query</var></dt>
+						<dd></dd>
+						<dt><var>$mode</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -452,26 +571,34 @@
 		<tr data-order="hasTablePrefix" id="_hasTablePrefix">
 
 			<td class="attributes"><code>
-				 public 
-				
+				final public 
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasTablePrefix">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#282-292" title="Go to source code">hasTablePrefix</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#473-490" title="Go to source code">hasTablePrefix</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns true if an table-prefix has been specified in the configuration.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if an table-prefix has been specified in the configuration.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -481,26 +608,34 @@
 		<tr data-order="getTablePrefix" id="_getTablePrefix">
 
 			<td class="attributes"><code>
-				 public 
-				
+				final public 
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getTablePrefix">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#294-305" title="Go to source code">getTablePrefix</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#492-507" title="Go to source code">getTablePrefix</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the table-prefix that has been specified in the configuration.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the table-prefix that has been specified in the configuration.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -510,26 +645,41 @@
 		<tr data-order="insertTablePrefix" id="_insertTablePrefix">
 
 			<td class="attributes"><code>
-				 public 
-				
+				final public 
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_insertTablePrefix">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#307-310" title="Go to source code">insertTablePrefix</a>( <span> <var>&amp; $query</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#509-535" title="Go to source code">insertTablePrefix</a>( <span>string <var>&amp; $query</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>changes the provided query string and replaces the occurances of the
+keyword TABLEPREFIX by the actual table-prefix.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>changes the provided query string and replaces the occurances of the
+keyword TABLEPREFIX by the actual table-prefix.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$query</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -539,26 +689,34 @@
 		<tr data-order="getId" id="_getId">
 
 			<td class="attributes"><code>
-				 public 
-				
+				final public 
+				integer|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getId">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#312-328" title="Go to source code">getId</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#537-563" title="Go to source code">getId</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the primary key of the latest performed SQL query.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the primary key of the latest performed SQL query.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						integer|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -568,26 +726,39 @@
 		<tr data-order="checkTableExists" id="_checkTableExists">
 
 			<td class="attributes"><code>
-				 public 
-				
+				final public 
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_checkTableExists">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#330-351" title="Go to source code">checkTableExists</a>( <span> <var>$table_name</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#565-599" title="Go to source code">checkTableExists</a>( <span>string <var>$table_name</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if table $table_name exists in database.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if table $table_name exists in database.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$table_name</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -597,26 +768,34 @@
 		<tr data-order="getDatabaseTables" id="_getDatabaseTables">
 
 			<td class="attributes"><code>
-				 public 
-				
+				final public 
+				array|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getDatabaseTables">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#353-373" title="Go to source code">getDatabaseTables</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#601-628" title="Go to source code">getDatabaseTables</a>( )</code>
 
 			<div class="description short">
-				
+				<p>retrieves all existing tables from database.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>retrieves all existing tables from database.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						array|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -626,26 +805,34 @@
 		<tr data-order="getApplicationDatabaseSchemaVersion" id="_getApplicationDatabaseSchemaVersion">
 
 			<td class="attributes"><code>
-				 public 
-				
+				final public 
+				integer|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getApplicationDatabaseSchemaVersion">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#375-403" title="Go to source code">getApplicationDatabaseSchemaVersion</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#630-665" title="Go to source code">getApplicationDatabaseSchemaVersion</a>( )</code>
 
 			<div class="description short">
-				
+				<p>retrieves the application schema version from the meta table.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>retrieves the application schema version from the meta table.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						integer|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -655,26 +842,34 @@
 		<tr data-order="getFrameworkDatabaseSchemaVersion" id="_getFrameworkDatabaseSchemaVersion">
 
 			<td class="attributes"><code>
-				 public 
-				
+				final public 
+				integer|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getFrameworkDatabaseSchemaVersion">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#405-433" title="Go to source code">getFrameworkDatabaseSchemaVersion</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#667-702" title="Go to source code">getFrameworkDatabaseSchemaVersion</a>( )</code>
 
 			<div class="description short">
-				
+				<p>retrieves the framework schema version from the meta table.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>retrieves the framework schema version from the meta table.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						integer|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -684,26 +879,43 @@
 		<tr data-order="setDatabaseSchemaVersion" id="_setDatabaseSchemaVersion">
 
 			<td class="attributes"><code>
-				 public 
-				
+				final public 
+				integer|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setDatabaseSchemaVersion">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#435-475" title="Go to source code">setDatabaseSchemaVersion</a>( <span> <var>$version</var> = <span class="php-keyword1">null</span></span>, <span> <var>$mode</var> = <span class="php-quote">'application'</span></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#704-779" title="Go to source code">setDatabaseSchemaVersion</a>( <span>integer <var>$version</var></span>, <span>string <var>$mode</var> = <span class="php-quote">'application'</span></span> )</code>
 
 			<div class="description short">
-				
+				<p>sets the schema version for the application or framework schema in the
+meta table.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>sets the schema version for the application or framework schema in the
+meta table.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$version</var></dt>
+						<dd></dd>
+						<dt><var>$mode</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						integer|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -713,26 +925,34 @@
 		<tr data-order="getApplicationSoftwareSchemaVersion" id="_getApplicationSoftwareSchemaVersion">
 
 			<td class="attributes"><code>
-				 public 
-				
+				final public 
+				integer
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getApplicationSoftwareSchemaVersion">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#477-480" title="Go to source code">getApplicationSoftwareSchemaVersion</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#781-791" title="Go to source code">getApplicationSoftwareSchemaVersion</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the application schema version number</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the application schema version number</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						integer
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -742,26 +962,34 @@
 		<tr data-order="getFrameworkSoftwareSchemaVersion" id="_getFrameworkSoftwareSchemaVersion">
 
 			<td class="attributes"><code>
-				 public 
-				
+				final public 
+				integer
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getFrameworkSoftwareSchemaVersion">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#482-485" title="Go to source code">getFrameworkSoftwareSchemaVersion</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#793-803" title="Go to source code">getFrameworkSoftwareSchemaVersion</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the framework schema version number</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the framework schema version number</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						integer
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -771,26 +999,34 @@
 		<tr data-order="truncateDatabaseTables" id="_truncateDatabaseTables">
 
 			<td class="attributes"><code>
-				 public 
-				
+				final public 
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_truncateDatabaseTables">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#487-502" title="Go to source code">truncateDatabaseTables</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#805-827" title="Go to source code">truncateDatabaseTables</a>( )</code>
 
 			<div class="description short">
-				
+				<p>truncates all tables in the database and wipes out any data in them.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>truncates all tables in the database and wipes out any data in them.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -800,26 +1036,34 @@
 		<tr data-order="checkDatabaseSoftwareVersion" id="_checkDatabaseSoftwareVersion">
 
 			<td class="attributes"><code>
-				 public 
-				
+				final public 
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_checkDatabaseSoftwareVersion">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#504-528" title="Go to source code">checkDatabaseSoftwareVersion</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#829-860" title="Go to source code">checkDatabaseSoftwareVersion</a>( )</code>
 
 			<div class="description short">
-				
+				<p>checks what kind of database software is in use and if it is supported.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>checks what kind of database software is in use and if it is supported.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -829,26 +1073,39 @@
 		<tr data-order="quote" id="_quote">
 
 			<td class="attributes"><code>
-				 public 
-				
+				final public 
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_quote">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#530-553" title="Go to source code">quote</a>( <span> <var>$text</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#862-892" title="Go to source code">quote</a>( <span>string <var>$text</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>uses the PDO internal quote() method to ecape the provided string</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>uses the PDO internal quote() method to ecape the provided string</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$text</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -859,25 +1116,40 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_checkColumnExists">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#555-581" title="Go to source code">checkColumnExists</a>( <span> <var>$table_name</var></span>, <span> <var>$column</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#894-931" title="Go to source code">checkColumnExists</a>( <span>string <var>$table_name</var></span>, <span>string <var>$column</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the specificed $column exists in table $table_name</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the specificed $column exists in table $table_name</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$table_name</var></dt>
+						<dd></dd>
+						<dt><var>$column</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -887,26 +1159,49 @@
 		<tr data-order="buildQuery" id="_buildQuery">
 
 			<td class="attributes"><code>
-				 public 
-				
+				final public 
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_buildQuery">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#583-697" title="Go to source code">buildQuery</a>( <span> <var>$type</var></span>, <span> <var>$table_name</var></span>, <span> <var>$query_columns</var> = <span class="php-quote">&quot;*&quot;</span></span>, <span> <var>$query_data</var> = <span class="php-keyword1">array</span>()</span>, <span> <var>&amp; $bind_params</var> = <span class="php-keyword1">array</span>()</span>, <span> <var>$extend_where_query</var> = <span class="php-keyword1">null</span> </span> )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#933-1059" title="Go to source code">buildQuery</a>( <span>string <var>$type</var></span>, <span>string <var>$table_name</var></span>, <span>string|array <var>$query_columns</var> = <span class="php-quote">&quot;*&quot;</span></span>, <span>array <var>$query_data</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>&amp; $bind_params</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$extend_where_query</var> = <span class="php-keyword1">null</span> </span> )</code>
 
 			<div class="description short">
-				
+				<p>constructs an SQL query by the provided parameters</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>constructs an SQL query by the provided parameters</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$type</var></dt>
+						<dd></dd>
+						<dt><var>$table_name</var></dt>
+						<dd></dd>
+						<dt><var>$query_columns</var></dt>
+						<dd></dd>
+						<dt><var>$query_data</var></dt>
+						<dd></dd>
+						<dt><var>$bind_params</var></dt>
+						<dd></dd>
+						<dt><var>$extend_where_query</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -917,25 +1212,38 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				array|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getColumns">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#699-712" title="Go to source code">getColumns</a>( <span> <var>$table_name</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#1061-1086" title="Go to source code">getColumns</a>( <span>string <var>$table_name</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns a list of all columns within a table.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns a list of all columns within a table.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$table_name</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						array|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -945,26 +1253,34 @@
 		<tr data-order="newTransaction" id="_newTransaction">
 
 			<td class="attributes"><code>
-				 public 
-				
+				final public 
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_newTransaction">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#714-735" title="Go to source code">newTransaction</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#1088-1119" title="Go to source code">newTransaction</a>( )</code>
 
 			<div class="description short">
-				
+				<p>starts a database transaction</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>starts a database transaction</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -975,25 +1291,33 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_closeTransaction">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#737-752" title="Go to source code">closeTransaction</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#1121-1146" title="Go to source code">closeTransaction</a>( )</code>
 
 			<div class="description short">
-				
+				<p>closes a database transaction</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>closes a database transaction</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -1004,25 +1328,33 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getDatabaseName">#</a>
-			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#754-757" title="Go to source code">getDatabaseName</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.DatabaseController.html#1148-1158" title="Go to source code">getDatabaseName</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the database name.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the database name.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -1059,7 +1391,7 @@
 				<td class="attributes"><code>integer</code></td>
 				<td class="name">
 					<code>
-						<a href="source-class-Thallium.Controllers.DatabaseController.html#26" title="Go to source code"><b>SCHEMA_VERSION</b></a>
+						<a href="source-class-Thallium.Controllers.DatabaseController.html#36-37" title="Go to source code"><b>SCHEMA_VERSION</b></a>
 					</code>
 
 					<div class="description short">
@@ -1083,7 +1415,7 @@
 				<td class="attributes"><code>integer</code></td>
 				<td class="name">
 					<code>
-						<a href="source-class-Thallium.Controllers.DatabaseController.html#27" title="Go to source code"><b>FRAMEWORK_SCHEMA_VERSION</b></a>
+						<a href="source-class-Thallium.Controllers.DatabaseController.html#39-40" title="Go to source code"><b>FRAMEWORK_SCHEMA_VERSION</b></a>
 					</code>
 
 					<div class="description short">
@@ -1122,18 +1454,18 @@
 		<tr data-order="db" id="$db">
 			<td class="attributes"><code>
 				protected  
-				
+				PDO
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.DatabaseController.html#29" title="Go to source code"><var>$db</var></a>
+					<a href="source-class-Thallium.Controllers.DatabaseController.html#42-43" title="Go to source code"><var>$db</var></a>
 
 				<div class="description short">
-					
+					<p>$db</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$db</p>
 
 				</div>
 			</td>
@@ -1147,18 +1479,18 @@
 		<tr data-order="db_cfg" id="$db_cfg">
 			<td class="attributes"><code>
 				protected  
-				
+				array
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.DatabaseController.html#30" title="Go to source code"><var>$db_cfg</var></a>
+					<a href="source-class-Thallium.Controllers.DatabaseController.html#45-46" title="Go to source code"><var>$db_cfg</var></a>
 
 				<div class="description short">
-					
+					<p>$db_cfg</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$db_cfg</p>
 
 				</div>
 			</td>
@@ -1176,14 +1508,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.DatabaseController.html#31" title="Go to source code"><var>$is_connected</var></a>
+					<a href="source-class-Thallium.Controllers.DatabaseController.html#48-49" title="Go to source code"><var>$is_connected</var></a>
 
 				<div class="description short">
-					
+					<p>$is_connected</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$is_connected</p>
 
 				</div>
 			</td>
@@ -1201,14 +1533,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.DatabaseController.html#32" title="Go to source code"><var>$is_open_transaction</var></a>
+					<a href="source-class-Thallium.Controllers.DatabaseController.html#51-52" title="Go to source code"><var>$is_open_transaction</var></a>
 
 				<div class="description short">
-					
+					<p>$is_open_transaction</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$is_open_transaction</p>
 
 				</div>
 			</td>
@@ -1216,6 +1548,41 @@
 				<div>
 					<a href="#$is_open_transaction" class="anchor">#</a>
 					<code><span class="php-keyword1">false</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="supported_fetch_methods" id="$supported_fetch_methods">
+			<td class="attributes"><code>
+				protected static 
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Thallium.Controllers.DatabaseController.html#54-65" title="Go to source code"><var>$supported_fetch_methods</var></a>
+
+				<div class="description short">
+					<p>$supported_fetch_methods</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>$supported_fetch_methods</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$supported_fetch_methods" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>(
+    \PDO::FETCH_LAZY,
+    \PDO::FETCH_ASSOC,
+    \PDO::FETCH_NAMED,
+    \PDO::FETCH_NUM,
+    \PDO::FETCH_BOTH,
+    \PDO::FETCH_OBJ,
+    \PDO::FETCH_COLUMN,
+    \PDO::FETCH_CLASS,
+    \PDO::FETCH_INTO,
+)</code>
 				</div>
 			</td>
 		</tr>

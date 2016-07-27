@@ -142,6 +142,10 @@
 	<h1>Class ExceptionController</h1>
 
 
+	<div class="description">
+	<p>Despite its name, ExceptionController class is not based on
+Thalliums DefaultController but rather extends PHPs own Exception class.</p>
+	</div>
 
 	<dl class="tree well">
 		<dd style="padding-left:0px">
@@ -176,9 +180,15 @@ Exception
 		
 		
 		<b>Namespace:</b> <a href="namespace-Thallium.html">Thallium</a>\<a href="namespace-Thallium.Controllers.html">Controllers</a><br>
-		
+		<b>Package:</b> Thallium\Controllers\ExceptionController\Controllers<br>
 
-			<b>Located at</b> <a href="source-class-Thallium.Controllers.ExceptionController.html#22-76" title="Go to source code">vendor/Thallium/Controllers/ExceptionController.php</a>
+				<b>Copyright:</b>
+				2015-2016 Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+				<b>License:</b>
+				<a href="AGPL3">AGPL3</a><br>
+				<b>Author:</b>
+				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+			<b>Located at</b> <a href="source-class-Thallium.Controllers.ExceptionController.html#22-147" title="Go to source code">vendor/Thallium/Controllers/ExceptionController.php</a>
 		<br>
 	</div>
 
@@ -198,18 +208,29 @@ Exception
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Thallium.Controllers.ExceptionController.html#26-29" title="Go to source code">__construct</a>( <span> <var>$message</var></span>, <span> <var>$captured_exception</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.ExceptionController.html#37-52" title="Go to source code">__construct</a>( <span>string <var>$message</var></span>, <span>Exception <var>$captured_exception</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
-				
+				<p>class constructor</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>class constructor</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$message</var></dt>
+						<dd></dd>
+						<dt><var>$captured_exception</var></dt>
+						<dd></dd>
+					</dl></div>
 
 
+					<h4>Throws</h4>
+					<div class="list">
+						Exception
+					</div>
 
 
 					<h4>Overrides</h4>
@@ -222,25 +243,33 @@ Exception
 
 			<td class="attributes"><code>
 				 public 
-				
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getText">#</a>
-			<code><a href="source-class-Thallium.Controllers.ExceptionController.html#31-43" title="Go to source code">getText</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.ExceptionController.html#54-89" title="Go to source code">getText</a>( )</code>
 
 			<div class="description short">
-				
+				<p>this method returns a formated text containing the exception details.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>this method returns a formated text containing the exception details.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						none
+					</div>
 
 
 
@@ -251,25 +280,33 @@ Exception
 
 			<td class="attributes"><code>
 				 public 
-				
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getJson">#</a>
-			<code><a href="source-class-Thallium.Controllers.ExceptionController.html#45-62" title="Go to source code">getJson</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.ExceptionController.html#91-123" title="Go to source code">getJson</a>( )</code>
 
 			<div class="description short">
-				
+				<p>this method returns a JSON-formated text containing the exception details.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>this method returns a JSON-formated text containing the exception details.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						none
+					</div>
 
 
 
@@ -280,25 +317,39 @@ Exception
 
 			<td class="attributes"><code>
 				 public 
-				
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___toString">#</a>
-			<code><a href="source-class-Thallium.Controllers.ExceptionController.html#64-75" title="Go to source code">__toString</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.ExceptionController.html#125-146" title="Go to source code">__toString</a>( )</code>
 
 			<div class="description short">
-				
+				<p>From php.net: The __toString() method allows a class to decide how it will
+react when it is treated like a string. For example, what echo $obj; will
+print. This method must return a string, as otherwise a fatal
+E_RECOVERABLE_ERROR level error is emitted.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>From php.net: The __toString() method allows a class to decide how it will
+react when it is treated like a string. For example, what echo $obj; will
+print. This method must return a string, as otherwise a fatal
+E_RECOVERABLE_ERROR level error is emitted.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						none
+					</div>
 
 
 					<h4>Overrides</h4>
@@ -339,18 +390,18 @@ Exception
 		<tr data-order="previous" id="$previous">
 			<td class="attributes"><code>
 				protected  
-				
+				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.ExceptionController.html#24" title="Go to source code"><var>$previous</var></a>
+					<a href="source-class-Thallium.Controllers.ExceptionController.html#34-35" title="Go to source code"><var>$previous</var></a>
 
 				<div class="description short">
-					
+					<p>$previous keeps track of the last error message.</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$previous keeps track of the last error message.</p>
 
 				</div>
 			</td>

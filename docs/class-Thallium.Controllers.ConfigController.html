@@ -142,6 +142,9 @@
 	<h1>Class ConfigController</h1>
 
 
+	<div class="description">
+	<p>ConfigController handles loading configuration files.</p>
+	</div>
 
 	<dl class="tree well">
 		<dd style="padding-left:0px">
@@ -175,9 +178,15 @@
 		
 		
 		<b>Namespace:</b> <a href="namespace-Thallium.html">Thallium</a>\<a href="namespace-Thallium.Controllers.html">Controllers</a><br>
-		
+		<b>Package:</b> Thallium\Controllers\ConfigController\Controllers<br>
 
-			<b>Located at</b> <a href="source-class-Thallium.Controllers.ConfigController.html#22-228" title="Go to source code">vendor/Thallium/Controllers/ConfigController.php</a>
+				<b>Copyright:</b>
+				2015-2016 Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+				<b>License:</b>
+				<a href="AGPL3">AGPL3</a><br>
+				<b>Author:</b>
+				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+			<b>Located at</b> <a href="source-class-Thallium.Controllers.ConfigController.html#22-340" title="Go to source code">vendor/Thallium/Controllers/ConfigController.php</a>
 		<br>
 	</div>
 
@@ -197,18 +206,22 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Thallium.Controllers.ConfigController.html#28-85" title="Go to source code">__construct</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.ConfigController.html#42-115" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
-				
+				<p>class constructor</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>class constructor</p>
 
 
 
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 					<h4>Overrides</h4>
@@ -221,25 +234,42 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				array|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_readConfig">#</a>
-			<code><a href="source-class-Thallium.Controllers.ConfigController.html#87-140" title="Go to source code">readConfig</a>( <span> <var>$config_target</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.ConfigController.html#117-191" title="Go to source code">readConfig</a>( <span>string <var>$config_target</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>this method loads the requested configuration file and awaits
+a path to an ini-style-formated file to have been provided
+for this.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>this method loads the requested configuration file and awaits
+a path to an ini-style-formated file to have been provided
+for this.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$config_target</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						array|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -250,25 +280,35 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				array|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getDatabaseConfiguration">#</a>
-			<code><a href="source-class-Thallium.Controllers.ConfigController.html#142-152" title="Go to source code">getDatabaseConfiguration</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.ConfigController.html#193-211" title="Go to source code">getDatabaseConfiguration</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the [database] section of the loaded configuration
+as array</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the [database] section of the loaded configuration
+as array</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						array|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -279,25 +319,35 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getDatabaseType">#</a>
-			<code><a href="source-class-Thallium.Controllers.ConfigController.html#154-163" title="Go to source code">getDatabaseType</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.ConfigController.html#213-235" title="Go to source code">getDatabaseType</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the 'type' parameter from within the [database] section
+of the loaded configuration as string.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the 'type' parameter from within the [database] section
+of the loaded configuration as string.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -308,25 +358,35 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getWebPath">#</a>
-			<code><a href="source-class-Thallium.Controllers.ConfigController.html#165-175" title="Go to source code">getWebPath</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.ConfigController.html#237-255" title="Go to source code">getWebPath</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the 'base_web_path' parameter from within the [app] section
+of the loaded configuration as string.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the 'base_web_path' parameter from within the [app] section
+of the loaded configuration as string.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -337,25 +397,35 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getPageTitle">#</a>
-			<code><a href="source-class-Thallium.Controllers.ConfigController.html#177-187" title="Go to source code">getPageTitle</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.ConfigController.html#257-275" title="Go to source code">getPageTitle</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the 'page_title' parameter from within the [app] section
+of the loaded configuration as string.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the 'page_title' parameter from within the [app] section
+of the loaded configuration as string.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -366,25 +436,40 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isEnabled">#</a>
-			<code><a href="source-class-Thallium.Controllers.ConfigController.html#189-196" title="Go to source code">isEnabled</a>( <span> <var>$value</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.ConfigController.html#277-292" title="Go to source code">isEnabled</a>( <span>string <var>$value</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the provided $value represents the logical
+state 'enabled'.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the provided $value represents the logical
+state 'enabled'.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -395,25 +480,40 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isDisabled">#</a>
-			<code><a href="source-class-Thallium.Controllers.ConfigController.html#198-205" title="Go to source code">isDisabled</a>( <span> <var>$value</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.ConfigController.html#294-309" title="Go to source code">isDisabled</a>( <span>string <var>$value</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the provided $value represents the logical
+state 'disabled'.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the provided $value represents the logical
+state 'disabled'.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -424,25 +524,35 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_inMaintenanceMode">#</a>
-			<code><a href="source-class-Thallium.Controllers.ConfigController.html#207-227" title="Go to source code">inMaintenanceMode</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.ConfigController.html#311-339" title="Go to source code">inMaintenanceMode</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns true if parameter 'maintenance_mode' from within the [app] section
+of the loaded configuration is set to 'enabled'.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if parameter 'maintenance_mode' from within the [app] section
+of the loaded configuration is set to 'enabled'.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -491,19 +601,19 @@
 			<table class="summary table table-bordered table-striped properties" id="properties">
 		<tr data-order="config_file_local" id="$config_file_local">
 			<td class="attributes"><code>
-				protected  
+				protected static 
 				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.ConfigController.html#24" title="Go to source code"><var>$config_file_local</var></a>
+					<a href="source-class-Thallium.Controllers.ConfigController.html#33-34" title="Go to source code"><var>$config_file_local</var></a>
 
 				<div class="description short">
-					
+					<p>$config_file_local</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$config_file_local</p>
 
 				</div>
 			</td>
@@ -516,19 +626,19 @@
 		</tr>
 		<tr data-order="config_file_dist" id="$config_file_dist">
 			<td class="attributes"><code>
-				protected  
+				protected static 
 				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.ConfigController.html#25" title="Go to source code"><var>$config_file_dist</var></a>
+					<a href="source-class-Thallium.Controllers.ConfigController.html#36-37" title="Go to source code"><var>$config_file_dist</var></a>
 
 				<div class="description short">
-					
+					<p>$config_file_dist</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$config_file_dist</p>
 
 				</div>
 			</td>
@@ -542,18 +652,18 @@
 		<tr data-order="config" id="$config">
 			<td class="attributes"><code>
 				protected  
-				
+				array
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.ConfigController.html#26" title="Go to source code"><var>$config</var></a>
+					<a href="source-class-Thallium.Controllers.ConfigController.html#39-40" title="Go to source code"><var>$config</var></a>
 
 				<div class="description short">
-					
+					<p>$config result of the merge of $config_file_local and $config_file_dist</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$config result of the merge of $config_file_local and $config_file_dist</p>
 
 				</div>
 			</td>

@@ -142,6 +142,10 @@
 	<h1>Class InstallerController</h1>
 
 
+	<div class="description">
+	<p>InstallerController is mainly used to install the database
+table schema into the configured database.</p>
+	</div>
 
 	<dl class="tree well">
 		<dd style="padding-left:0px">
@@ -175,9 +179,15 @@
 		
 		
 		<b>Namespace:</b> <a href="namespace-Thallium.html">Thallium</a>\<a href="namespace-Thallium.Controllers.html">Controllers</a><br>
-		
+		<b>Package:</b> Thallium\Controllers\InstallerController\Controllers<br>
 
-			<b>Located at</b> <a href="source-class-Thallium.Controllers.InstallerController.html#22-397" title="Go to source code">vendor/Thallium/Controllers/InstallerController.php</a>
+				<b>Copyright:</b>
+				2015-2016 Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+				<b>License:</b>
+				<a href="AGPL3">AGPL3</a><br>
+				<b>Author:</b>
+				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+			<b>Located at</b> <a href="source-class-Thallium.Controllers.InstallerController.html#22-567" title="Go to source code">vendor/Thallium/Controllers/InstallerController.php</a>
 		<br>
 	</div>
 
@@ -186,7 +196,7 @@
 		<div class="panel panel-default">
 			<div class="panel-heading"><h2>Methods summary</h2></div>
 			<table class="summary table table-bordered table-striped methods" id="methods">
-		<tr data-order="setup" id="_setup">
+		<tr data-order="__construct" id="___construct">
 
 			<td class="attributes"><code>
 				 public 
@@ -196,19 +206,67 @@
 			</td>
 
 			<td class="name"><div>
-			<a class="anchor" href="#_setup">#</a>
-			<code><a href="source-class-Thallium.Controllers.InstallerController.html#27-88" title="Go to source code">setup</a>( )</code>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-Thallium.Controllers.InstallerController.html#46-76" title="Go to source code">__construct</a>( <span>string <var>$mode</var>,…</span> )</code>
 
 			<div class="description short">
-				
+				<p>class constructor</p>
 			</div>
 
 			<div class="description detailed hidden">
+				<p>class constructor</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$mode</var>,…</dt>
+						<dd>allow specifying the mode Thallium starts into</dd>
+					</dl></div>
+
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
+
+
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Thallium.Controllers.DefaultController.html#___construct">Thallium\Controllers\DefaultController::__construct</a></code></div>
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setup" id="_setup">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
 				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setup">#</a>
+			<code><a href="source-class-Thallium.Controllers.InstallerController.html#78-173" title="Go to source code">setup</a>( )</code>
+
+			<div class="description short">
+				<p>this is the public accessible method that triggers the installation process.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>this is the public accessible method that triggers the installation process.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -218,26 +276,34 @@
 		<tr data-order="createDatabaseTables" id="_createDatabaseTables">
 
 			<td class="attributes"><code>
-				 protected 
-				
+				final protected 
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_createDatabaseTables">#</a>
-			<code><a href="source-class-Thallium.Controllers.InstallerController.html#90-103" title="Go to source code">createDatabaseTables</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.InstallerController.html#175-195" title="Go to source code">createDatabaseTables</a>( )</code>
 
 			<div class="description short">
-				
+				<p>creates application- and framework-specific tables in the database</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>creates application- and framework-specific tables in the database</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -248,25 +314,33 @@
 
 			<td class="attributes"><code>
 				final protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_createFrameworkDatabaseTables">#</a>
-			<code><a href="source-class-Thallium.Controllers.InstallerController.html#105-208" title="Go to source code">createFrameworkDatabaseTables</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.InstallerController.html#197-307" title="Go to source code">createFrameworkDatabaseTables</a>( )</code>
 
 			<div class="description short">
-				
+				<p>creates framework-specific tables in the database</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>creates framework-specific tables in the database</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -277,25 +351,39 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_createApplicationDatabaseTables">#</a>
-			<code><a href="source-class-Thallium.Controllers.InstallerController.html#210-214" title="Go to source code">createApplicationDatabaseTables</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.InstallerController.html#309-323" title="Go to source code">createApplicationDatabaseTables</a>( )</code>
 
 			<div class="description short">
-				
+				<p>creates application-specific tables in the database.
+normally this method has to be overriden with a new
+method that actually knows about wapplication-
+specific tables.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>creates application-specific tables in the database.
+normally this method has to be overriden with a new
+method that actually knows about wapplication-
+specific tables.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -305,26 +393,34 @@
 		<tr data-order="upgradeDatabaseSchema" id="_upgradeDatabaseSchema">
 
 			<td class="attributes"><code>
-				 protected 
-				
+				final protected 
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_upgradeDatabaseSchema">#</a>
-			<code><a href="source-class-Thallium.Controllers.InstallerController.html#216-231" title="Go to source code">upgradeDatabaseSchema</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.InstallerController.html#325-347" title="Go to source code">upgradeDatabaseSchema</a>( )</code>
 
 			<div class="description short">
-				
+				<p>upgrades application- and framework-specific tables in the database</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>upgrades application- and framework-specific tables in the database</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -335,25 +431,33 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_upgradeApplicationDatabaseSchema">#</a>
-			<code><a href="source-class-Thallium.Controllers.InstallerController.html#233-273" title="Go to source code">upgradeApplicationDatabaseSchema</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.InstallerController.html#349-406" title="Go to source code">upgradeApplicationDatabaseSchema</a>( )</code>
 
 			<div class="description short">
-				
+				<p>upgrades application-specific tables in the database</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>upgrades application-specific tables in the database</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -364,25 +468,33 @@
 
 			<td class="attributes"><code>
 				final protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_upgradeFrameworkDatabaseSchema">#</a>
-			<code><a href="source-class-Thallium.Controllers.InstallerController.html#275-315" title="Go to source code">upgradeFrameworkDatabaseSchema</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.InstallerController.html#408-465" title="Go to source code">upgradeFrameworkDatabaseSchema</a>( )</code>
 
 			<div class="description short">
-				
+				<p>upgrades framework-specific tables in the database</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>upgrades framework-specific tables in the database</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -392,26 +504,34 @@
 		<tr data-order="upgradeFrameworkDatabaseSchemaV2" id="_upgradeFrameworkDatabaseSchemaV2">
 
 			<td class="attributes"><code>
-				 protected 
-				
+				final protected 
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_upgradeFrameworkDatabaseSchemaV2">#</a>
-			<code><a href="source-class-Thallium.Controllers.InstallerController.html#317-346" title="Go to source code">upgradeFrameworkDatabaseSchemaV2</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.InstallerController.html#467-503" title="Go to source code">upgradeFrameworkDatabaseSchemaV2</a>( )</code>
 
 			<div class="description short">
-				
+				<p>upgrade to framework schema v2</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>upgrade to framework schema v2</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -421,26 +541,34 @@
 		<tr data-order="upgradeFrameworkDatabaseSchemaV3" id="_upgradeFrameworkDatabaseSchemaV3">
 
 			<td class="attributes"><code>
-				 protected 
-				
+				final protected 
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_upgradeFrameworkDatabaseSchemaV3">#</a>
-			<code><a href="source-class-Thallium.Controllers.InstallerController.html#348-374" title="Go to source code">upgradeFrameworkDatabaseSchemaV3</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.InstallerController.html#505-537" title="Go to source code">upgradeFrameworkDatabaseSchemaV3</a>( )</code>
 
 			<div class="description short">
-				
+				<p>upgrade to framework schema v3</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>upgrade to framework schema v3</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -450,26 +578,34 @@
 		<tr data-order="upgradeFrameworkDatabaseSchemaV4" id="_upgradeFrameworkDatabaseSchemaV4">
 
 			<td class="attributes"><code>
-				 protected 
-				
+				final protected 
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_upgradeFrameworkDatabaseSchemaV4">#</a>
-			<code><a href="source-class-Thallium.Controllers.InstallerController.html#376-396" title="Go to source code">upgradeFrameworkDatabaseSchemaV4</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.InstallerController.html#539-566" title="Go to source code">upgradeFrameworkDatabaseSchemaV4</a>( )</code>
 
 			<div class="description short">
-				
+				<p>upgrade to framework schema v4</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>upgrade to framework schema v4</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code><br>if an error occurs.
+					</div>
 
 
 
@@ -482,7 +618,6 @@
 		<div class="panel panel-default">
 	        <div class="panel-heading"><h3>Methods inherited from <a href="class-Thallium.Controllers.DefaultController.html#methods">Thallium\Controllers\DefaultController</a></h3></div>
 			<p class="elementList">
-				<code><a href="class-Thallium.Controllers.DefaultController.html#___construct">__construct()</a></code>, 
 				<code><a href="class-Thallium.Controllers.DefaultController.html#___set">__set()</a></code>, 
 				<code><a href="class-Thallium.Controllers.DefaultController.html#_getVerbosity">getVerbosity()</a></code>, 
 				<code><a href="class-Thallium.Controllers.DefaultController.html#_isCmdline">isCmdline()</a></code>, 
@@ -520,18 +655,20 @@
 		<tr data-order="schema_version_before" id="$schema_version_before">
 			<td class="attributes"><code>
 				protected  
-				
+				integer
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.InstallerController.html#24" title="Go to source code"><var>$schema_version_before</var></a>
+					<a href="source-class-Thallium.Controllers.InstallerController.html#34-38" title="Go to source code"><var>$schema_version_before</var></a>
 
 				<div class="description short">
-					
+					<p>$schema_version_before holds the version number of the application
+schema before the upgrade has been performed</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$schema_version_before holds the version number of the application
+schema before the upgrade has been performed</p>
 
 				</div>
 			</td>
@@ -545,18 +682,20 @@
 		<tr data-order="framework_schema_version_before" id="$framework_schema_version_before">
 			<td class="attributes"><code>
 				protected  
-				
+				integer
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.InstallerController.html#25" title="Go to source code"><var>$framework_schema_version_before</var></a>
+					<a href="source-class-Thallium.Controllers.InstallerController.html#40-44" title="Go to source code"><var>$framework_schema_version_before</var></a>
 
 				<div class="description short">
-					
+					<p>$framework_schema_version_before holds the version number of the
+framework schema before the upgrade has been performed</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$framework_schema_version_before holds the version number of the
+framework schema before the upgrade has been performed</p>
 
 				</div>
 			</td>
