@@ -143,10 +143,9 @@
 
 
 	<div class="description">
-	<p>DefaultController is an abstract class that is used by all
-the other Thallium Controllers.</p>
-
-<p>It declares some common methods, properties and constants.</p>
+	<p>RpcController handles remote-procedure-call requests made by
+clients. This should only be used seldomly and MessageBus
+is a better joice.</p>
 	</div>
 
 	<dl class="tree well">
@@ -181,7 +180,7 @@ the other Thallium Controllers.</p>
 		
 		
 		<b>Namespace:</b> <a href="namespace-Thallium.html">Thallium</a>\<a href="namespace-Thallium.Controllers.html">Controllers</a><br>
-		<b>Package:</b> Thallium\Controllers\DefaultController\Controllers<br>
+		<b>Package:</b> Thallium\Controllers\RpcController\Controllers<br>
 
 				<b>Copyright:</b>
 				2015-2016 Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
@@ -189,7 +188,7 @@ the other Thallium Controllers.</p>
 				<a href="AGPL3">AGPL3</a><br>
 				<b>Author:</b>
 				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
-			<b>Located at</b> <a href="source-class-Thallium.Controllers.RpcController.html#22-424" title="Go to source code">vendor/Thallium/Controllers/RpcController.php</a>
+			<b>Located at</b> <a href="source-class-Thallium.Controllers.RpcController.html#22-576" title="Go to source code">vendor/Thallium/Controllers/RpcController.php</a>
 		<br>
 	</div>
 
@@ -198,7 +197,7 @@ the other Thallium Controllers.</p>
 		<div class="panel panel-default">
 			<div class="panel-heading"><h2>Methods summary</h2></div>
 			<table class="summary table table-bordered table-striped methods" id="methods">
-		<tr data-order="perform" id="_perform">
+		<tr data-order="__construct" id="___construct">
 
 			<td class="attributes"><code>
 				 public 
@@ -208,19 +207,101 @@ the other Thallium Controllers.</p>
 			</td>
 
 			<td class="name"><div>
-			<a class="anchor" href="#_perform">#</a>
-			<code><a href="source-class-Thallium.Controllers.RpcController.html#24-86" title="Go to source code">perform</a>( )</code>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-Thallium.Controllers.RpcController.html#35-65" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
-				
+				<p>class constructur</p>
 			</div>
 
 			<div class="description detailed hidden">
+				<p>class constructur</p>
+
+
+
+
+					<h4>Throws</h4>
+					<div class="list">
+						Thallium\Controller\ExceptionController
+					</div>
+
+
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Thallium.Controllers.DefaultController.html#___construct">Thallium\Controllers\DefaultController::__construct</a></code></div>
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="perform" id="_perform">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
 				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_perform">#</a>
+			<code><a href="source-class-Thallium.Controllers.RpcController.html#67-142" title="Go to source code">perform</a>( )</code>
+
+			<div class="description short">
+				<p>this method is actually kicked from the MainController, if
+that one seeѕ an inbound RPC request.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>this method is actually kicked from the MainController, if
+that one seeѕ an inbound RPC request.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						Thallium\Controller\ExceptionController
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="rpcIdle" id="_rpcIdle">
+
+			<td class="attributes"><code>
+				 protected 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_rpcIdle">#</a>
+			<code><a href="source-class-Thallium.Controllers.RpcController.html#144-156" title="Go to source code">rpcIdle</a>( )</code>
+
+			<div class="description short">
+				<p>idle method, actually does nothing.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>idle method, actually does nothing.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+					<h4>Throws</h4>
+					<div class="list">
+						Thallium\Controller\ExceptionController
+					</div>
 
 
 
@@ -231,25 +312,33 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_rpcDelete">#</a>
-			<code><a href="source-class-Thallium.Controllers.RpcController.html#88-173" title="Go to source code">rpcDelete</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.RpcController.html#158-253" title="Go to source code">rpcDelete</a>( )</code>
 
 			<div class="description short">
-				
+				<p>deletes an object</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>deletes an object</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						Thallium\Controller\ExceptionController
+					</div>
 
 
 
@@ -260,25 +349,33 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_rpcGetContent">#</a>
-			<code><a href="source-class-Thallium.Controllers.RpcController.html#175-206" title="Go to source code">rpcGetContent</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.RpcController.html#255-300" title="Go to source code">rpcGetContent</a>( )</code>
 
 			<div class="description short">
-				
+				<p>retrieves content from a specific template.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>retrieves content from a specific template.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						Thallium\Controller\ExceptionController
+					</div>
 
 
 
@@ -289,25 +386,33 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_rpcFindPrevNextObject">#</a>
-			<code><a href="source-class-Thallium.Controllers.RpcController.html#208-288" title="Go to source code">rpcFindPrevNextObject</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.RpcController.html#302-410" title="Go to source code">rpcFindPrevNextObject</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the previous or next object</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the previous or next object</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						Thallium\Controller\ExceptionController
+					</div>
 
 
 
@@ -318,25 +423,33 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_rpcUpdate">#</a>
-			<code><a href="source-class-Thallium.Controllers.RpcController.html#290-372" title="Go to source code">rpcUpdate</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.RpcController.html#412-501" title="Go to source code">rpcUpdate</a>( )</code>
 
 			<div class="description short">
-				
+				<p>adds or update an object</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>adds or update an object</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						Thallium\Controller\ExceptionController
+					</div>
 
 
 
@@ -347,25 +460,33 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_rpcSubmitToMessageBus">#</a>
-			<code><a href="source-class-Thallium.Controllers.RpcController.html#374-393" title="Go to source code">rpcSubmitToMessageBus</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.RpcController.html#503-530" title="Go to source code">rpcSubmitToMessageBus</a>( )</code>
 
 			<div class="description short">
-				
+				<p>submit one or messages into the message bus.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>submit one or messages into the message bus.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						Thallium\Controller\ExceptionController
+					</div>
 
 
 
@@ -376,25 +497,33 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_rpcRetrieveFromMessageBus">#</a>
-			<code><a href="source-class-Thallium.Controllers.RpcController.html#395-411" title="Go to source code">rpcRetrieveFromMessageBus</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.RpcController.html#532-555" title="Go to source code">rpcRetrieveFromMessageBus</a>( )</code>
 
 			<div class="description short">
-				
+				<p>retrieve messages from message bus.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>retrieve messages from message bus.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						Thallium\Controller\ExceptionController
+					</div>
 
 
 
@@ -405,25 +534,35 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 protected 
-				
+				object
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_rpcProcessMessages">#</a>
-			<code><a href="source-class-Thallium.Controllers.RpcController.html#413-423" title="Go to source code">rpcProcessMessages</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.RpcController.html#557-575" title="Go to source code">rpcProcessMessages</a>( )</code>
 
 			<div class="description short">
-				
+				<p>a client can trigger the server to process messages waiting in the
+message bus.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>a client can trigger the server to process messages waiting in the
+message bus.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						object
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						Thallium\Controller\ExceptionController
+					</div>
 
 
 
@@ -436,7 +575,6 @@ the other Thallium Controllers.</p>
 		<div class="panel panel-default">
 	        <div class="panel-heading"><h3>Methods inherited from <a href="class-Thallium.Controllers.DefaultController.html#methods">Thallium\Controllers\DefaultController</a></h3></div>
 			<p class="elementList">
-				<code><a href="class-Thallium.Controllers.DefaultController.html#___construct">__construct()</a></code>, 
 				<code><a href="class-Thallium.Controllers.DefaultController.html#___set">__set()</a></code>, 
 				<code><a href="class-Thallium.Controllers.DefaultController.html#_getVerbosity">getVerbosity()</a></code>, 
 				<code><a href="class-Thallium.Controllers.DefaultController.html#_isCmdline">isCmdline()</a></code>, 

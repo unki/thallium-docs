@@ -142,10 +142,9 @@
 
 
 	<div class="description">
-	<p>DefaultController is an abstract class that is used by all
-the other Thallium Controllers.</p>
-
-<p>It declares some common methods, properties and constants.</p>
+	<p>RpcController handles remote-procedure-call requests made by
+clients. This should only be used seldomly and MessageBus
+is a better joice.</p>
 	</div>
 
 	<dl class="tree well">
@@ -181,7 +180,7 @@ the other Thallium Controllers.</p>
 		
 		
 		<b>Namespace:</b> <a href="namespace-Skeleton.html">Skeleton</a>\<a href="namespace-Skeleton.Controllers.html">Controllers</a><br>
-		<b>Package:</b> Thallium\Controllers\DefaultController\Controllers<br>
+		<b>Package:</b> Thallium\Controllers\RpcController\Controllers<br>
 
 				<b>Copyright:</b>
 				2015-2016 Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
@@ -202,10 +201,12 @@ the other Thallium Controllers.</p>
 		<div class="panel panel-default">
 	        <div class="panel-heading"><h3>Methods inherited from <a href="class-Thallium.Controllers.RpcController.html#methods">Thallium\Controllers\RpcController</a></h3></div>
 			<p class="elementList">
+				<code><a href="class-Thallium.Controllers.RpcController.html#___construct">__construct()</a></code>, 
 				<code><a href="class-Thallium.Controllers.RpcController.html#_perform">perform()</a></code>, 
 				<code><a href="class-Thallium.Controllers.RpcController.html#_rpcDelete">rpcDelete()</a></code>, 
 				<code><a href="class-Thallium.Controllers.RpcController.html#_rpcFindPrevNextObject">rpcFindPrevNextObject()</a></code>, 
 				<code><a href="class-Thallium.Controllers.RpcController.html#_rpcGetContent">rpcGetContent()</a></code>, 
+				<code><a href="class-Thallium.Controllers.RpcController.html#_rpcIdle">rpcIdle()</a></code>, 
 				<code><a href="class-Thallium.Controllers.RpcController.html#_rpcProcessMessages">rpcProcessMessages()</a></code>, 
 				<code><a href="class-Thallium.Controllers.RpcController.html#_rpcRetrieveFromMessageBus">rpcRetrieveFromMessageBus()</a></code>, 
 				<code><a href="class-Thallium.Controllers.RpcController.html#_rpcSubmitToMessageBus">rpcSubmitToMessageBus()</a></code>, 
@@ -215,7 +216,6 @@ the other Thallium Controllers.</p>
 		<div class="panel panel-default">
 	        <div class="panel-heading"><h3>Methods inherited from <a href="class-Thallium.Controllers.DefaultController.html#methods">Thallium\Controllers\DefaultController</a></h3></div>
 			<p class="elementList">
-				<code><a href="class-Thallium.Controllers.DefaultController.html#___construct">__construct()</a></code>, 
 				<code><a href="class-Thallium.Controllers.DefaultController.html#___set">__set()</a></code>, 
 				<code><a href="class-Thallium.Controllers.DefaultController.html#_getVerbosity">getVerbosity()</a></code>, 
 				<code><a href="class-Thallium.Controllers.DefaultController.html#_isCmdline">isCmdline()</a></code>, 
