@@ -143,10 +143,8 @@
 
 
 	<div class="description">
-	<p>DefaultController is an abstract class that is used by all
-the other Thallium Controllers.</p>
-
-<p>It declares some common methods, properties and constants.</p>
+	<p>JobsController handles a queue ob jobs that act on various
+internal tasks that may be triggered by client or internally.</p>
 	</div>
 
 	<dl class="tree well">
@@ -181,7 +179,7 @@ the other Thallium Controllers.</p>
 		
 		
 		<b>Namespace:</b> <a href="namespace-Thallium.html">Thallium</a>\<a href="namespace-Thallium.Controllers.html">Controllers</a><br>
-		<b>Package:</b> Thallium\Controllers\DefaultController\Controllers<br>
+		<b>Package:</b> Thallium\Controllers\JobController\Controllers<br>
 
 				<b>Copyright:</b>
 				2015-2016 Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
@@ -189,7 +187,7 @@ the other Thallium Controllers.</p>
 				<a href="AGPL3">AGPL3</a><br>
 				<b>Author:</b>
 				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
-			<b>Located at</b> <a href="source-class-Thallium.Controllers.JobsController.html#22-608" title="Go to source code">vendor/Thallium/Controllers/JobsController.php</a>
+			<b>Located at</b> <a href="source-class-Thallium.Controllers.JobsController.html#22-805" title="Go to source code">vendor/Thallium/Controllers/JobsController.php</a>
 		<br>
 	</div>
 
@@ -209,7 +207,7 @@ the other Thallium Controllers.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Thallium.Controllers.JobsController.html#30-56" title="Go to source code">__construct</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.JobsController.html#46-82" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
 				<p>class constructor</p>
@@ -237,25 +235,33 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_removeExpiredJobs">#</a>
-			<code><a href="source-class-Thallium.Controllers.JobsController.html#58-73" title="Go to source code">removeExpiredJobs</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.JobsController.html#84-106" title="Go to source code">removeExpiredJobs</a>( )</code>
 
 			<div class="description short">
-				
+				<p>remove expired jobs from job queue</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>remove expired jobs from job queue</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -266,25 +272,44 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				object|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_createJob">#</a>
-			<code><a href="source-class-Thallium.Controllers.JobsController.html#75-136" title="Go to source code">createJob</a>( <span> <var>$command</var></span>, <span> <var>$parameters</var> = <span class="php-keyword1">null</span></span>, <span> <var>$sessionid</var> = <span class="php-keyword1">null</span></span>, <span> <var>$request_guid</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.JobsController.html#108-187" title="Go to source code">createJob</a>( <span>string <var>$command</var></span>, <span>array <var>$parameters</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$sessionid</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$request_guid</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
-				
+				<p>remove expired jobs from job queue</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>remove expired jobs from job queue</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$command</var></dt>
+						<dd></dd>
+						<dt><var>$parameters</var></dt>
+						<dd></dd>
+						<dt><var>$sessionid</var></dt>
+						<dd></dd>
+						<dt><var>$request_guid</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						object|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -295,25 +320,38 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_deleteJob">#</a>
-			<code><a href="source-class-Thallium.Controllers.JobsController.html#138-168" title="Go to source code">deleteJob</a>( <span> <var>$job_guid</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.JobsController.html#189-234" title="Go to source code">deleteJob</a>( <span>string <var>$job_guid</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>delete a job from job queue</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>delete a job from job queue</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$job_guid</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -324,25 +362,38 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setCurrentJob">#</a>
-			<code><a href="source-class-Thallium.Controllers.JobsController.html#170-181" title="Go to source code">setCurrentJob</a>( <span> <var>$job_guid</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.JobsController.html#236-257" title="Go to source code">setCurrentJob</a>( <span>string <var>$job_guid</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>set the current-job-flag</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>set the current-job-flag</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$job_guid</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -353,25 +404,33 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getCurrentJob">#</a>
-			<code><a href="source-class-Thallium.Controllers.JobsController.html#183-190" title="Go to source code">getCurrentJob</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.JobsController.html#259-274" title="Go to source code">getCurrentJob</a>( )</code>
 
 			<div class="description short">
-				
+				<p>get the current-job from the current-job-flag</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>get the current-job from the current-job-flag</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -382,25 +441,33 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasCurrentJob">#</a>
-			<code><a href="source-class-Thallium.Controllers.JobsController.html#192-199" title="Go to source code">hasCurrentJob</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.JobsController.html#276-290" title="Go to source code">hasCurrentJob</a>( )</code>
 
 			<div class="description short">
-				
+				<p>return true if there is a job in the current-job-flag.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>return true if there is a job in the current-job-flag.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -411,25 +478,33 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_clearCurrentJob">#</a>
-			<code><a href="source-class-Thallium.Controllers.JobsController.html#201-205" title="Go to source code">clearCurrentJob</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.JobsController.html#292-303" title="Go to source code">clearCurrentJob</a>( )</code>
 
 			<div class="description short">
-				
+				<p>clears the current-job-flag.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>clears the current-job-flag.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -440,25 +515,38 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_runJob">#</a>
-			<code><a href="source-class-Thallium.Controllers.JobsController.html#207-274" title="Go to source code">runJob</a>( <span> <var>$job</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.JobsController.html#305-398" title="Go to source code">runJob</a>( <span>string|object <var>$run_job</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>run a specific job.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>run a specific job.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$run_job</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -469,25 +557,33 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_runJobs">#</a>
-			<code><a href="source-class-Thallium.Controllers.JobsController.html#276-336" title="Go to source code">runJobs</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.JobsController.html#400-472" title="Go to source code">runJobs</a>( )</code>
 
 			<div class="description short">
-				
+				<p>run job that are waiting in the job queue.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>run job that are waiting in the job queue.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -498,25 +594,40 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_registerHandler">#</a>
-			<code><a href="source-class-Thallium.Controllers.JobsController.html#338-368" title="Go to source code">registerHandler</a>( <span> <var>$job_name</var></span>, <span> <var>$handler</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.JobsController.html#474-513" title="Go to source code">registerHandler</a>( <span>string <var>$job_name</var></span>, <span>string|array <var>$handler</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>registers a handler that act on specific jobs.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>registers a handler that act on specific jobs.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$job_name</var></dt>
+						<dd></dd>
+						<dt><var>$handler</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -527,25 +638,38 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_unregisterHandler">#</a>
-			<code><a href="source-class-Thallium.Controllers.JobsController.html#370-383" title="Go to source code">unregisterHandler</a>( <span> <var>$job_name</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.JobsController.html#515-535" title="Go to source code">unregisterHandler</a>( <span>string <var>$job_name</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>unregisteres a handler</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>unregisteres a handler</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$job_name</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -556,25 +680,38 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isRegisteredHandler">#</a>
-			<code><a href="source-class-Thallium.Controllers.JobsController.html#385-397" title="Go to source code">isRegisteredHandler</a>( <span> <var>$job_name</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.JobsController.html#537-556" title="Go to source code">isRegisteredHandler</a>( <span>string <var>$job_name</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the provided handler name is already registered.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the provided handler name is already registered.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$job_name</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -585,25 +722,38 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getHandler">#</a>
-			<code><a href="source-class-Thallium.Controllers.JobsController.html#399-412" title="Go to source code">getHandler</a>( <span> <var>$job_name</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.JobsController.html#558-578" title="Go to source code">getHandler</a>( <span>string <var>$job_name</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the handler name for a specific job.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the handler name for a specific job.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$job_name</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -614,25 +764,38 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_handleDeleteRequest">#</a>
-			<code><a href="source-class-Thallium.Controllers.JobsController.html#414-516" title="Go to source code">handleDeleteRequest</a>( <span> <var>$job</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.JobsController.html#580-694" title="Go to source code">handleDeleteRequest</a>( <span>array <var>$job</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>a generic handler that handles delete-object requests</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>a generic handler that handles delete-object requests</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$job</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -643,25 +806,38 @@ the other Thallium Controllers.</p>
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_handleSaveRequest">#</a>
-			<code><a href="source-class-Thallium.Controllers.JobsController.html#518-607" title="Go to source code">handleSaveRequest</a>( <span> <var>$job</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.JobsController.html#696-804" title="Go to source code">handleSaveRequest</a>( <span>array <var>$job</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>a generic handler that saves data into an object.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>a generic handler that saves data into an object.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$job</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -698,7 +874,7 @@ the other Thallium Controllers.</p>
 				<td class="attributes"><code>integer</code></td>
 				<td class="name">
 					<code>
-						<a href="source-class-Thallium.Controllers.JobsController.html#24" title="Go to source code"><b>EXPIRE_TIMEOUT</b></a>
+						<a href="source-class-Thallium.Controllers.JobsController.html#34-35" title="Go to source code"><b>EXPIRE_TIMEOUT</b></a>
 					</code>
 
 					<div class="description short">
@@ -737,18 +913,18 @@ the other Thallium Controllers.</p>
 		<tr data-order="currentJobGuid" id="$currentJobGuid">
 			<td class="attributes"><code>
 				protected  
-				
+				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.JobsController.html#26" title="Go to source code"><var>$currentJobGuid</var></a>
+					<a href="source-class-Thallium.Controllers.JobsController.html#37-38" title="Go to source code"><var>$currentJobGuid</var></a>
 
 				<div class="description short">
-					
+					<p>$currentjobGuid</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$currentjobGuid</p>
 
 				</div>
 			</td>
@@ -766,14 +942,14 @@ the other Thallium Controllers.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.JobsController.html#27" title="Go to source code"><var>$registeredHandlers</var></a>
+					<a href="source-class-Thallium.Controllers.JobsController.html#40-41" title="Go to source code"><var>$registeredHandlers</var></a>
 
 				<div class="description short">
-					
+					<p>$registeredHandlers</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$registeredHandlers</p>
 
 				</div>
 			</td>
@@ -787,18 +963,18 @@ the other Thallium Controllers.</p>
 		<tr data-order="json_errors" id="$json_errors">
 			<td class="attributes"><code>
 				protected  
-				
+				array
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.JobsController.html#28" title="Go to source code"><var>$json_errors</var></a>
+					<a href="source-class-Thallium.Controllers.JobsController.html#43-44" title="Go to source code"><var>$json_errors</var></a>
 
 				<div class="description short">
-					
+					<p>$json_errors</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$json_errors</p>
 
 				</div>
 			</td>

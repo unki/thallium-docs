@@ -129,6 +129,12 @@
 	<h1>Class DefaultModel</h1>
 
 
+	<div class="description">
+	<p>DefaultModel is an abstract class that is used by all
+the other Thallium Models.</p>
+
+<p>It declares some common methods, properties and constants.</p>
+	</div>
 
 
 
@@ -165,9 +171,15 @@
 		<b>Abstract</b><br>
 		
 		<b>Namespace:</b> <a href="namespace-Thallium.html">Thallium</a>\<a href="namespace-Thallium.Models.html">Models</a><br>
-		
+		<b>Package:</b> Thallium\Models\DefaultModel\Models<br>
 
-			<b>Located at</b> <a href="source-class-Thallium.Models.DefaultModel.html#24-3791" title="Go to source code">vendor/Thallium/Models/DefaultModel.php</a>
+				<b>Copyright:</b>
+				2015-2016 Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+				<b>License:</b>
+				<a href="AGPL3">AGPL3</a><br>
+				<b>Author:</b>
+				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
+			<b>Located at</b> <a href="source-class-Thallium.Models.DefaultModel.html#24-4581" title="Go to source code">vendor/Thallium/Models/DefaultModel.php</a>
 		<br>
 	</div>
 
@@ -187,18 +199,29 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#50-88" title="Go to source code">__construct</a>( <span> <var>$load_by</var> = <span class="php-keyword1">array</span>()</span>, <span> <var>$sort_order</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#104-156" title="Go to source code">__construct</a>( <span>array <var>$load_by</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$sort_order</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
-				
+				<p>class constructor</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>class constructor</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$load_by</var></dt>
+						<dd></dd>
+						<dt><var>$sort_order</var></dt>
+						<dd></dd>
+					</dl></div>
 
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -209,25 +232,33 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_validateModelSettings">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#90-314" title="Go to source code">validateModelSettings</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#158-394" title="Go to source code">validateModelSettings</a>( )</code>
 
 			<div class="description short">
-				
+				<p>validate model settings</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>validate model settings</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -238,25 +269,38 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_load">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#316-557" title="Go to source code">load</a>( <span> <var>$extend_query_where</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#396-669" title="Go to source code">load</a>( <span>string <var>$extend_query_where</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
-				<p>load</p>
+				<p>loads data from database into a model</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>load</p>
+				<p>loads data from database into a model</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$extend_query_where</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -267,25 +311,42 @@
 
 			<td class="attributes"><code>
 				final protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_bulkLoad">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#559-649" title="Go to source code">bulkLoad</a>( <span> <var>$keys</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#671-782" title="Go to source code">bulkLoad</a>( <span>array <var>$keys</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>if a model is configured to have items, it will consist of further models that
+are representing these items. Too speed up the loading process, bulkLoad() may
+be used automatically if number of items to load is > than $model_bulk_load_limit</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>if a model is configured to have items, it will consist of further models that
+are representing these items. Too speed up the loading process, bulkLoad() may
+be used automatically if number of items to load is > than $model_bulk_load_limit</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$keys</var></dt>
+						<dd>$extend_query_where</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -303,14 +364,14 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_update">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#651-697" title="Go to source code">update</a>( <span>mixed <var>$data</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#784-830" title="Go to source code">update</a>( <span>array|object <var>$data</var></span> )</code>
 
 			<div class="description short">
-				<p>update object variables via array</p>
+				<p>update model fields by the data provided in $data</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>update object variables via array</p>
+				<p>update model fields by the data provided in $data</p>
 
 
 					<h4>Parameters</h4>
@@ -324,6 +385,10 @@
 						boolean
 					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -341,14 +406,25 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_flood">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#699-745" title="Go to source code">flood</a>( <span>mixed <var>$data</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#832-889" title="Go to source code">flood</a>( <span>array|object <var>$data</var></span> )</code>
 
 			<div class="description short">
-				<p>flood object variables via array</p>
+				<p>update model fields by the data provided in $data.
+contrary to update(), this method updates the field
+values directly, without triggering the setXxx() method
+of a field.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>flood object variables via array</p>
+				<p>update model fields by the data provided in $data.
+contrary to update(), this method updates the field
+values directly, without triggering the setXxx() method
+of a field.</p>
+
+<p>!!! WARNING: even invalid values that the setXxx() methods would
+!!! normally deny, can be set by this method!
+!!! this is, why flood() can not be overriden and available only
+!!! as protected!</p>
 
 
 					<h4>Parameters</h4>
@@ -362,6 +438,10 @@
 						boolean
 					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -372,25 +452,33 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_delete">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#747-826" title="Go to source code">delete</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#891-970" title="Go to source code">delete</a>( )</code>
 
 			<div class="description short">
-				
+				<p>deletes an model object from database.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>deletes an model object from database.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -401,25 +489,33 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_deleteItems">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#828-856" title="Go to source code">deleteItems</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#972-1008" title="Go to source code">deleteItems</a>( )</code>
 
 			<div class="description short">
-				
+				<p>if a model is configured to have items, this method will delete all of those items.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>if a model is configured to have items, this method will delete all of those items.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -430,25 +526,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_createClone">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#858-1028" title="Go to source code">createClone</a>( <span> <var>&amp; $srcobj</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#1010-1189" title="Go to source code">createClone</a>( <span>object <var>&amp; $srcobj</var></span> )</code>
 
 			<div class="description short">
-				<p>clone</p>
+				<p>clones a model into a new one.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>clone</p>
+				<p>clones a model into a new one.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$srcobj</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -459,25 +568,38 @@
 
 			<td class="attributes"><code>
 				final protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_initFields">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1030-1063" title="Go to source code">initFields</a>( <span> <var>$override</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#1191-1228" title="Go to source code">initFields</a>( <span>array <var>$override</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
-				<p>init fields</p>
+				<p>initializes all fields</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>init fields</p>
+				<p>initializes all fields</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$override</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -495,18 +617,37 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___set">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1066-1235" title="Go to source code">__set</a>( <span> <var>$name</var></span>, <span> <var>$value</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#1230-1404" title="Go to source code">__set</a>( <span>string <var>$name</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>this method overrides PHP own __set() method. it is called for all
+undeclared properties - that means, that have not explicitly declared
+before run time.
+we capture these events here and try to locate a matching setXxxx()
+method.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>this method overrides PHP own __set() method. it is called for all
+undeclared properties - that means, that have not explicitly declared
+before run time.
+we capture these events here and try to locate a matching setXxxx()
+method.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd></dd>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+					</dl></div>
 
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -517,25 +658,46 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				mixed
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___get">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1238-1291" title="Go to source code">__get</a>( <span> <var>$name</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#1406-1470" title="Go to source code">__get</a>( <span>string <var>$name</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>this method overrides PHP own __get() method. it is called for all
+undeclared properties - that means, that have not explicitly declared
+before run time.
+we capture these events here and try to locate a matching getXxxx()
+method.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>this method overrides PHP own __get() method. it is called for all
+undeclared properties - that means, that have not explicitly declared
+before run time.
+we capture these events here and try to locate a matching getXxxx()
+method.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						mixed
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -546,25 +708,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_save">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1293-1401" title="Go to source code">save</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#1472-1596" title="Go to source code">save</a>( )</code>
 
 			<div class="description short">
-				
+				<p>saves model field values to database.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>saves model field values to database.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -575,25 +745,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_prev">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1536-1586" title="Go to source code">prev</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#1731-1788" title="Go to source code">prev</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the previous object in database relative to the current one.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the previous object in database relative to the current one.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -604,25 +782,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_next">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1588-1636" title="Go to source code">next</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#1790-1845" title="Go to source code">next</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the next object in database relative to the current one.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the next object in database relative to the current one.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -633,25 +819,33 @@
 
 			<td class="attributes"><code>
 				final protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isDuplicate">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1638-1719" title="Go to source code">isDuplicate</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#1847-1935" title="Go to source code">isDuplicate</a>( )</code>
 
 			<div class="description short">
-				
+				<p>verifies if the same object (idx, guid) is already in database.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>verifies if the same object (idx, guid) is already in database.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -662,25 +856,38 @@
 
 			<td class="attributes"><code>
 				final protected static
-				
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_column">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1721-1731" title="Go to source code">column</a>( <span> <var>$suffix</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#1937-1954" title="Go to source code">column</a>( <span>string <var>$suffix</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the database table column-name for a specific field.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the database table column-name for a specific field.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$suffix</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -691,25 +898,38 @@
 
 			<td class="attributes"><code>
 				final protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_permitRpcUpdates">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1733-1742" title="Go to source code">permitRpcUpdates</a>( <span> <var>$state</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#1956-1972" title="Go to source code">permitRpcUpdates</a>( <span>boolean <var>$state</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>globally enable or disable RPC updates to this object.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>globally enable or disable RPC updates to this object.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$state</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -720,25 +940,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_permitsRpcUpdates">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1744-1753" title="Go to source code">permitsRpcUpdates</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#1974-1992" title="Go to source code">permitsRpcUpdates</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns true if RPC updates are generally enabled for this object.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if RPC updates are generally enabled for this object.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -749,25 +977,38 @@
 
 			<td class="attributes"><code>
 				final protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_addRpcEnabledField">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1755-1781" title="Go to source code">addRpcEnabledField</a>( <span> <var>$field</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#1994-2027" title="Go to source code">addRpcEnabledField</a>( <span>string <var>$field</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>allow the specified field to be updated by RPC updates.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>allow the specified field to be updated by RPC updates.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -778,25 +1019,38 @@
 
 			<td class="attributes"><code>
 				final protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_addRpcAction">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1783-1804" title="Go to source code">addRpcAction</a>( <span> <var>$action</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2029-2057" title="Go to source code">addRpcAction</a>( <span>string <var>$action</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>allow the specified action to be performed by an RPC call.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>allow the specified action to be performed by an RPC call.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$action</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -807,25 +1061,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_permitsRpcUpdateToField">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1806-1845" title="Go to source code">permitsRpcUpdateToField</a>( <span> <var>$field</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2059-2105" title="Go to source code">permitsRpcUpdateToField</a>( <span>string <var>$field</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if RPC updates are permitted to the specified field.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if RPC updates are permitted to the specified field.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -836,25 +1103,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_permitsRpcActions">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1847-1871" title="Go to source code">permitsRpcActions</a>( <span> <var>$action</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2107-2138" title="Go to source code">permitsRpcActions</a>( <span>string <var>$action</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if RPC action is allowed for this object.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if RPC action is allowed for this object.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$action</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -865,25 +1145,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasIdx">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1873-1892" title="Go to source code">hasIdx</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2140-2166" title="Go to source code">hasIdx</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the field FIELD_IDX has an value</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the field FIELD_IDX has an value</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -894,26 +1182,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				integer|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getId">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1894-1899" title="Go to source code">getId</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2168-2181" title="Go to source code">getId</a>( )</code>
 
 			<div class="description short">
-				
+				<p>legacy method. use getIdx() instead!</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>legacy method. use getIdx() instead!</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						integer|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
+					<h4>Todo</h4>
+					<div class="list">
+							remove after 31.12.2016<br>
+					</div>
 
 
 			</div>
@@ -923,25 +1223,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				integer|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getIdx">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1901-1914" title="Go to source code">getIdx</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2183-2203" title="Go to source code">getIdx</a>( )</code>
 
 			<div class="description short">
-				
+				<p>return the value of FIELD_IDX</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>return the value of FIELD_IDX</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						integer|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -952,25 +1260,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasGuid">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1916-1935" title="Go to source code">hasGuid</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2205-2231" title="Go to source code">hasGuid</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the field FIELD_GUID has an value</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the field FIELD_GUID has an value</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -981,25 +1297,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getGuid">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1937-1955" title="Go to source code">getGuid</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2233-2258" title="Go to source code">getGuid</a>( )</code>
 
 			<div class="description short">
-				
+				<p>return the value of FIELD_GUID</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>return the value of FIELD_GUID</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1010,25 +1334,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setGuid">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1957-1973" title="Go to source code">setGuid</a>( <span> <var>$guid</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2260-2283" title="Go to source code">setGuid</a>( <span>string <var>$guid</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>set FIELD_GUID to the value $guid</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>set FIELD_GUID to the value $guid</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$guid</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1039,25 +1376,33 @@
 
 			<td class="attributes"><code>
 				final public static
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasFields">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1975-1990" title="Go to source code">hasFields</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2285-2307" title="Go to source code">hasFields</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns true if this model has fields configured.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if this model has fields configured.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1068,25 +1413,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				array
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getFields">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#1992-2048" title="Go to source code">getFields</a>( <span> <var>$no_virtual</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2309-2372" title="Go to source code">getFields</a>( <span>boolean <var>$no_virtual</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
-				
+				<p>return an array of all fields</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>return an array of all fields</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$no_virtual</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1097,25 +1455,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				array
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getFieldNames">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2050-2058" title="Go to source code">getFieldNames</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2374-2389" title="Go to source code">getFieldNames</a>( )</code>
 
 			<div class="description short">
-				
+				<p>return all the field names.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>return all the field names.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1126,25 +1492,40 @@
 
 			<td class="attributes"><code>
 				final public static
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasField">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2060-2080" title="Go to source code">hasField</a>( <span> <var>$field_name</var></span>, <span> <var>$ignore_virtual</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2391-2420" title="Go to source code">hasField</a>( <span>string <var>$field_name</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the field $field_name is declared for this model.
+it can not be used for virtual fields!</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the field $field_name is declared for this model.
+it can not be used for virtual fields!</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field_name</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1155,25 +1536,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getFieldPrefix">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2082-2093" title="Go to source code">getFieldPrefix</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2422-2440" title="Go to source code">getFieldPrefix</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the column prefix.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the column prefix.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1184,25 +1573,35 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isNew">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2095-2102" title="Go to source code">isNew</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2442-2457" title="Go to source code">isNew</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the model is new and has not been saved to
+database yet.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the model is new and has not been saved to
+database yet.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1220,18 +1619,31 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_raiseError">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2104-2115" title="Go to source code">raiseError</a>( <span> <var>$string</var></span>, <span> <var>$stop_execution</var> = <span class="php-keyword1">false</span></span>, <span> <var>$exception</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2459-2479" title="Go to source code">raiseError</a>( <span>string <var>$string</var></span>, <span>boolean <var>$stop_execution</var> = <span class="php-keyword1">false</span></span>, <span>object|null <var>$exception</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
-				
+				<p>raises an error by using the ExceptionController.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>raises an error by using the ExceptionController.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$string</var></dt>
+						<dd></dd>
+						<dt><var>$stop_execution</var></dt>
+						<dd></dd>
+						<dt><var>$exception</var></dt>
+						<dd></dd>
+					</dl></div>
 
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1242,25 +1654,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasVirtualFields">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2117-2124" title="Go to source code">hasVirtualFields</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2481-2495" title="Go to source code">hasVirtualFields</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns true if there are virtual fields configured.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if there are virtual fields configured.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1271,25 +1691,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasVirtualFieldValue">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2126-2153" title="Go to source code">hasVirtualFieldValue</a>( <span> <var>$field</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2497-2531" title="Go to source code">hasVirtualFieldValue</a>( <span>string <var>$field</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the specified virtual field has a value.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the specified virtual field has a value.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1300,25 +1733,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				mixed
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getVirtualFieldValue">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2155-2178" title="Go to source code">getVirtualFieldValue</a>( <span> <var>$field</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2533-2563" title="Go to source code">getVirtualFieldValue</a>( <span>string <var>$field</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the value of the specified virtual field.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the value of the specified virtual field.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						mixed
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1329,25 +1775,40 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setVirtualFieldValue">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2180-2203" title="Go to source code">setVirtualFieldValue</a>( <span> <var>$field</var></span>, <span> <var>$value</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2565-2596" title="Go to source code">setVirtualFieldValue</a>( <span>string <var>$field</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>sets the value for the specified virtual field.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>sets the value for the specified virtual field.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1358,25 +1819,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getVirtualFieldGetMethod">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2205-2227" title="Go to source code">getVirtualFieldGetMethod</a>( <span> <var>$field</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2598-2627" title="Go to source code">getVirtualFieldGetMethod</a>( <span>string <var>$field</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the getXxx() method for the specified virtual field</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the getXxx() method for the specified virtual field</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1387,25 +1861,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getVirtualFieldSetMethod">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2229-2251" title="Go to source code">getVirtualFieldSetMethod</a>( <span> <var>$field</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2629-2658" title="Go to source code">getVirtualFieldSetMethod</a>( <span>string <var>$field</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the setXxx() method for the specified virtual field</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the setXxx() method for the specified virtual field</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1416,25 +1903,33 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				array
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getVirtualFields">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2253-2261" title="Go to source code">getVirtualFields</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2660-2675" title="Go to source code">getVirtualFields</a>( )</code>
 
 			<div class="description short">
-				
+				<p>return all virtual fields.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>return all virtual fields.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1445,25 +1940,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasVirtualField">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2263-2275" title="Go to source code">hasVirtualField</a>( <span> <var>$vfield</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2677-2696" title="Go to source code">hasVirtualField</a>( <span>string <var>$vfield</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the specified virtual field exists.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the specified virtual field exists.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$vfield</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1474,25 +1982,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_addVirtualField">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2277-2290" title="Go to source code">addVirtualField</a>( <span> <var>$vfield</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2698-2718" title="Go to source code">addVirtualField</a>( <span>string <var>$vfield</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>registers a new virtual field to the model.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>registers a new virtual field to the model.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$vfield</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1503,25 +2024,33 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				array|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getItemsKeys">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2292-2305" title="Go to source code">getItemsKeys</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2720-2740" title="Go to source code">getItemsKeys</a>( )</code>
 
 			<div class="description short">
-				
+				<p>if a model has items, it returns all the items keys as array.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>if a model has items, it returns all the items keys as array.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						array|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1532,25 +2061,42 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				array|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getItems">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2307-2395" title="Go to source code">getItems</a>( <span> <var>$offset</var> = <span class="php-keyword1">null</span></span>, <span> <var>$limit</var> = <span class="php-keyword1">null</span></span>, <span> <var>$filter</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2742-2839" title="Go to source code">getItems</a>( <span>integer|null <var>$offset</var> = <span class="php-keyword1">null</span></span>, <span>integer|null <var>$limit</var> = <span class="php-keyword1">null</span></span>, <span>array|null <var>$filter</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
-				
+				<p>if a model has items, it returns all the items as array.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>if a model has items, it returns all the items as array.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$offset</var></dt>
+						<dd></dd>
+						<dt><var>$limit</var></dt>
+						<dd></dd>
+						<dt><var>$filter</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						array|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1561,25 +2107,40 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				array|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_filterItems">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2397-2458" title="Go to source code">filterItems</a>( <span> <var>$items</var></span>, <span> <var>$filter</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2841-2910" title="Go to source code">filterItems</a>( <span>array <var>$items</var></span>, <span>array <var>$filter</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>filters a list of items by the provided filter.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>filters a list of items by the provided filter.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$items</var></dt>
+						<dd></dd>
+						<dt><var>$filter</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						array|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1590,26 +2151,43 @@
 
 			<td class="attributes"><code>
 				final public static
-				
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isHavingItems">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2460-2466" title="Go to source code">isHavingItems</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2912-2926" title="Go to source code">isHavingItems</a>( <span>string <var>$field</var>,…</span> )</code>
 
 			<div class="description short">
-				
+				<p>legacy method, has been replaaced by hasModelItems()</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>legacy method, has been replaaced by hasModelItems()</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var>,…</dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
+					<h4>Todo</h4>
+					<div class="list">
+							remove after 31.12.2016<br>
+					</div>
 
 
 			</div>
@@ -1619,25 +2197,38 @@
 
 			<td class="attributes"><code>
 				final public static
-				
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasModelItems">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2468-2484" title="Go to source code">hasModelItems</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2928-2951" title="Go to source code">hasModelItems</a>( <span>string <var>$field</var>,…</span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the model is configured to have items.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the model is configured to have items.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var>,…</dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1648,25 +2239,37 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasItems">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2486-2502" title="Go to source code">hasItems</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2953-2978" title="Go to source code">hasItems</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the model actually has items.
+contrary to hasModelItems() which only checks if the
+model is configured to have items at all.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the model actually has items.
+contrary to hasModelItems() which only checks if the
+model is configured to have items at all.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1677,25 +2280,38 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_addItem">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2504-2579" title="Go to source code">addItem</a>( <span> <var>$item</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#2980-3062" title="Go to source code">addItem</a>( <span>object <var>$item</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>adds an item</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>adds an item</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$item</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1706,25 +2322,42 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				mixed
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getItem">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2581-2672" title="Go to source code">getItem</a>( <span> <var>$idx</var></span>, <span> <var>$reset</var> = <span class="php-keyword1">true</span></span>, <span> <var>$allow_cached</var> = <span class="php-keyword1">true</span></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3064-3164" title="Go to source code">getItem</a>( <span>integer <var>$idx</var></span>, <span>boolean <var>$reset</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$allow_cached</var> = <span class="php-keyword1">true</span></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the requested item</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the requested item</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$idx</var></dt>
+						<dd></dd>
+						<dt><var>$reset</var></dt>
+						<dd></dd>
+						<dt><var>$allow_cached</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						mixed
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1735,25 +2368,38 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasItem">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2674-2686" title="Go to source code">hasItem</a>( <span> <var>$idx</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3166-3185" title="Go to source code">hasItem</a>( <span>integer <var>$idx</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the provided item exists.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the provided item exists.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$idx</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1764,25 +2410,38 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasItemData">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2688-2711" title="Go to source code">hasItemData</a>( <span> <var>$key</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3187-3217" title="Go to source code">hasItemData</a>( <span>string|integer <var>$key</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the provided item has data (= field values)</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the provided item has data (= field values)</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1793,25 +2452,38 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasItemModel">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2713-2736" title="Go to source code">hasItemModel</a>( <span> <var>$key</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3219-3249" title="Go to source code">hasItemModel</a>( <span>string|integer <var>$key</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the model that is used for items.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the model that is used for items.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1822,25 +2494,38 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getItemModel">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2738-2759" title="Go to source code">getItemModel</a>( <span> <var>$key</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3251-3279" title="Go to source code">getItemModel</a>( <span>string|integer <var>$key</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the model if an specific item</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the model if an specific item</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1851,25 +2536,40 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setItemModel">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2761-2782" title="Go to source code">setItemModel</a>( <span> <var>$key</var></span>, <span> <var>$model</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3281-3310" title="Go to source code">setItemModel</a>( <span>string <var>$key</var></span>, <span>string <var>$model</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>sets the model of a specific item</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>sets the model of a specific item</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd>$field</dd>
+						<dt><var>$model</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1880,25 +2580,38 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				mixed
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getItemData">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2784-2800" title="Go to source code">getItemData</a>( <span> <var>$key</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3312-3335" title="Go to source code">getItemData</a>( <span>string|integer <var>$key</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the field values of a specific item.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the field values of a specific item.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						mixed
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1909,25 +2622,42 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setItemData">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2802-2824" title="Go to source code">setItemData</a>( <span> <var>$key</var></span>, <span> <var>$data</var></span>, <span> <var>$init</var> = <span class="php-keyword1">true</span></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3337-3368" title="Go to source code">setItemData</a>( <span>string <var>$key</var></span>, <span>array <var>$data</var></span>, <span>boolean <var>$init</var> = <span class="php-keyword1">true</span></span> )</code>
 
 			<div class="description short">
-				
+				<p>sets data for a specific item.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>sets data for a specific item.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd></dd>
+						<dt><var>$data</var></dt>
+						<dd></dd>
+						<dt><var>$init</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1938,25 +2668,33 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				integer|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getItemsCount">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2826-2837" title="Go to source code">getItemsCount</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3370-3388" title="Go to source code">getItemsCount</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the number of items.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the number of items.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						integer|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1967,25 +2705,39 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isNewModel">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2839-2849" title="Go to source code">isNewModel</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3390-3410" title="Go to source code">isNewModel</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns true if this is a new model.
+contrary to isNew() this one returns true,
+if no loading-parameters have been provided
+to the constructor by $model_load_by.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if this is a new model.
+contrary to isNew() this one returns true,
+if no loading-parameters have been provided
+to the constructor by $model_load_by.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -1996,25 +2748,38 @@
 
 			<td class="attributes"><code>
 				 public static
-				
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getFieldType">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2851-2864" title="Go to source code">getFieldType</a>( <span> <var>$field_name</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3412-3432" title="Go to source code">getFieldType</a>( <span>string <var>$field_name</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the type of a specific field</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the type of a specific field</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field_name</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2025,25 +2790,38 @@
 
 			<td class="attributes"><code>
 				 public static
-				
+				integer|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getFieldLength">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2866-2883" title="Go to source code">getFieldLength</a>( <span> <var>$field_name</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3434-3458" title="Go to source code">getFieldLength</a>( <span>string <var>$field_name</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the length of a specific field.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the length of a specific field.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field_name</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						integer|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2054,25 +2832,38 @@
 
 			<td class="attributes"><code>
 				 public static
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasFieldLength">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2885-2902" title="Go to source code">hasFieldLength</a>( <span> <var>$field_name</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3460-3484" title="Go to source code">hasFieldLength</a>( <span>string <var>$field_name</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the field has a field-length declared.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the field has a field-length declared.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field_name</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2083,25 +2874,33 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getTableName">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2904-2907" title="Go to source code">getTableName</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3486-3496" title="Go to source code">getTableName</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the table name that is used to store this model into.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the table name that is used to store this model into.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2112,25 +2911,38 @@
 
 			<td class="attributes"><code>
 				 public static
-				
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getFieldNameFromColumn">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2909-2933" title="Go to source code">getFieldNameFromColumn</a>( <span> <var>$column</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3498-3529" title="Go to source code">getFieldNameFromColumn</a>( <span>string <var>$column</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the field name if a column-name is provided.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the field name if a column-name is provided.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$column</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2141,25 +2953,40 @@
 
 			<td class="attributes"><code>
 				 public static
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_validateField">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#2935-3017" title="Go to source code">validateField</a>( <span> <var>$field</var></span>, <span> <var>$value</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3531-3621" title="Go to source code">validateField</a>( <span>string <var>$field</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>validate if the provided $value is ok for the field $field.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>validate if the provided $value is ok for the field $field.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2170,25 +2997,38 @@
 
 			<td class="attributes"><code>
 				 public static
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_validateItemsFilter">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3019-3038" title="Go to source code">validateItemsFilter</a>( <span> <var>$filter</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3623-3649" title="Go to source code">validateItemsFilter</a>( <span>array <var>$filter</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>validates the provided items-filter.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>validates the provided items-filter.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$filter</var></dt>
+						<dd>$field</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2199,25 +3039,33 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_flush">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3040-3057" title="Go to source code">flush</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3651-3675" title="Go to source code">flush</a>( )</code>
 
 			<div class="description short">
-				
+				<p>if the model has items, flush the database table and clean out all items by this.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>if the model has items, flush the database table and clean out all items by this.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2228,25 +3076,33 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_flushTable">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3059-3074" title="Go to source code">flushTable</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3677-3699" title="Go to source code">flushTable</a>( )</code>
 
 			<div class="description short">
-				
+				<p>flushes the database table.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>flushes the database table.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2257,25 +3113,38 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasFieldSetMethod">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3076-3110" title="Go to source code">hasFieldSetMethod</a>( <span> <var>$field</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3701-3742" title="Go to source code">hasFieldSetMethod</a>( <span>string <var>$field</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the field has a setXxxx() method.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the field has a setXxxx() method.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2286,25 +3155,38 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getFieldSetMethod">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3112-3125" title="Go to source code">getFieldSetMethod</a>( <span> <var>$field</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3744-3764" title="Go to source code">getFieldSetMethod</a>( <span>string <var>$field</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the fields setXxx() method.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the fields setXxx() method.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2315,25 +3197,38 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasFieldGetMethod">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3127-3161" title="Go to source code">hasFieldGetMethod</a>( <span> <var>$field</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3766-3807" title="Go to source code">hasFieldGetMethod</a>( <span>string <var>$field</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the specified field has a getXxx() method.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the specified field has a getXxx() method.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2344,25 +3239,38 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getFieldGetMethod">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3163-3176" title="Go to source code">getFieldGetMethod</a>( <span> <var>$field</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3809-3829" title="Go to source code">getFieldGetMethod</a>( <span>string <var>$field</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the getXxx() method for the specified field.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the getXxx() method for the specified field.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2373,25 +3281,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasFieldValue">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3178-3211" title="Go to source code">hasFieldValue</a>( <span> <var>$field</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3831-3871" title="Go to source code">hasFieldValue</a>( <span>string <var>$field</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true, if the specified $field has a value.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true, if the specified $field has a value.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2402,25 +3323,40 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setFieldValue">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3213-3274" title="Go to source code">setFieldValue</a>( <span> <var>$field</var></span>, <span> <var>$value</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3873-3942" title="Go to source code">setFieldValue</a>( <span>string <var>$field</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>sets the value of the specified field.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>sets the value of the specified field.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2431,25 +3367,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				mixed
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getFieldValue">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3276-3289" title="Go to source code">getFieldValue</a>( <span> <var>$field</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3944-3964" title="Go to source code">getFieldValue</a>( <span>string <var>$field</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the value of the specified field.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the value of the specified field.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						mixed
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2460,25 +3409,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasDefaultValue">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3291-3313" title="Go to source code">hasDefaultValue</a>( <span> <var>$field</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3966-3995" title="Go to source code">hasDefaultValue</a>( <span>string <var>$field</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the field has a default value configured.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the field has a default value configured.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2489,25 +3451,38 @@
 
 			<td class="attributes"><code>
 				final public 
-				
+				mixed
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getDefaultValue">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3315-3328" title="Go to source code">getDefaultValue</a>( <span> <var>$field</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#3997-4017" title="Go to source code">getDefaultValue</a>( <span>string <var>$field</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the fields default value.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the fields default value.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						mixed
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2518,25 +3493,40 @@
 
 			<td class="attributes"><code>
 				 public static
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_exists">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3330-3405" title="Go to source code">exists</a>( <span> <var>$load_by</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#4019-4102" title="Go to source code">exists</a>( <span>array <var>$load_by</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
-				
+				<p>returns true, if the same object as specified by $load_by is already
+present in database.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true, if the same object as specified by $load_by is already
+present in database.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$load_by</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2547,25 +3537,33 @@
 
 			<td class="attributes"><code>
 				 public static
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasModelLinks">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3407-3416" title="Go to source code">hasModelLinks</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#4104-4120" title="Go to source code">hasModelLinks</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns true if the model is configured to have links.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if the model is configured to have links.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2576,25 +3574,33 @@
 
 			<td class="attributes"><code>
 				 public static
-				
+				array|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getModelLinks">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3418-3426" title="Go to source code">getModelLinks</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#4122-4137" title="Go to source code">getModelLinks</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns all the configured model links.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns all the configured model links.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						array|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2605,25 +3611,33 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_deleteModelLinks">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3428-3470" title="Go to source code">deleteModelLinks</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#4139-4188" title="Go to source code">deleteModelLinks</a>( )</code>
 
 			<div class="description short">
-				
+				<p>delete all the present links to other models.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>delete all the present links to other models.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2634,25 +3648,33 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_resetFields">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3472-3493" title="Go to source code">resetFields</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#4190-4218" title="Go to source code">resetFields</a>( )</code>
 
 			<div class="description short">
-				
+				<p>reset all the fields to their init values.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>reset all the fields to their init values.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2663,25 +3685,38 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_updateItemsLookupCache">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3495-3562" title="Go to source code">updateItemsLookupCache</a>( <span> <var>$item</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#4220-4294" title="Go to source code">updateItemsLookupCache</a>( <span>object <var>$item</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>updates the items lookup cache with a new item.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>updates the items lookup cache with a new item.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$item</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2692,25 +3727,38 @@
 
 			<td class="attributes"><code>
 				 public static
-				
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getModelName">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3564-3573" title="Go to source code">getModelName</a>( <span> <var>$short</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#4296-4312" title="Go to source code">getModelName</a>( <span>string <var>$short</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the name of this model</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the name of this model</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$short</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2721,25 +3769,33 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___toString">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3575-3604" title="Go to source code">__toString</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#4314-4350" title="Go to source code">__toString</a>( )</code>
 
 			<div class="description short">
-				
+				<p>if model is called in a string-context, returns an unique identifier.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>if model is called in a string-context, returns an unique identifier.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2750,25 +3806,40 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				array|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getModelLinkedList">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3606-3667" title="Go to source code">getModelLinkedList</a>( <span> <var>$sorted</var> = <span class="php-keyword1">false</span></span>, <span> <var>$unique</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#4352-4421" title="Go to source code">getModelLinkedList</a>( <span>boolean <var>$sorted</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$unique</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
-				
+				<p>return all the links this model has.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>return all the links this model has.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$sorted</var></dt>
+						<dd></dd>
+						<dt><var>$unique</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						array|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2779,25 +3850,40 @@
 
 			<td class="attributes"><code>
 				 protected 
-				
+				array|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getModelLinkTarget">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3669-3732" title="Go to source code">getModelLinkTarget</a>( <span> <var>$link</var></span>, <span> <var>$value</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#4423-4494" title="Go to source code">getModelLinkTarget</a>( <span>string <var>$link</var></span>, <span>string <var>$value</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>returns the link target items.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the link target items.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$link</var></dt>
+						<dd></dd>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						array|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2808,25 +3894,33 @@
 
 			<td class="attributes"><code>
 				final public static
-				
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasModelItemsModel">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3734-3751" title="Go to source code">hasModelItemsModel</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#4496-4520" title="Go to source code">hasModelItemsModel</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns true if this model has a model defined for its items.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if this model has a model defined for its items.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2837,25 +3931,33 @@
 
 			<td class="attributes"><code>
 				final public static
-				
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getModelItemsModel">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3753-3763" title="Go to source code">getModelItemsModel</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#4522-4539" title="Go to source code">getModelItemsModel</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the models items model (= type of item).</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the models items model (= type of item).</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2866,25 +3968,33 @@
 
 			<td class="attributes"><code>
 				final public static
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasModelFriendlyName">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3765-3778" title="Go to source code">hasModelFriendlyName</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#4541-4561" title="Go to source code">hasModelFriendlyName</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns true if this model has a friendly name configured.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true if this model has a friendly name configured.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2895,25 +4005,33 @@
 
 			<td class="attributes"><code>
 				final public static
-				
+				string|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getModelFriendlyName">#</a>
-			<code><a href="source-class-Thallium.Models.DefaultModel.html#3780-3790" title="Go to source code">getModelFriendlyName</a>( )</code>
+			<code><a href="source-class-Thallium.Models.DefaultModel.html#4563-4580" title="Go to source code">getModelFriendlyName</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the friendly name of this model, if it has been configured.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the friendly name of this model, if it has been configured.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						string|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -2939,18 +4057,18 @@
 		<tr data-order="model_table_name" id="$model_table_name">
 			<td class="attributes"><code>
 				protected static 
-				
+				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#26" title="Go to source code"><var>$model_table_name</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#38-39" title="Go to source code"><var>$model_table_name</var></a>
 
 				<div class="description short">
-					
+					<p>$model_table_name</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$model_table_name</p>
 
 				</div>
 			</td>
@@ -2964,18 +4082,18 @@
 		<tr data-order="model_column_prefix" id="$model_column_prefix">
 			<td class="attributes"><code>
 				protected static 
-				
+				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#27" title="Go to source code"><var>$model_column_prefix</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#41-42" title="Go to source code"><var>$model_column_prefix</var></a>
 
 				<div class="description short">
-					
+					<p>$model_column_prefix</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$model_column_prefix</p>
 
 				</div>
 			</td>
@@ -2993,14 +4111,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#28" title="Go to source code"><var>$model_fields</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#44-45" title="Go to source code"><var>$model_fields</var></a>
 
 				<div class="description short">
-					
+					<p>$model_fields</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$model_fields</p>
 
 				</div>
 			</td>
@@ -3018,14 +4136,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#29" title="Go to source code"><var>$model_fields_index</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#47-48" title="Go to source code"><var>$model_fields_index</var></a>
 
 				<div class="description short">
-					
+					<p>$model_fields_index</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$model_fields_index</p>
 
 				</div>
 			</td>
@@ -3043,14 +4161,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#30" title="Go to source code"><var>$model_has_items</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#50-51" title="Go to source code"><var>$model_has_items</var></a>
 
 				<div class="description short">
-					
+					<p>$model_has_items</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$model_has_items</p>
 
 				</div>
 			</td>
@@ -3064,18 +4182,18 @@
 		<tr data-order="model_items_model" id="$model_items_model">
 			<td class="attributes"><code>
 				protected static 
-				
+				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#31" title="Go to source code"><var>$model_items_model</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#53-54" title="Go to source code"><var>$model_items_model</var></a>
 
 				<div class="description short">
-					
+					<p>$model_items_model</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$model_items_model</p>
 
 				</div>
 			</td>
@@ -3093,14 +4211,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#32" title="Go to source code"><var>$model_links</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#56-57" title="Go to source code"><var>$model_links</var></a>
 
 				<div class="description short">
-					
+					<p>$model_links</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$model_links</p>
 
 				</div>
 			</td>
@@ -3118,14 +4236,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#33" title="Go to source code"><var>$model_bulk_load_limit</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#59-60" title="Go to source code"><var>$model_bulk_load_limit</var></a>
 
 				<div class="description short">
-					
+					<p>$model_bulk_load_limit</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$model_bulk_load_limit</p>
 
 				</div>
 			</td>
@@ -3139,18 +4257,18 @@
 		<tr data-order="model_friendly_name" id="$model_friendly_name">
 			<td class="attributes"><code>
 				protected static 
-				
+				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#34" title="Go to source code"><var>$model_friendly_name</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#62-63" title="Go to source code"><var>$model_friendly_name</var></a>
 
 				<div class="description short">
-					
+					<p>$model_friendly_name</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$model_friendly_name</p>
 
 				</div>
 			</td>
@@ -3168,14 +4286,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#35" title="Go to source code"><var>$model_load_by</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#65-66" title="Go to source code"><var>$model_load_by</var></a>
 
 				<div class="description short">
-					
+					<p>$model_load_by</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$model_load_by</p>
 
 				</div>
 			</td>
@@ -3193,14 +4311,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#36" title="Go to source code"><var>$model_sort_order</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#68-69" title="Go to source code"><var>$model_sort_order</var></a>
 
 				<div class="description short">
-					
+					<p>$model_sort_order</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$model_sort_order</p>
 
 				</div>
 			</td>
@@ -3218,14 +4336,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#37" title="Go to source code"><var>$model_items</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#71-72" title="Go to source code"><var>$model_items</var></a>
 
 				<div class="description short">
-					
+					<p>$model_items</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$model_items</p>
 
 				</div>
 			</td>
@@ -3243,14 +4361,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#38" title="Go to source code"><var>$model_items_lookup_index</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#74-75" title="Go to source code"><var>$model_items_lookup_index</var></a>
 
 				<div class="description short">
-					
+					<p>$model_items_lookup_index</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$model_items_lookup_index</p>
 
 				</div>
 			</td>
@@ -3268,14 +4386,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#39" title="Go to source code"><var>$model_permit_rpc_updates</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#77-78" title="Go to source code"><var>$model_permit_rpc_updates</var></a>
 
 				<div class="description short">
-					
+					<p>$model_permit_rpc_updates</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$model_permit_rpc_updates</p>
 
 				</div>
 			</td>
@@ -3293,14 +4411,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#40" title="Go to source code"><var>$model_rpc_allowed_fields</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#80-81" title="Go to source code"><var>$model_rpc_allowed_fields</var></a>
 
 				<div class="description short">
-					
+					<p>$model_rpc_allowed_fields</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$model_rpc_allowed_fields</p>
 
 				</div>
 			</td>
@@ -3318,14 +4436,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#41" title="Go to source code"><var>$model_rpc_allowed_actions</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#83-84" title="Go to source code"><var>$model_rpc_allowed_actions</var></a>
 
 				<div class="description short">
-					
+					<p>$model_rpc_allowed_actions</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$model_rpc_allowed_actions</p>
 
 				</div>
 			</td>
@@ -3343,14 +4461,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#42" title="Go to source code"><var>$model_virtual_fields</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#86-87" title="Go to source code"><var>$model_virtual_fields</var></a>
 
 				<div class="description short">
-					
+					<p>$model_virtual_fields</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$model_virtual_fields</p>
 
 				</div>
 			</td>
@@ -3368,14 +4486,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#43" title="Go to source code"><var>$model_init_values</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#89-90" title="Go to source code"><var>$model_init_values</var></a>
 
 				<div class="description short">
-					
+					<p>$model_init_values</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$model_init_values</p>
 
 				</div>
 			</td>
@@ -3393,14 +4511,14 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#44" title="Go to source code"><var>$model_values</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#92-93" title="Go to source code"><var>$model_values</var></a>
 
 				<div class="description short">
-					
+					<p>$model_values</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$model_values</p>
 
 				</div>
 			</td>
@@ -3414,18 +4532,18 @@
 		<tr data-order="id" id="$id">
 			<td class="attributes"><code>
 				protected  
-				
+				integer
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#45" title="Go to source code"><var>$id</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#95-96" title="Go to source code"><var>$id</var></a>
 
 				<div class="description short">
-					
+					<p>$id</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$id</p>
 
 				</div>
 			</td>
@@ -3439,18 +4557,18 @@
 		<tr data-order="child_names" id="$child_names">
 			<td class="attributes"><code>
 				protected  
-				
+				array
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#47" title="Go to source code"><var>$child_names</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#98-99" title="Go to source code"><var>$child_names</var></a>
 
 				<div class="description short">
-					
+					<p>$child_names</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$child_names</p>
 
 				</div>
 			</td>
@@ -3464,18 +4582,18 @@
 		<tr data-order="ignore_child_on_clone" id="$ignore_child_on_clone">
 			<td class="attributes"><code>
 				protected  
-				
+				boolean
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.DefaultModel.html#48" title="Go to source code"><var>$ignore_child_on_clone</var></a>
+					<a href="source-class-Thallium.Models.DefaultModel.html#101-102" title="Go to source code"><var>$ignore_child_on_clone</var></a>
 
 				<div class="description short">
-					
+					<p>$ignore_child_on_clone</p>
 				</div>
 
 				<div class="description detailed hidden">
-					
+					<p>$ignore_child_on_clone</p>
 
 				</div>
 			</td>
