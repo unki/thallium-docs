@@ -130,10 +130,7 @@
 
 
 	<div class="description">
-	<p>DefaultModel is an abstract class that is used by all
-the other Thallium Models.</p>
-
-<p>It declares some common methods, properties and constants.</p>
+	<p>Represents a single audit log entry.</p>
 	</div>
 
 	<dl class="tree well">
@@ -168,7 +165,7 @@ the other Thallium Models.</p>
 		
 		
 		<b>Namespace:</b> <a href="namespace-Thallium.html">Thallium</a>\<a href="namespace-Thallium.Models.html">Models</a><br>
-		<b>Package:</b> Thallium\Models\DefaultModel\Models<br>
+		<b>Package:</b> Thallium\Models\AuditEntryModel\Models<br>
 
 				<b>Copyright:</b>
 				2015-2016 Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
@@ -176,7 +173,7 @@ the other Thallium Models.</p>
 				<a href="AGPL3">AGPL3</a><br>
 				<b>Author:</b>
 				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
-			<b>Located at</b> <a href="source-class-Thallium.Models.AuditEntryModel.html#22-239" title="Go to source code">vendor/Thallium/Models/AuditEntryModel.php</a>
+			<b>Located at</b> <a href="source-class-Thallium.Models.AuditEntryModel.html#22-352" title="Go to source code">vendor/Thallium/Models/AuditEntryModel.php</a>
 		<br>
 	</div>
 
@@ -189,25 +186,33 @@ the other Thallium Models.</p>
 
 			<td class="attributes"><code>
 				 protected 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_preSave">#</a>
-			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#50-63" title="Go to source code">preSave</a>( )</code>
+			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#67-87" title="Go to source code">preSave</a>( )</code>
 
 			<div class="description short">
-				
+				<p>automatically set the time-field to the current time on saving.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>automatically set the time-field to the current time on saving.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -218,25 +223,33 @@ the other Thallium Models.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasMessage">#</a>
-			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#65-72" title="Go to source code">hasMessage</a>( )</code>
+			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#89-103" title="Go to source code">hasMessage</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns true, if the message field has a value set.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true, if the message field has a value set.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -247,25 +260,33 @@ the other Thallium Models.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getMessage">#</a>
-			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#74-87" title="Go to source code">getMessage</a>( )</code>
+			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#105-130" title="Go to source code">getMessage</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the value of the message field.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the value of the message field.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -276,25 +297,38 @@ the other Thallium Models.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setMessage">#</a>
-			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#89-107" title="Go to source code">setMessage</a>( <span> <var>$message</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#132-157" title="Go to source code">setMessage</a>( <span>string <var>$message</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>stores a value into the message field.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>stores a value into the message field.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$message</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -305,25 +339,33 @@ the other Thallium Models.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasEntryType">#</a>
-			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#109-116" title="Go to source code">hasEntryType</a>( )</code>
+			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#159-173" title="Go to source code">hasEntryType</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns true, if the type field has a value set.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true, if the type field has a value set.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -334,25 +376,33 @@ the other Thallium Models.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getEntryType">#</a>
-			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#118-131" title="Go to source code">getEntryType</a>( )</code>
+			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#175-195" title="Go to source code">getEntryType</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the value of the type field.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the value of the type field.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -363,25 +413,38 @@ the other Thallium Models.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setEntryType">#</a>
-			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#133-151" title="Go to source code">setEntryType</a>( <span> <var>$entry_type</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#197-222" title="Go to source code">setEntryType</a>( <span>string <var>$entry_type</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>stores a value into the type field.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>stores a value into the type field.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$entry_type</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -392,25 +455,33 @@ the other Thallium Models.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasScene">#</a>
-			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#153-160" title="Go to source code">hasScene</a>( )</code>
+			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#224-238" title="Go to source code">hasScene</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns true, if the scene field has a value set.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true, if the scene field has a value set.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -421,25 +492,33 @@ the other Thallium Models.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getScene">#</a>
-			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#162-175" title="Go to source code">getScene</a>( )</code>
+			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#240-260" title="Go to source code">getScene</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the value of the scene field.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the value of the scene field.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -450,25 +529,38 @@ the other Thallium Models.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setScene">#</a>
-			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#177-194" title="Go to source code">setScene</a>( <span> <var>$scene</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#262-286" title="Go to source code">setScene</a>( <span>string <var>$scene</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>stores a value into the scene field.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>stores a value into the scene field.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$scene</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -479,25 +571,33 @@ the other Thallium Models.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasEntryGuid">#</a>
-			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#196-203" title="Go to source code">hasEntryGuid</a>( )</code>
+			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#288-302" title="Go to source code">hasEntryGuid</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns true, if the object_guid field has a value set.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns true, if the object_guid field has a value set.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -508,25 +608,33 @@ the other Thallium Models.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getEntryGuid">#</a>
-			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#205-218" title="Go to source code">getEntryGuid</a>( )</code>
+			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#304-324" title="Go to source code">getEntryGuid</a>( )</code>
 
 			<div class="description short">
-				
+				<p>returns the value of the object_guid field.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>returns the value of the object_guid field.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -537,25 +645,38 @@ the other Thallium Models.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setEntryGuid">#</a>
-			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#220-238" title="Go to source code">setEntryGuid</a>( <span> <var>$guid</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.AuditEntryModel.html#326-351" title="Go to source code">setEntryGuid</a>( <span>string <var>$guid</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>stores a value into the object_guid field.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>stores a value into the object_guid field.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$guid</var></dt>
+						<dd>$message</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
+					</div>
 
 
 
@@ -671,6 +792,36 @@ the other Thallium Models.</p>
 
 
 
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Constants summary</h2></div>
+			<table class="summary table table-bordered table-striped constants" id="constants">
+			<tr data-order="MAX_MSG_LENGTH" id="MAX_MSG_LENGTH">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-Thallium.Models.AuditEntryModel.html#64-65" title="Go to source code"><b>MAX_MSG_LENGTH</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#MAX_MSG_LENGTH" class="anchor">#</a>
+						<code><span class="php-num">8192</span></code>
+					</div>
+				</td>
+			</tr>
+			</table>
+		</div>
+
 
 
 
@@ -684,7 +835,7 @@ the other Thallium Models.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.AuditEntryModel.html#24" title="Go to source code"><var>$model_table_name</var></a>
+					<a href="source-class-Thallium.Models.AuditEntryModel.html#33-34" title="Go to source code"><var>$model_table_name</var></a>
 
 				<div class="description short">
 					<p>$model_table_name</p>
@@ -709,7 +860,7 @@ the other Thallium Models.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.AuditEntryModel.html#25" title="Go to source code"><var>$model_column_prefix</var></a>
+					<a href="source-class-Thallium.Models.AuditEntryModel.html#36-37" title="Go to source code"><var>$model_column_prefix</var></a>
 
 				<div class="description short">
 					<p>$model_column_prefix</p>
@@ -734,7 +885,7 @@ the other Thallium Models.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.AuditEntryModel.html#26-48" title="Go to source code"><var>$model_fields</var></a>
+					<a href="source-class-Thallium.Models.AuditEntryModel.html#39-62" title="Go to source code"><var>$model_fields</var></a>
 
 				<div class="description short">
 					<p>$model_fields</p>

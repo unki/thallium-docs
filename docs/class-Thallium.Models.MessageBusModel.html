@@ -130,10 +130,8 @@
 
 
 	<div class="description">
-	<p>DefaultModel is an abstract class that is used by all
-the other Thallium Models.</p>
-
-<p>It declares some common methods, properties and constants.</p>
+	<p>MessageBusModel represents the internal message queue.
+Messages are the represented by MessageModels.</p>
 	</div>
 
 	<dl class="tree well">
@@ -168,7 +166,7 @@ the other Thallium Models.</p>
 		
 		
 		<b>Namespace:</b> <a href="namespace-Thallium.html">Thallium</a>\<a href="namespace-Thallium.Models.html">Models</a><br>
-		<b>Package:</b> Thallium\Models\DefaultModel\Models<br>
+		<b>Package:</b> Thallium\Models\MessageBusModel\Models<br>
 
 				<b>Copyright:</b>
 				2015-2016 Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
@@ -176,7 +174,7 @@ the other Thallium Models.</p>
 				<a href="AGPL3">AGPL3</a><br>
 				<b>Author:</b>
 				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
-			<b>Located at</b> <a href="source-class-Thallium.Models.MessageBusModel.html#22-180" title="Go to source code">vendor/Thallium/Models/MessageBusModel.php</a>
+			<b>Located at</b> <a href="source-class-Thallium.Models.MessageBusModel.html#22-259" title="Go to source code">vendor/Thallium/Models/MessageBusModel.php</a>
 		<br>
 	</div>
 
@@ -189,25 +187,38 @@ the other Thallium Models.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				array|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getMessagesForSession">#</a>
-			<code><a href="source-class-Thallium.Models.MessageBusModel.html#29-96" title="Go to source code">getMessagesForSession</a>( <span> <var>$session_id</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.MessageBusModel.html#46-128" title="Go to source code">getMessagesForSession</a>( <span>string <var>$session_id</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>get messages associated with a specific session id</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>get messages associated with a specific session id</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$session_id</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						array|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						Thallium\Controller\ExceptionController
+					</div>
 
 
 
@@ -218,25 +229,33 @@ the other Thallium Models.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				array|boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getServerRequests">#</a>
-			<code><a href="source-class-Thallium.Models.MessageBusModel.html#98-148" title="Go to source code">getServerRequests</a>( )</code>
+			<code><a href="source-class-Thallium.Models.MessageBusModel.html#130-201" title="Go to source code">getServerRequests</a>( )</code>
 
 			<div class="description short">
-				
+				<p>get messages that are designated to the framework.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>get messages that are designated to the framework.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						array|boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						Thallium\Controller\ExceptionController
+					</div>
 
 
 
@@ -247,25 +266,38 @@ the other Thallium Models.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_deleteExpiredMessages">#</a>
-			<code><a href="source-class-Thallium.Models.MessageBusModel.html#150-179" title="Go to source code">deleteExpiredMessages</a>( <span> <var>$timeout</var></span> )</code>
+			<code><a href="source-class-Thallium.Models.MessageBusModel.html#203-258" title="Go to source code">deleteExpiredMessages</a>( <span>integer <var>$timeout</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>remove expired messages from message bus queue.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>remove expired messages from message bus queue.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$timeout</var></dt>
+						<dd></dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
+					<h4>Throws</h4>
+					<div class="list">
+						Thallium\Controller\ExceptionController
+					</div>
 
 
 
@@ -394,7 +426,7 @@ the other Thallium Models.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.MessageBusModel.html#24" title="Go to source code"><var>$model_table_name</var></a>
+					<a href="source-class-Thallium.Models.MessageBusModel.html#34-35" title="Go to source code"><var>$model_table_name</var></a>
 
 				<div class="description short">
 					<p>$model_table_name</p>
@@ -419,7 +451,7 @@ the other Thallium Models.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.MessageBusModel.html#25" title="Go to source code"><var>$model_column_prefix</var></a>
+					<a href="source-class-Thallium.Models.MessageBusModel.html#37-38" title="Go to source code"><var>$model_column_prefix</var></a>
 
 				<div class="description short">
 					<p>$model_column_prefix</p>
@@ -444,7 +476,7 @@ the other Thallium Models.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.MessageBusModel.html#26" title="Go to source code"><var>$model_has_items</var></a>
+					<a href="source-class-Thallium.Models.MessageBusModel.html#40-41" title="Go to source code"><var>$model_has_items</var></a>
 
 				<div class="description short">
 					<p>$model_has_items</p>
@@ -469,7 +501,7 @@ the other Thallium Models.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Models.MessageBusModel.html#27" title="Go to source code"><var>$model_items_model</var></a>
+					<a href="source-class-Thallium.Models.MessageBusModel.html#43-44" title="Go to source code"><var>$model_items_model</var></a>
 
 				<div class="description short">
 					<p>$model_items_model</p>
