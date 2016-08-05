@@ -458,8 +458,8 @@
 </span><span id="276" class="l">            <span class="php-var">$current_items_limit</span> = <span class="php-var">$items_limit</span>;
 </span><span id="277" class="l">        }
 </span><span id="278" class="l">
-</span><span id="279" class="l">        <span class="php-keyword1">if</span> ((<span class="php-var">$template_name</span> = <span class="php-keyword1">static</span>::getListTemplate()) === <span class="php-keyword1">false</span>) {
-</span><span id="280" class="l">            <span class="php-keyword1">static</span>::raiseError(__CLASS__ .<span class="php-quote">'::getListTemplate() returned false!'</span>);
+</span><span id="279" class="l">        <span class="php-keyword1">if</span> ((<span class="php-var">$template_name</span> = <span class="php-keyword1">static</span>::getListTemplateName()) === <span class="php-keyword1">false</span>) {
+</span><span id="280" class="l">            <span class="php-keyword1">static</span>::raiseError(__CLASS__ .<span class="php-quote">'::getListTemplateName() returned false!'</span>);
 </span><span id="281" class="l">            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 </span><span id="282" class="l">        }
 </span><span id="283" class="l">
