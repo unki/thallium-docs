@@ -239,7 +239,7 @@
 </span><span id="57" class="l">        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$db</span>) ||
 </span><span id="58" class="l">            <span class="php-keyword1">empty</span>(<span class="php-var">$db</span>) ||
 </span><span id="59" class="l">            !<span class="php-keyword2">is_object</span>(<span class="php-var">$db</span>) ||
-</span><span id="60" class="l">            !<span class="php-keyword2">is_a</span>(<span class="php-var">$db</span>, <span class="php-quote">'Thallium\Controller\DatabaseController'</span>)
+</span><span id="60" class="l">            !<span class="php-keyword2">is_a</span>(<span class="php-var">$db</span>, <span class="php-quote">'Thallium\Controllers\DatabaseController'</span>)
 </span><span id="61" class="l">        ) {
 </span><span id="62" class="l">            <span class="php-keyword1">static</span>::raiseError(__METHOD__ .<span class="php-quote">'(), it looks like DatabaseController is not available!'</span>, <span class="php-keyword1">true</span>);
 </span><span id="63" class="l">            <span class="php-keyword1">return</span>;
@@ -248,7 +248,7 @@
 </span><span id="66" class="l">        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$config</span>) ||
 </span><span id="67" class="l">            <span class="php-keyword1">empty</span>(<span class="php-var">$config</span>) ||
 </span><span id="68" class="l">            !<span class="php-keyword2">is_object</span>(<span class="php-var">$config</span>) ||
-</span><span id="69" class="l">            !<span class="php-keyword2">is_a</span>(<span class="php-var">$config</span>, <span class="php-quote">'Thallium\Controller\ConfigController'</span>)
+</span><span id="69" class="l">            !<span class="php-keyword2">is_a</span>(<span class="php-var">$config</span>, <span class="php-quote">'Thallium\Controllers\ConfigController'</span>)
 </span><span id="70" class="l">        ) {
 </span><span id="71" class="l">            <span class="php-keyword1">static</span>::raiseError(__METHOD__ .<span class="php-quote">'(), it looks like ConfigController is not available!'</span>, <span class="php-keyword1">true</span>);
 </span><span id="72" class="l">            <span class="php-keyword1">return</span>;
@@ -306,50 +306,50 @@
 </span><span id="124" class="l">        }
 </span><span id="125" class="l">
 </span><span id="126" class="l">        <span class="php-keyword1">if</span> (!<span class="php-keyword1">empty</span>(<span class="php-var">$this</span>-&gt;schema_version_before)) {
-</span><span id="127" class="l">            <span class="php-var">$this</span>-&gt;write(<span class="php-keyword2">sprintf</span>(
-</span><span id="128" class="l">                <span class="php-quote">'Application database schema version before upgrade: %s&lt;br /&gt;\n'</span>,
+</span><span id="127" class="l">            <span class="php-keyword2">printf</span>(
+</span><span id="128" class="l">                <span class="php-quote">'Application database schema version before upgrade: %s&lt;br /&gt;'</span>,
 </span><span id="129" class="l">                <span class="php-var">$this</span>-&gt;schema_version_before
-</span><span id="130" class="l">            ));
+</span><span id="130" class="l">            );
 </span><span id="131" class="l">        }
 </span><span id="132" class="l">
-</span><span id="133" class="l">        <span class="php-var">$this</span>-&gt;write(<span class="php-keyword2">sprintf</span>(
-</span><span id="134" class="l">            <span class="php-quote">'Application software supported schema version: %s&lt;br /&gt;\n'</span>,
+</span><span id="133" class="l">        <span class="php-keyword2">printf</span>(
+</span><span id="134" class="l">            <span class="php-quote">'Application software supported schema version: %s&lt;br /&gt;'</span>,
 </span><span id="135" class="l">            <span class="php-var">$db</span>-&gt;getApplicationSoftwareSchemaVersion()
-</span><span id="136" class="l">        ));
+</span><span id="136" class="l">        );
 </span><span id="137" class="l">
-</span><span id="138" class="l">        <span class="php-var">$this</span>-&gt;write(<span class="php-keyword2">sprintf</span>(
-</span><span id="139" class="l">            <span class="php-quote">'Application database schema version after upgrade: %s&lt;br /&gt;\n'</span>,
+</span><span id="138" class="l">        <span class="php-keyword2">printf</span>(
+</span><span id="139" class="l">            <span class="php-quote">'Application database schema version after upgrade: %s&lt;br /&gt;'</span>,
 </span><span id="140" class="l">            <span class="php-var">$db</span>-&gt;getApplicationDatabaseSchemaVersion()
-</span><span id="141" class="l">        ));
+</span><span id="141" class="l">        );
 </span><span id="142" class="l">
-</span><span id="143" class="l">        <span class="php-var">$this</span>-&gt;write(<span class="php-quote">'&lt;br /&gt;&lt;br /&gt;'</span>);
+</span><span id="143" class="l">        <span class="php-keyword1">print</span> <span class="php-quote">'&lt;br /&gt;&lt;br /&gt;'</span>;
 </span><span id="144" class="l">
 </span><span id="145" class="l">        <span class="php-keyword1">if</span> (!<span class="php-keyword1">empty</span>(<span class="php-var">$this</span>-&gt;framework_schema_version_before)) {
-</span><span id="146" class="l">            <span class="php-var">$this</span>-&gt;write(<span class="php-keyword2">sprintf</span>(
-</span><span id="147" class="l">                <span class="php-quote">'Framework database schema version before upgrade: %s&lt;br /&gt;\n'</span>,
+</span><span id="146" class="l">            <span class="php-keyword2">printf</span>(
+</span><span id="147" class="l">                <span class="php-quote">'Framework database schema version before upgrade: %s&lt;br /&gt;'</span>,
 </span><span id="148" class="l">                <span class="php-var">$this</span>-&gt;framework_schema_version_before
-</span><span id="149" class="l">            ));
+</span><span id="149" class="l">            );
 </span><span id="150" class="l">        }
 </span><span id="151" class="l">
-</span><span id="152" class="l">        <span class="php-var">$this</span>-&gt;write(<span class="php-keyword2">sprintf</span>(
-</span><span id="153" class="l">            <span class="php-quote">'Framework software supported schema version: %s&lt;br /&gt;\n'</span>,
+</span><span id="152" class="l">        <span class="php-keyword2">printf</span>(
+</span><span id="153" class="l">            <span class="php-quote">'Framework software supported schema version: %s&lt;br /&gt;'</span>,
 </span><span id="154" class="l">            <span class="php-var">$db</span>-&gt;getFrameworkSoftwareSchemaVersion()
-</span><span id="155" class="l">        ));
+</span><span id="155" class="l">        );
 </span><span id="156" class="l">
-</span><span id="157" class="l">        <span class="php-var">$this</span>-&gt;write(<span class="php-keyword2">sprintf</span>(
-</span><span id="158" class="l">            <span class="php-quote">'Framework database schema version after upgrade: %s&lt;br /&gt;\n'</span>,
+</span><span id="157" class="l">        <span class="php-keyword2">printf</span>(
+</span><span id="158" class="l">            <span class="php-quote">'Framework database schema version after upgrade: %s&lt;br /&gt;'</span>,
 </span><span id="159" class="l">            <span class="php-var">$db</span>-&gt;getFrameworkDatabaseSchemaVersion()
-</span><span id="160" class="l">        ));
+</span><span id="160" class="l">        );
 </span><span id="161" class="l">
 </span><span id="162" class="l">        <span class="php-keyword1">if</span> ((<span class="php-var">$base_path</span> = <span class="php-var">$config</span>-&gt;getWebPath()) === <span class="php-keyword1">true</span>) {
 </span><span id="163" class="l">            <span class="php-keyword1">static</span>::raiseError(<span class="php-keyword2">get_class</span>(<span class="php-var">$config</span>) .<span class="php-quote">'&quot;::getWebPath() returned false!'</span>);
 </span><span id="164" class="l">            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 </span><span id="165" class="l">        }
 </span><span id="166" class="l">
-</span><span id="167" class="l">        <span class="php-var">$this</span>-&gt;write(<span class="php-keyword2">sprintf</span>(
-</span><span id="168" class="l">            <span class="php-quote">'&quot;&lt;a href=&quot;%s&quot;&gt;Return to application&lt;/a&gt;&lt;br /&gt;\n'</span>,
+</span><span id="167" class="l">        <span class="php-keyword2">printf</span>(
+</span><span id="168" class="l">            <span class="php-quote">'&lt;br /&gt;&lt;a href=&quot;%s&quot;&gt;Return to application&lt;/a&gt;&lt;br /&gt;'</span>,
 </span><span id="169" class="l">            <span class="php-var">$base_path</span>
-</span><span id="170" class="l">        ));
+</span><span id="170" class="l">        );
 </span><span id="171" class="l">
 </span><span id="172" class="l">        <span class="php-keyword1">return</span> <span class="php-keyword1">true</span>;
 </span><span id="173" class="l">    }

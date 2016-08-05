@@ -670,7 +670,7 @@
 </span><span id="488" class="l">
 </span><span id="489" class="l">        <span class="php-keyword1">if</span> ((<span class="php-var">$sql</span> = <span class="php-var">$db</span>-&gt;buildQuery(
 </span><span id="490" class="l">            <span class="php-quote">&quot;SELECT&quot;</span>,
-</span><span id="491" class="l">            self::getTableName(),
+</span><span id="491" class="l">            <span class="php-keyword1">static</span>::getTableName(),
 </span><span id="492" class="l">            <span class="php-var">$sql_query_columns</span>,
 </span><span id="493" class="l">            <span class="php-var">$sql_query_data</span>,
 </span><span id="494" class="l">            <span class="php-var">$bind_params</span>,
@@ -3669,7 +3669,7 @@
 </span></span><span id="3487" class="l"><span class="php-comment">     * @return string
 </span></span><span id="3488" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController
 </span></span><span id="3489" class="l"><span class="php-comment">     */</span>
-</span><span id="3490" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getTableName()
+</span><span id="3490" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> getTableName()
 </span><span id="3491" class="l">    {
 </span><span id="3492" class="l">        <span class="php-keyword1">return</span> <span class="php-keyword2">sprintf</span>(<span class="php-quote">&quot;TABLEPREFIX%s&quot;</span>, <span class="php-keyword1">static</span>::<span class="php-var">$model_table_name</span>);
 </span><span id="3493" class="l">    }
@@ -4235,7 +4235,7 @@
 </span><span id="4053" class="l">
 </span><span id="4054" class="l">        <span class="php-keyword1">if</span> ((<span class="php-var">$sql</span> = <span class="php-var">$db</span>-&gt;buildQuery(
 </span><span id="4055" class="l">            <span class="php-quote">&quot;SELECT&quot;</span>,
-</span><span id="4056" class="l">            self::getTableName(),
+</span><span id="4056" class="l">            <span class="php-keyword1">static</span>::getTableName(),
 </span><span id="4057" class="l">            <span class="php-var">$query_columns</span>,
 </span><span id="4058" class="l">            <span class="php-var">$query_where</span>,
 </span><span id="4059" class="l">            <span class="php-var">$bind_params</span>

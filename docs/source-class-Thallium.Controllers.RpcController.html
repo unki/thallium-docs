@@ -219,7 +219,7 @@
 </span></span><span id="37" class="l"><span class="php-comment">     *
 </span></span><span id="38" class="l"><span class="php-comment">     * @param none
 </span></span><span id="39" class="l"><span class="php-comment">     * @return void
-</span></span><span id="40" class="l"><span class="php-comment">     * @throws \Thallium\Controller\ExceptionController
+</span></span><span id="40" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController
 </span></span><span id="41" class="l"><span class="php-comment">     */</span>
 </span><span id="42" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct()
 </span><span id="43" class="l">    {
@@ -228,7 +228,7 @@
 </span><span id="46" class="l">        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$router</span>) ||
 </span><span id="47" class="l">            <span class="php-keyword1">empty</span>(<span class="php-var">$router</span>) ||
 </span><span id="48" class="l">            !<span class="php-keyword2">is_object</span>(<span class="php-var">$router</span>) ||
-</span><span id="49" class="l">            !<span class="php-keyword2">is_a</span>(<span class="php-var">$router</span>, <span class="php-quote">'Thallium\Controller\HttpRouterController'</span>)
+</span><span id="49" class="l">            !<span class="php-keyword2">is_a</span>(<span class="php-var">$router</span>, <span class="php-quote">'Thallium\Controllers\HttpRouterController'</span>)
 </span><span id="50" class="l">        ) {
 </span><span id="51" class="l">            <span class="php-keyword1">static</span>::raiseError(__METHOD__ .<span class="php-quote">'(), HttpRouterController not loaded!'</span>, <span class="php-keyword1">true</span>);
 </span><span id="52" class="l">            <span class="php-keyword1">return</span>;
@@ -252,7 +252,7 @@
 </span></span><span id="70" class="l"><span class="php-comment">     *
 </span></span><span id="71" class="l"><span class="php-comment">     * @param none
 </span></span><span id="72" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="73" class="l"><span class="php-comment">     * @throws \Thallium\Controller\ExceptionController
+</span></span><span id="73" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController
 </span></span><span id="74" class="l"><span class="php-comment">     */</span>
 </span><span id="75" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> perform()
 </span><span id="76" class="l">    {
@@ -328,7 +328,7 @@
 </span></span><span id="146" class="l"><span class="php-comment">     *
 </span></span><span id="147" class="l"><span class="php-comment">     * @param none
 </span></span><span id="148" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="149" class="l"><span class="php-comment">     * @throws \Thallium\Controller\ExceptionController
+</span></span><span id="149" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController
 </span></span><span id="150" class="l"><span class="php-comment">     */</span>
 </span><span id="151" class="l">    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> rpcIdle()
 </span><span id="152" class="l">    {
@@ -342,7 +342,7 @@
 </span></span><span id="160" class="l"><span class="php-comment">     *
 </span></span><span id="161" class="l"><span class="php-comment">     * @param none
 </span></span><span id="162" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="163" class="l"><span class="php-comment">     * @throws \Thallium\Controller\ExceptionController
+</span></span><span id="163" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController
 </span></span><span id="164" class="l"><span class="php-comment">     */</span>
 </span><span id="165" class="l">    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> rpcDelete()
 </span><span id="166" class="l">    {
@@ -439,7 +439,7 @@
 </span></span><span id="257" class="l"><span class="php-comment">     *
 </span></span><span id="258" class="l"><span class="php-comment">     * @param none
 </span></span><span id="259" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="260" class="l"><span class="php-comment">     * @throws \Thallium\Controller\ExceptionController
+</span></span><span id="260" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController
 </span></span><span id="261" class="l"><span class="php-comment">     */</span>
 </span><span id="262" class="l">    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> rpcGetContent()
 </span><span id="263" class="l">    {
@@ -486,7 +486,7 @@
 </span></span><span id="304" class="l"><span class="php-comment">     *
 </span></span><span id="305" class="l"><span class="php-comment">     * @param none
 </span></span><span id="306" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="307" class="l"><span class="php-comment">     * @throws \Thallium\Controller\ExceptionController
+</span></span><span id="307" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController
 </span></span><span id="308" class="l"><span class="php-comment">     */</span>
 </span><span id="309" class="l">    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> rpcFindPrevNextObject()
 </span><span id="310" class="l">    {
@@ -596,7 +596,7 @@
 </span></span><span id="414" class="l"><span class="php-comment">     *
 </span></span><span id="415" class="l"><span class="php-comment">     * @param none
 </span></span><span id="416" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="417" class="l"><span class="php-comment">     * @throws \Thallium\Controller\ExceptionController
+</span></span><span id="417" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController
 </span></span><span id="418" class="l"><span class="php-comment">     */</span>
 </span><span id="419" class="l">    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> rpcUpdate()
 </span><span id="420" class="l">    {
@@ -687,7 +687,7 @@
 </span></span><span id="505" class="l"><span class="php-comment">     *
 </span></span><span id="506" class="l"><span class="php-comment">     * @param none
 </span></span><span id="507" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="508" class="l"><span class="php-comment">     * @throws \Thallium\Controller\ExceptionController
+</span></span><span id="508" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController
 </span></span><span id="509" class="l"><span class="php-comment">     */</span>
 </span><span id="510" class="l">    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> rpcSubmitToMessageBus()
 </span><span id="511" class="l">    {
@@ -716,7 +716,7 @@
 </span></span><span id="534" class="l"><span class="php-comment">     *
 </span></span><span id="535" class="l"><span class="php-comment">     * @param none
 </span></span><span id="536" class="l"><span class="php-comment">     * @return bool
-</span></span><span id="537" class="l"><span class="php-comment">     * @throws \Thallium\Controller\ExceptionController
+</span></span><span id="537" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController
 </span></span><span id="538" class="l"><span class="php-comment">     */</span>
 </span><span id="539" class="l">    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> rpcRetrieveFromMessageBus()
 </span><span id="540" class="l">    {
@@ -742,7 +742,7 @@
 </span></span><span id="560" class="l"><span class="php-comment">     *
 </span></span><span id="561" class="l"><span class="php-comment">     * @param none
 </span></span><span id="562" class="l"><span class="php-comment">     * @return object
-</span></span><span id="563" class="l"><span class="php-comment">     * @throws \Thallium\Controller\ExceptionController
+</span></span><span id="563" class="l"><span class="php-comment">     * @throws \Thallium\Controllers\ExceptionController
 </span></span><span id="564" class="l"><span class="php-comment">     */</span>
 </span><span id="565" class="l">    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> rpcProcessMessages()
 </span><span id="566" class="l">    {
