@@ -209,7 +209,7 @@ the other Thallium Controllers.</p>
 				<a href="AGPL3">AGPL3</a><br>
 				<b>Author:</b>
 				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
-			<b>Located at</b> <a href="source-class-Thallium.Controllers.DefaultController.html#22-284" title="Go to source code">vendor/Thallium/Controllers/DefaultController.php</a>
+			<b>Located at</b> <a href="source-class-Thallium.Controllers.DefaultController.html#22-291" title="Go to source code">vendor/Thallium/Controllers/DefaultController.php</a>
 		<br>
 	</div>
 
@@ -352,7 +352,7 @@ message to the client via the MessageBusController.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_raiseError">#</a>
-			<code><a href="source-class-Thallium.Controllers.DefaultController.html#136-162" title="Go to source code">raiseError</a>( <span>string <var>$text</var></span>, <span>boolean <var>$stop_execution</var> = <span class="php-keyword1">false</span></span>, <span>callable|null <var>$catched_exception</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.DefaultController.html#136-170" title="Go to source code">raiseError</a>( <span>string <var>$text</var></span>, <span>boolean <var>$stop_execution</var> = <span class="php-keyword1">false</span></span>, <span>callable|null <var>$catched_exception</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				<p>methods raises an exception by throwing a ExceptionController exception.</p>
@@ -398,7 +398,7 @@ message to the client via the MessageBusController.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_write">#</a>
-			<code><a href="source-class-Thallium.Controllers.DefaultController.html#164-213" title="Go to source code">write</a>( <span>string <var>$logtext</var></span>, <span>integer <var>$loglevel</var> = LOG_INFO</span>, <span>boolean|null <var>$override_output</var> = <span class="php-keyword1">null</span></span>, <span>boolean|null <var>$no_newline</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.DefaultController.html#172-221" title="Go to source code">write</a>( <span>string <var>$logtext</var></span>, <span>integer <var>$loglevel</var> = LOG_INFO</span>, <span>boolean|null <var>$override_output</var> = <span class="php-keyword1">null</span></span>, <span>boolean|null <var>$no_newline</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				<p>this method provides a generic output method.</p>
@@ -449,7 +449,7 @@ message to the client via the MessageBusController.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isCmdline">#</a>
-			<code><a href="source-class-Thallium.Controllers.DefaultController.html#215-231" title="Go to source code">isCmdline</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.DefaultController.html#223-239" title="Go to source code">isCmdline</a>( )</code>
 
 			<div class="description short">
 				<p>this method detects if itself has been executed from within
@@ -481,14 +481,14 @@ the command line.</p>
 
 			<td class="attributes"><code>
 				 public 
-				boolean
+				integer
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getVerbosity">#</a>
-			<code><a href="source-class-Thallium.Controllers.DefaultController.html#233-244" title="Go to source code">getVerbosity</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.DefaultController.html#241-251" title="Go to source code">getVerbosity</a>( )</code>
 
 			<div class="description short">
 				<p>this method returns the current log verbosity.</p>
@@ -501,7 +501,7 @@ the command line.</p>
 
 					<h4>Returns</h4>
 					<div class="list">
-						boolean
+						integer
 					</div>
 
 					<h4>Throws</h4>
@@ -525,7 +525,7 @@ the command line.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_requireModel">#</a>
-			<code><a href="source-class-Thallium.Controllers.DefaultController.html#246-283" title="Go to source code">requireModel</a>( <span>object <var>$obj</var></span>, <span>string <var>$model</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.DefaultController.html#253-290" title="Go to source code">requireModel</a>( <span>object <var>$obj</var></span>, <span>string <var>$model</var></span> )</code>
 
 			<div class="description short">
 				<p>this method returns true if the provided object $obj is

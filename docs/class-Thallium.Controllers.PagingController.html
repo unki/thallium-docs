@@ -188,7 +188,7 @@ this data into pages so that long lists can be paged.</p>
 				<a href="AGPL3">AGPL3</a><br>
 				<b>Author:</b>
 				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
-			<b>Located at</b> <a href="source-class-Thallium.Controllers.PagingController.html#22-741" title="Go to source code">vendor/Thallium/Controllers/PagingController.php</a>
+			<b>Located at</b> <a href="source-class-Thallium.Controllers.PagingController.html#22-777" title="Go to source code">vendor/Thallium/Controllers/PagingController.php</a>
 		<br>
 	</div>
 
@@ -290,14 +290,16 @@ this data into pages so that long lists can be paged.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getPagingData">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#104-139" title="Go to source code">getPagingData</a>( <span>integer <var>$offset</var></span>, <span>integer <var>$limit</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#104-140" title="Go to source code">getPagingData</a>( <span>integer <var>$offset</var></span>, <span>integer|null <var>$limit</var></span> )</code>
 
 			<div class="description short">
-				<p>startup methods by which Thallium is actually starting to perform.</p>
+				<p>this method returns the paged data starting from $offset and will
+contain max. $limit items.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>startup methods by which Thallium is actually starting to perform.</p>
+				<p>this method returns the paged data starting from $offset and will
+contain max. $limit items.</p>
 
 
 					<h4>Parameters</h4>
@@ -334,7 +336,7 @@ this data into pages so that long lists can be paged.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getPagingDataCount">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#141-165" title="Go to source code">getPagingDataCount</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#142-166" title="Go to source code">getPagingDataCount</a>( )</code>
 
 			<div class="description short">
 				<p>returns how many items in total are available in the paged data</p>
@@ -371,7 +373,7 @@ this data into pages so that long lists can be paged.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setPagingParameters">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#167-194" title="Go to source code">setPagingParameters</a>( <span>array <var>$params</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#168-195" title="Go to source code">setPagingParameters</a>( <span>array <var>$params</var></span> )</code>
 
 			<div class="description short">
 				<p>startup methods by which Thallium is actually starting to perform.</p>
@@ -413,7 +415,7 @@ this data into pages so that long lists can be paged.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setParameter">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#196-218" title="Go to source code">setParameter</a>( <span>string <var>$key</var></span>, <span>string <var>$value</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#197-219" title="Go to source code">setParameter</a>( <span>string <var>$key</var></span>, <span>string <var>$value</var></span> )</code>
 
 			<div class="description short">
 				<p>internal set parameter for paging.</p>
@@ -457,7 +459,7 @@ this data into pages so that long lists can be paged.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getParameter">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#220-239" title="Go to source code">getParameter</a>( <span>none <var>$key</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#221-240" title="Go to source code">getParameter</a>( <span>none <var>$key</var></span> )</code>
 
 			<div class="description short">
 				<p>returns the requested internal paging parameter.</p>
@@ -499,7 +501,7 @@ this data into pages so that long lists can be paged.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getNumberOfPages">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#241-300" title="Go to source code">getNumberOfPages</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#242-301" title="Go to source code">getNumberOfPages</a>( )</code>
 
 			<div class="description short">
 				<p>returns the number of pages based on the total number of items
@@ -538,7 +540,7 @@ and the items-per-page limit.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getCurrentPage">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#302-322" title="Go to source code">getCurrentPage</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#303-323" title="Go to source code">getCurrentPage</a>( )</code>
 
 			<div class="description short">
 				<p>returns the current page number.</p>
@@ -575,7 +577,7 @@ and the items-per-page limit.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isCurrentPage">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#324-347" title="Go to source code">isCurrentPage</a>( <span>integer <var>$pageno</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#325-348" title="Go to source code">isCurrentPage</a>( <span>integer <var>$pageno</var></span> )</code>
 
 			<div class="description short">
 				<p>returns true if the provided page number matches the current page number</p>
@@ -617,7 +619,7 @@ and the items-per-page limit.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setCurrentPage">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#349-380" title="Go to source code">setCurrentPage</a>( <span>integer <var>$pageno</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#350-380" title="Go to source code">setCurrentPage</a>( <span>integer <var>$pageno</var></span> )</code>
 
 			<div class="description short">
 				<p>startup methods by which Thallium is actually starting to perform.</p>
@@ -1033,7 +1035,7 @@ and the items-per-page limit.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setItemsLimit">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#682-713" title="Go to source code">setItemsLimit</a>( <span>integer <var>$limit</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#682-712" title="Go to source code">setItemsLimit</a>( <span>integer <var>$limit</var></span> )</code>
 
 			<div class="description short">
 				<p>set the items-per-page limit.</p>
@@ -1064,6 +1066,64 @@ and the items-per-page limit.</p>
 			</div>
 			</div></td>
 		</tr>
+		<tr data-order="isValidItemsLimit" id="_isValidItemsLimit">
+
+			<td class="attributes"><code>
+				final public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_isValidItemsLimit">#</a>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#714-731" title="Go to source code">isValidItemsLimit</a>( <span> <var>$limit</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getFirstItemsLimit" id="_getFirstItemsLimit">
+
+			<td class="attributes"><code>
+				final public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getFirstItemsLimit">#</a>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#733-749" title="Go to source code">getFirstItemsLimit</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
 		<tr data-order="isCurrentItemsLimit" id="_isCurrentItemsLimit">
 
 			<td class="attributes"><code>
@@ -1075,7 +1135,7 @@ and the items-per-page limit.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isCurrentItemsLimit">#</a>
-			<code><a href="source-class-Thallium.Controllers.PagingController.html#715-740" title="Go to source code">isCurrentItemsLimit</a>( <span>integer <var>$limit</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.PagingController.html#751-776" title="Go to source code">isCurrentItemsLimit</a>( <span>integer <var>$limit</var></span> )</code>
 
 			<div class="description short">
 				<p>returns true if the provided $limit matches the one that is currently

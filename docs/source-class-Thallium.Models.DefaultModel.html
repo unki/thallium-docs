@@ -2162,7 +2162,7 @@
 </span><span id="1980" class="l">        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;model_permit_rpc_updates) ||
 </span><span id="1981" class="l">            <span class="php-keyword1">empty</span>(<span class="php-var">$this</span>-&gt;model_permit_rpc_updates) ||
 </span><span id="1982" class="l">            !<span class="php-keyword2">is_bool</span>(<span class="php-var">$this</span>-&gt;model_permit_rpc_updates) ||
-</span><span id="1983" class="l">            <span class="php-var">$this</span>-&gt;model_permit_rpc_updates !== <span class="php-quote">'true'</span>
+</span><span id="1983" class="l">            <span class="php-var">$this</span>-&gt;model_permit_rpc_updates !== <span class="php-keyword1">true</span>
 </span><span id="1984" class="l">        ) {
 </span><span id="1985" class="l">            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 </span><span id="1986" class="l">        }
@@ -2955,7 +2955,7 @@
 </span><span id="2773" class="l">        ) {
 </span><span id="2774" class="l">            <span class="php-keyword1">static</span>::raiseError(__METHOD__ .<span class="php-quote">'(), $offset parameter is invalid!'</span>);
 </span><span id="2775" class="l">            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
-</span><span id="2776" class="l">        } <span class="php-keyword1">elseif</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$offset</span>) &amp;&amp; <span class="php-keyword2">is_null</span>(<span class="php-var">$offset</span>)) {
+</span><span id="2776" class="l">        } <span class="php-keyword1">elseif</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$offset</span>) || <span class="php-keyword2">is_null</span>(<span class="php-var">$offset</span>)) {
 </span><span id="2777" class="l">            <span class="php-var">$offset</span> = <span class="php-num">0</span>;
 </span><span id="2778" class="l">        }
 </span><span id="2779" class="l">
