@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#
+# APIGEN
+#
+
 APIGEN="/usr/bin/apigen"
 #APIGEN="strace -f -s 256 /usr/bin/apigen"
 
@@ -56,3 +60,18 @@ fi
 DATE=$(date)
 git add ${OUTPUT}
 git commit -q -m "commit docs from run ${DATE}" ${OUTPUT}
+
+
+
+
+#
+# PHPMD
+#
+PHPMD="/usr/bin/phpmd"
+
+${PHPMD} \
+   --strict \
+   --reportfile reports/phpmd.txt \
+   thallium \
+   text \
+   reports/phpmd.rules.xml
