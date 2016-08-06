@@ -571,12 +571,12 @@
 </span><span id="389" class="l">            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 </span><span id="390" class="l">        }
 </span><span id="391" class="l">
-</span><span id="392" class="l">        <span class="php-keyword1">if</span> (!<span class="php-keyword2">preg_match</span>(<span class="php-quote">'/model$/i'</span>, <span class="php-var">$model_name</span>)) {
-</span><span id="393" class="l">            <span class="php-var">$nick</span> = <span class="php-var">$model_name</span>;
-</span><span id="394" class="l">            <span class="php-var">$model</span> = <span class="php-keyword1">null</span>;
-</span><span id="395" class="l">        } <span class="php-keyword1">else</span> {
-</span><span id="396" class="l">            <span class="php-var">$nick</span> = <span class="php-keyword1">null</span>;
-</span><span id="397" class="l">            <span class="php-var">$model</span> = <span class="php-var">$model_name</span>;
+</span><span id="392" class="l">        <span class="php-var">$nick</span> = <span class="php-keyword1">null</span>;
+</span><span id="393" class="l">        <span class="php-var">$model</span> = <span class="php-var">$model_name</span>;
+</span><span id="394" class="l">
+</span><span id="395" class="l">        <span class="php-keyword1">if</span> (!<span class="php-keyword2">preg_match</span>(<span class="php-quote">'/model$/i'</span>, <span class="php-var">$model_name</span>)) {
+</span><span id="396" class="l">            <span class="php-var">$nick</span> = <span class="php-var">$model_name</span>;
+</span><span id="397" class="l">            <span class="php-var">$model</span> = <span class="php-keyword1">null</span>;
 </span><span id="398" class="l">        }
 </span><span id="399" class="l">
 </span><span id="400" class="l">        <span class="php-keyword1">if</span> (!<span class="php-var">$this</span>-&gt;isRegisteredModel(<span class="php-var">$nick</span>, <span class="php-var">$model</span>)) {
