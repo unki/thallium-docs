@@ -187,7 +187,7 @@ clients page requests to a specific view.</p>
 				<a href="AGPL3">AGPL3</a><br>
 				<b>Author:</b>
 				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
-			<b>Located at</b> <a href="source-class-Thallium.Controllers.ViewsController.html#22-259" title="Go to source code">vendor/Thallium/Controllers/ViewsController.php</a>
+			<b>Located at</b> <a href="source-class-Thallium.Controllers.ViewsController.html#22-260" title="Go to source code">vendor/Thallium/Controllers/ViewsController.php</a>
 		<br>
 	</div>
 
@@ -207,7 +207,7 @@ clients page requests to a specific view.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Thallium.Controllers.ViewsController.html#47-72" title="Go to source code">__construct</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.ViewsController.html#48-73" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
 				<p>class constructor</p>
@@ -242,7 +242,7 @@ clients page requests to a specific view.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getViewName">#</a>
-			<code><a href="source-class-Thallium.Controllers.ViewsController.html#74-121" title="Go to source code">getViewName</a>( <span>string <var>$view</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.ViewsController.html#75-122" title="Go to source code">getViewName</a>( <span>string <var>$view</var></span> )</code>
 
 			<div class="description short">
 				<p>returns the name of a view that is responsible for handling
@@ -286,7 +286,7 @@ a specific page request.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getView">#</a>
-			<code><a href="source-class-Thallium.Controllers.ViewsController.html#123-160" title="Go to source code">getView</a>( <span>string <var>$view</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.ViewsController.html#124-161" title="Go to source code">getView</a>( <span>string <var>$view</var></span> )</code>
 
 			<div class="description short">
 				<p>loads the view specified as $view</p>
@@ -328,7 +328,7 @@ a specific page request.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_load">#</a>
-			<code><a href="source-class-Thallium.Controllers.ViewsController.html#162-209" title="Go to source code">load</a>( <span>string <var>$view</var></span>, <span>boolean <var>$skeleton</var> = <span class="php-keyword1">true</span></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.ViewsController.html#163-210" title="Go to source code">load</a>( <span>string <var>$view</var></span>, <span>boolean <var>$skeleton</var> = <span class="php-keyword1">true</span></span> )</code>
 
 			<div class="description short">
 				<p>returns the output of a view, either with or without the page
@@ -374,7 +374,7 @@ skeleton structure.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isLoadedView">#</a>
-			<code><a href="source-class-Thallium.Controllers.ViewsController.html#211-235" title="Go to source code">isLoadedView</a>( <span>string <var>$view</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.ViewsController.html#212-236" title="Go to source code">isLoadedView</a>( <span>string <var>$view</var></span> )</code>
 
 			<div class="description short">
 				<p>returns true if the specified view has already been loaded and is
@@ -418,7 +418,7 @@ present in the $loaded_views property.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getLoadedView">#</a>
-			<code><a href="source-class-Thallium.Controllers.ViewsController.html#237-258" title="Go to source code">getLoadedView</a>( <span>string <var>$view</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.ViewsController.html#238-259" title="Go to source code">getLoadedView</a>( <span>string <var>$view</var></span> )</code>
 
 			<div class="description short">
 				<p>returns a view that has already been cached in property $loaded_views
@@ -498,7 +498,7 @@ a specific page request.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.ViewsController.html#34-39" title="Go to source code"><var>$page_map</var></a>
+					<a href="source-class-Thallium.Controllers.ViewsController.html#34-40" title="Go to source code"><var>$page_map</var></a>
 
 				<div class="description short">
 					<p>$page_map</p>
@@ -516,6 +516,7 @@ a specific page request.</p>
     <span class="php-quote">'/^$/'</span> =&gt; <span class="php-quote">'MainView'</span>,
     <span class="php-quote">'/^main$/'</span> =&gt; <span class="php-quote">'MainView'</span>,
     <span class="php-quote">'/^about$/'</span> =&gt; <span class="php-quote">'AboutView'</span>,
+    <span class="php-quote">'/^internaltestview$/'</span> =&gt; <span class="php-quote">'InternalTestView'</span>,
 )</code>
 				</div>
 			</td>
@@ -527,7 +528,7 @@ a specific page request.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.ViewsController.html#41-42" title="Go to source code"><var>$page_skeleton</var></a>
+					<a href="source-class-Thallium.Controllers.ViewsController.html#42-43" title="Go to source code"><var>$page_skeleton</var></a>
 
 				<div class="description short">
 					<p>$page_skeleton</p>
@@ -552,7 +553,7 @@ a specific page request.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Controllers.ViewsController.html#44-45" title="Go to source code"><var>$loaded_views</var></a>
+					<a href="source-class-Thallium.Controllers.ViewsController.html#45-46" title="Go to source code"><var>$loaded_views</var></a>
 
 				<div class="description short">
 					<p>$loaded_views</p>

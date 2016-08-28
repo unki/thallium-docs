@@ -105,6 +105,7 @@
 			<h3>Classes</h3>
 			<ul>
 				<li class="active"><a href="class-Thallium.Views.DefaultView.html">DefaultView</a></li>
+				<li><a href="class-Thallium.Views.InternalTestView.html">InternalTestView</a></li>
 				<li><a href="class-Thallium.Views.MainView.html">MainView</a></li>
 				<li><a href="class-Thallium.Views.SkeletonView.html">SkeletonView</a></li>
 			</ul>
@@ -138,6 +139,7 @@ the other Thallium Views.</p>
 		<h3>Direct known subclasses</h3>
 		<p class="elementList">
 			<code><a href="class-Skeleton.Views.DefaultView.html">Skeleton\Views\DefaultView</a></code>, 
+			<code><a href="class-Thallium.Views.InternalTestView.html">Thallium\Views\InternalTestView</a></code>, 
 			<code><a href="class-Thallium.Views.MainView.html">Thallium\Views\MainView</a></code>, 
 			<code><a href="class-Thallium.Views.SkeletonView.html">Thallium\Views\SkeletonView</a></code>
 		</p>
@@ -167,7 +169,7 @@ the other Thallium Views.</p>
 				<a href="AGPL3">AGPL3</a><br>
 				<b>Author:</b>
 				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
-			<b>Located at</b> <a href="source-class-Thallium.Views.DefaultView.html#22-1133" title="Go to source code">vendor/Thallium/Views/DefaultView.php</a>
+			<b>Located at</b> <a href="source-class-Thallium.Views.DefaultView.html#22-1217" title="Go to source code">vendor/Thallium/Views/DefaultView.php</a>
 		<br>
 	</div>
 
@@ -187,7 +189,7 @@ the other Thallium Views.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#65-101" title="Go to source code">__construct</a>( )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#68-122" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
 				<p>class constructor</p>
@@ -220,7 +222,7 @@ the other Thallium Views.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___set">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#103-123" title="Go to source code">__set</a>( <span>string <var>$name</var></span>, <span>mixed <var>$value</var></span> )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#124-144" title="Go to source code">__set</a>( <span>string <var>$name</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 			<div class="description short">
 				<p>this overrides PHP own __set() method that is invoked for
@@ -262,7 +264,7 @@ on writing into an undeclared class property.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_validateView">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#125-151" title="Go to source code">validateView</a>( )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#146-172" title="Go to source code">validateView</a>( )</code>
 
 			<div class="description short">
 				<p>validates the Views parameters</p>
@@ -299,7 +301,7 @@ on writing into an undeclared class property.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_show">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#153-265" title="Go to source code">show</a>( )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#174-286" title="Go to source code">show</a>( )</code>
 
 			<div class="description short">
 				<p>this is the main entry point into the view.
@@ -338,7 +340,7 @@ here the view decides what to do.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_showList">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#267-379" title="Go to source code">showList</a>( <span>integer|null <var>$pageno</var> = <span class="php-keyword1">null</span></span>, <span>integer|null <var>$items_limit</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#288-400" title="Go to source code">showList</a>( <span>integer|null <var>$pageno</var> = <span class="php-keyword1">null</span></span>, <span>integer|null <var>$items_limit</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				<p>a helper method to display a listing.</p>
@@ -382,7 +384,7 @@ here the view decides what to do.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_showEdit">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#381-425" title="Go to source code">showEdit</a>( <span>integer <var>$id</var></span>, <span>string <var>$guid</var></span> )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#402-446" title="Go to source code">showEdit</a>( <span>integer <var>$id</var></span>, <span>string <var>$guid</var></span> )</code>
 
 			<div class="description short">
 				<p>a helper method to display a editable view for a model.</p>
@@ -426,7 +428,7 @@ here the view decides what to do.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_showItem">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#427-469" title="Go to source code">showItem</a>( <span>integer <var>$id</var></span>, <span>string <var>$guid</var></span> )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#448-490" title="Go to source code">showItem</a>( <span>integer <var>$id</var></span>, <span>string <var>$guid</var></span> )</code>
 
 			<div class="description short">
 				<p>a helper method to display a model.</p>
@@ -470,7 +472,7 @@ here the view decides what to do.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_raiseError">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#471-491" title="Go to source code">raiseError</a>( <span>string <var>$string</var></span>, <span>boolean <var>$stop_execution</var> = <span class="php-keyword1">false</span></span>, <span>callable <var>$exception</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#492-512" title="Go to source code">raiseError</a>( <span>string <var>$string</var></span>, <span>boolean <var>$stop_execution</var> = <span class="php-keyword1">false</span></span>, <span>callable <var>$exception</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				<p>triggers an exception.</p>
@@ -512,7 +514,7 @@ here the view decides what to do.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_addMode">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#493-521" title="Go to source code">addMode</a>( <span>string <var>$mode</var></span> )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#514-542" title="Go to source code">addMode</a>( <span>string <var>$mode</var></span> )</code>
 
 			<div class="description short">
 				<p>adds a mode that this view is going to support.</p>
@@ -554,7 +556,7 @@ here the view decides what to do.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isValidMode">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#523-549" title="Go to source code">isValidMode</a>( <span>string <var>$mode</var></span> )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#544-570" title="Go to source code">isValidMode</a>( <span>string <var>$mode</var></span> )</code>
 
 			<div class="description short">
 				<p>returns true if $mode is a valid mode for the current View.</p>
@@ -596,7 +598,7 @@ here the view decides what to do.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getModes">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#551-565" title="Go to source code">getModes</a>( )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#572-586" title="Go to source code">getModes</a>( )</code>
 
 			<div class="description short">
 				<p>returns all the available modes for the current View.</p>
@@ -633,7 +635,7 @@ here the view decides what to do.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasSessionVar">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#567-588" title="Go to source code">hasSessionVar</a>( <span>string <var>$name</var></span> )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#588-609" title="Go to source code">hasSessionVar</a>( <span>string <var>$name</var></span> )</code>
 
 			<div class="description short">
 				<p>returns true if the session-variable $name is set.</p>
@@ -675,7 +677,7 @@ here the view decides what to do.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getSessionVar">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#590-617" title="Go to source code">getSessionVar</a>( <span>string <var>$name</var></span> )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#611-638" title="Go to source code">getSessionVar</a>( <span>string <var>$name</var></span> )</code>
 
 			<div class="description short">
 				<p>returns the value of the session-variable $name.</p>
@@ -717,7 +719,7 @@ here the view decides what to do.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setSessionVar">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#619-653" title="Go to source code">setSessionVar</a>( <span>string <var>$name</var></span>, <span>mixed <var>$value</var></span> )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#640-674" title="Go to source code">setSessionVar</a>( <span>string <var>$name</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 			<div class="description short">
 				<p>sets the value $value on the session-variable $name.</p>
@@ -761,7 +763,7 @@ here the view decides what to do.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setViewData">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#655-681" title="Go to source code">setViewData</a>( <span>object <var>&amp; $data</var></span> )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#676-702" title="Go to source code">setViewData</a>( <span>object <var>&amp; $data</var></span> )</code>
 
 			<div class="description short">
 				<p>sets the view data this View operates on.</p>
@@ -803,7 +805,7 @@ here the view decides what to do.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasViewData">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#683-700" title="Go to source code">hasViewData</a>( )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#704-721" title="Go to source code">hasViewData</a>( )</code>
 
 			<div class="description short">
 				<p>returns true if the View has data set.</p>
@@ -840,7 +842,7 @@ here the view decides what to do.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getViewData">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#702-717" title="Go to source code">getViewData</a>( )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#723-738" title="Go to source code">getViewData</a>( )</code>
 
 			<div class="description short">
 				<p>returns the View data.</p>
@@ -877,7 +879,7 @@ here the view decides what to do.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getViewDataCount">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#719-748" title="Go to source code">getViewDataCount</a>( )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#740-769" title="Go to source code">getViewDataCount</a>( )</code>
 
 			<div class="description short">
 				<p>returns the number of items from the $view_data object;</p>
@@ -914,7 +916,7 @@ here the view decides what to do.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_dataList">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#750-856" title="Go to source code">dataList</a>( <span>array <var>$params</var></span>, <span>string <var>$content</var></span>, <span>object <var>&amp; $smarty</var></span>, <span>boolean <var>&amp; $repeat</var></span> )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#771-877" title="Go to source code">dataList</a>( <span>array <var>$params</var></span>, <span>string <var>$content</var></span>, <span>object <var>&amp; $smarty</var></span>, <span>boolean <var>&amp; $repeat</var></span> )</code>
 
 			<div class="description short">
 				<p>a smarty block plugin that floods a list of items.</p>
@@ -962,7 +964,7 @@ here the view decides what to do.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getListIndex">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#858-891" title="Go to source code">getListIndex</a>( <span>string <var>$list_name</var></span>, <span>object <var>&amp; $smarty</var></span> )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#879-912" title="Go to source code">getListIndex</a>( <span>string <var>$list_name</var></span>, <span>object <var>&amp; $smarty</var></span> )</code>
 
 			<div class="description short">
 				<p>returns the current index pointer of a list identified by $list_name.</p>
@@ -1006,7 +1008,7 @@ here the view decides what to do.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setListIndex">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#893-929" title="Go to source code">setListIndex</a>( <span>string <var>$list_name</var></span>, <span>integer <var>$index</var></span>, <span>object <var>&amp; $smarty</var></span> )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#914-950" title="Go to source code">setListIndex</a>( <span>string <var>$list_name</var></span>, <span>integer <var>$index</var></span>, <span>object <var>&amp; $smarty</var></span> )</code>
 
 			<div class="description short">
 				<p>sets the current index pointer of a list identified by $list_name.</p>
@@ -1052,7 +1054,7 @@ here the view decides what to do.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasCurrentItem">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#931-948" title="Go to source code">hasCurrentItem</a>( )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#952-969" title="Go to source code">hasCurrentItem</a>( )</code>
 
 			<div class="description short">
 				<p>returns true if the View knows about the current item that is
@@ -1091,7 +1093,7 @@ currently handled.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getCurrentItem">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#950-965" title="Go to source code">getCurrentItem</a>( )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#971-986" title="Go to source code">getCurrentItem</a>( )</code>
 
 			<div class="description short">
 				<p>returns the current item if the View knows about.</p>
@@ -1128,7 +1130,7 @@ currently handled.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setCurrentItem">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#967-983" title="Go to source code">setCurrentItem</a>( <span>object <var>&amp; $item</var></span> )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#988-1004" title="Go to source code">setCurrentItem</a>( <span>object <var>&amp; $item</var></span> )</code>
 
 			<div class="description short">
 				<p>sets the current item.</p>
@@ -1170,7 +1172,7 @@ currently handled.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getListTemplateName">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#985-995" title="Go to source code">getListTemplateName</a>( )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#1006-1016" title="Go to source code">getListTemplateName</a>( )</code>
 
 			<div class="description short">
 				<p>returns the filename of the listing-template.</p>
@@ -1207,7 +1209,7 @@ currently handled.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getEditTemplateName">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#997-1007" title="Go to source code">getEditTemplateName</a>( )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#1018-1028" title="Go to source code">getEditTemplateName</a>( )</code>
 
 			<div class="description short">
 				<p>returns the filename of the editing-template.</p>
@@ -1244,7 +1246,7 @@ currently handled.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getViewItemsCount">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#1009-1038" title="Go to source code">getViewItemsCount</a>( )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#1030-1059" title="Go to source code">getViewItemsCount</a>( )</code>
 
 			<div class="description short">
 				<p>returns the number of items for this view.
@@ -1285,7 +1287,7 @@ number because of the PagingController has limited the data range.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getViewItemsKeys">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#1040-1081" title="Go to source code">getViewItemsKeys</a>( )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#1061-1102" title="Go to source code">getViewItemsKeys</a>( )</code>
 
 			<div class="description short">
 				<p>returns the keys of the items available in the model.</p>
@@ -1322,7 +1324,7 @@ number because of the PagingController has limited the data range.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getViewItemsItem">#</a>
-			<code><a href="source-class-Thallium.Views.DefaultView.html#1083-1132" title="Go to source code">getViewItemsItem</a>( <span>integer <var>$item_idx</var></span> )</code>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#1104-1153" title="Go to source code">getViewItemsItem</a>( <span>integer <var>$item_idx</var></span> )</code>
 
 			<div class="description short">
 				<p>returns the item specified by $item_idx from the $view_data object</p>
@@ -1347,6 +1349,93 @@ number because of the PagingController has limited the data range.</p>
 					<div class="list">
 						<code><a href="class-Thallium.Controllers.ExceptionController.html">Thallium\Controllers\ExceptionController</a></code>
 					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addContent" id="_addContent">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addContent">#</a>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#1155-1168" title="Go to source code">addContent</a>( <span> <var>$name</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="hasContent" id="_hasContent">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_hasContent">#</a>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#1170-1182" title="Go to source code">hasContent</a>( <span> <var>$name</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getContent" id="_getContent">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getContent">#</a>
+			<code><a href="source-class-Thallium.Views.DefaultView.html#1184-1216" title="Go to source code">getContent</a>( <span> <var>$name</var></span>, <span> <var>&amp; $data</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
 
 
 
@@ -1549,6 +1638,31 @@ number because of the PagingController has limited the data range.</p>
 				</div>
 			</td>
 		</tr>
+		<tr data-order="view_contents" id="$view_contents">
+			<td class="attributes"><code>
+				protected  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Thallium.Views.DefaultView.html#62-63" title="Go to source code"><var>$view_contents</var></a>
+
+				<div class="description short">
+					<p>$view_contents</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>$view_contents</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$view_contents" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
 		<tr data-order="default_items_limit" id="$default_items_limit">
 			<td class="attributes"><code>
 				protected  
@@ -1556,7 +1670,7 @@ number because of the PagingController has limited the data range.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Thallium.Views.DefaultView.html#62-63" title="Go to source code"><var>$default_items_limit</var></a>
+					<a href="source-class-Thallium.Views.DefaultView.html#65-66" title="Go to source code"><var>$default_items_limit</var></a>
 
 				<div class="description short">
 					<p>$default_items_limit</p>
