@@ -4918,7 +4918,7 @@
 </span><span id="4735" class="l">            <span class="php-quote">'1'</span>
 </span><span id="4736" class="l">        );
 </span><span id="4737" class="l">
-</span><span id="4738" class="l">        <span class="php-keyword1">if</span> (!<span class="php-keyword2">in_array</span>(<span class="php-var">$value</span>, <span class="php-var">$means_enabled</span>)) {
+</span><span id="4738" class="l">        <span class="php-keyword1">if</span> (!<span class="php-keyword2">in_array</span>(<span class="php-keyword2">strtolower</span>(<span class="php-var">$value</span>), <span class="php-var">$means_enabled</span>, <span class="php-keyword1">true</span>)) {
 </span><span id="4739" class="l">            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 </span><span id="4740" class="l">        }
 </span><span id="4741" class="l">
@@ -4944,7 +4944,7 @@
 </span><span id="4761" class="l">            <span class="php-quote">'0'</span>
 </span><span id="4762" class="l">        );
 </span><span id="4763" class="l">
-</span><span id="4764" class="l">        <span class="php-keyword1">if</span> (!<span class="php-keyword2">in_array</span>(<span class="php-var">$value</span>, <span class="php-var">$means_disabled</span>)) {
+</span><span id="4764" class="l">        <span class="php-keyword1">if</span> (!<span class="php-keyword2">in_array</span>(<span class="php-keyword2">strtolower</span>(<span class="php-var">$value</span>), <span class="php-var">$means_disabled</span>, <span class="php-keyword1">true</span>)) {
 </span><span id="4765" class="l">            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 </span><span id="4766" class="l">        }
 </span><span id="4767" class="l">

@@ -309,7 +309,7 @@
 </span><span id="126" class="l">
 </span><span id="127" class="l">        <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$parameters</span>) &amp;&amp; (
 </span><span id="128" class="l">            <span class="php-keyword1">empty</span>(<span class="php-var">$parameters</span>) ||
-</span><span id="129" class="l">            !<span class="php-keyword2">is_array</span>(<span class="php-var">$parameters</span>)
+</span><span id="129" class="l">            (!<span class="php-keyword2">is_string</span>(<span class="php-var">$parameters</span>) &amp;&amp; !<span class="php-keyword2">is_array</span>(<span class="php-var">$parameters</span>) &amp;&amp; !<span class="php-keyword2">is_object</span>(<span class="php-var">$parameters</span>))
 </span><span id="130" class="l">        )) {
 </span><span id="131" class="l">            <span class="php-keyword1">static</span>::raiseError(__METHOD__ .<span class="php-quote">'(), $parameters parameter is invalid!'</span>);
 </span><span id="132" class="l">            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
@@ -618,7 +618,7 @@
 </span><span id="435" class="l">
 </span><span id="436" class="l">        <span class="php-keyword1">foreach</span> (<span class="php-var">$pending</span> <span class="php-keyword1">as</span> <span class="php-var">$job</span>) {
 </span><span id="437" class="l">            <span class="php-keyword1">if</span> (<span class="php-var">$job</span>-&gt;isProcessing()) {
-</span><span id="438" class="l">                <span class="php-keyword1">return</span> <span class="php-keyword1">true</span>;
+</span><span id="438" class="l">                <span class="php-keyword1">continue</span>;
 </span><span id="439" class="l">            }
 </span><span id="440" class="l">
 </span><span id="441" class="l">            <span class="php-keyword1">if</span> (!<span class="php-var">$job</span>-&gt;setProcessingFlag()) {

@@ -187,7 +187,7 @@ clients.</p>
 				<a href="AGPL3">AGPL3</a><br>
 				<b>Author:</b>
 				Andreas Unterkircher <a href="&#x6d;&#97;&#x69;&#108;t&#x6f;&#58;&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;">&#x75;&#110;&#107;&#x69;&#64;&#x6e;&#101;&#116;&#x73;&#104;&#x61;&#x64;&#111;&#x77;&#46;n&#x65;&#116;</a><br>
-			<b>Located at</b> <a href="source-class-Thallium.Controllers.MessageBusController.html#22-504" title="Go to source code">vendor/Thallium/Controllers/MessageBusController.php</a>
+			<b>Located at</b> <a href="source-class-Thallium.Controllers.MessageBusController.html#22-519" title="Go to source code">vendor/Thallium/Controllers/MessageBusController.php</a>
 		<br>
 	</div>
 
@@ -242,7 +242,7 @@ clients.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_submit">#</a>
-			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#80-187" title="Go to source code">submit</a>( <span>string <var>$messages_raw</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#80-202" title="Go to source code">submit</a>( <span>string <var>$messages_raw</var></span> )</code>
 
 			<div class="description short">
 				<p>submit one or more messages to the message bus.
@@ -286,7 +286,7 @@ inbound messages in a JSON-formated string.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_poll">#</a>
-			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#189-284" title="Go to source code">poll</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#204-299" title="Go to source code">poll</a>( )</code>
 
 			<div class="description short">
 				<p>this method is called when a client polls the message bus for pending
@@ -325,7 +325,7 @@ messages. they are returned as JSON-encoded strings.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getRequestMessages">#</a>
-			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#286-313" title="Go to source code">getRequestMessages</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#301-328" title="Go to source code">getRequestMessages</a>( )</code>
 
 			<div class="description short">
 				<p>retrieve messages from message bus with type request.</p>
@@ -362,7 +362,7 @@ messages. they are returned as JSON-encoded strings.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_removeExpiredMessages">#</a>
-			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#315-337" title="Go to source code">removeExpiredMessages</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#330-352" title="Go to source code">removeExpiredMessages</a>( )</code>
 
 			<div class="description short">
 				<p>purges all expired messages from the message bus.</p>
@@ -399,7 +399,7 @@ messages. they are returned as JSON-encoded strings.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_sendMessageToClient">#</a>
-			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#339-418" title="Go to source code">sendMessageToClient</a>( <span>string <var>$command</var></span>, <span>string <var>$body</var></span>, <span>string <var>$value</var></span>, <span>string|null <var>$sessionid</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#354-433" title="Go to source code">sendMessageToClient</a>( <span>string <var>$command</var></span>, <span>string <var>$body</var></span>, <span>string <var>$value</var></span>, <span>string|null <var>$sessionid</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				<p>submit a message to the message bus that has to be sent to a client.</p>
@@ -447,7 +447,7 @@ messages. they are returned as JSON-encoded strings.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getSessionIdFromJob">#</a>
-			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#420-463" title="Go to source code">getSessionIdFromJob</a>( <span>string|null <var>$job_guid</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#435-478" title="Go to source code">getSessionIdFromJob</a>( <span>string|null <var>$job_guid</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				<p>return the session-id that is bound to a specific job.</p>
@@ -489,7 +489,7 @@ messages. they are returned as JSON-encoded strings.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isSuppressOutboundMessaging">#</a>
-			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#465-483" title="Go to source code">isSuppressOutboundMessaging</a>( )</code>
+			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#480-498" title="Go to source code">isSuppressOutboundMessaging</a>( )</code>
 
 			<div class="description short">
 				<p>returns true if outbound messaging is temporary disabled.</p>
@@ -526,7 +526,7 @@ messages. they are returned as JSON-encoded strings.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_suppressOutboundMessaging">#</a>
-			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#485-503" title="Go to source code">suppressOutboundMessaging</a>( <span>boolean <var>$state</var></span> )</code>
+			<code><a href="source-class-Thallium.Controllers.MessageBusController.html#500-518" title="Go to source code">suppressOutboundMessaging</a>( <span>boolean <var>$state</var></span> )</code>
 
 			<div class="description short">
 				<p>enable or disable outbound messaging</p>
